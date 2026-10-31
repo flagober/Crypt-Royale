@@ -16,7 +16,7 @@ on:
 jobs:
   build-ios:
     name: Compilar IPA no macOS com Xcode Oficial
-    runs-on: macos-14 # Runner oficial Apple Silicon (M1/M2) com Xcode pré-instalado
+    runs-on: macos-15 # Runner oficial Apple com macOS Sequoia e Xcode 16
 
     steps:
       - name: 1. Baixar código do Crypt Royale
