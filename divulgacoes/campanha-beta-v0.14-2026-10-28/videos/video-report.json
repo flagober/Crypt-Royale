@@ -1,0 +1,33 @@
+{
+  "status": "preview-not-approved",
+  "music": "Vinheta original sintetizada; sem música de marcas ou narração.",
+  "durationSeconds": 18.6,
+  "reports": [
+    {
+      "file": "videos/royale-beta-vertical-1080x1920.mp4",
+      "width": 1080,
+      "height": 1920,
+      "durationSeconds": 18.6,
+      "fps": 30,
+      "video": "H.264 High/yuv420p",
+      "audio": "AAC stereo 48kHz",
+      "faststart": true,
+      "fullDecodePassed": true,
+      "bytes": 2689574,
+      "buildWarnings": "[aist#5:0/pcm_s16le @ 000001e1b7e54500] Guessed Channel Layout: stereo"
+    },
+    {
+      "file": "videos/royale-beta-horizontal-1920x1080.mp4",
+      "width": 1920,
+      "height": 1080,
+      "durationSeconds": 18.6,
+      "fps": 30,
+      "video": "H.264 High/yuv420p",
+      "audio": "AAC stereo 48kHz",
+      "faststart": true,
+      "fullDecodePassed": true,
+      "bytes": 2663192,
+      "buildWarnings": "[aist#5:0/pcm_s16le @ 000001bfd69efcc0] Guessed Channel Layout: stereo"
+    }
+  ]
+}

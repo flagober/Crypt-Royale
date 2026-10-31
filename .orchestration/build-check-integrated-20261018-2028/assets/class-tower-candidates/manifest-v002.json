@@ -1,0 +1,120 @@
+{
+  "globalFlipAllowed": false,
+  "status": "candidate-not-integrated",
+  "source": "Built-in image_gen edits; tower floor expanded, female armor recolored; male frame 2 source crop corrected",
+  "characters": [
+    {
+      "frames": [
+        {
+          "pivotX": 273.0,
+          "pivotY": 633,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 0
+        },
+        {
+          "pivotX": 207,
+          "pivotY": 633,
+          "width": 513,
+          "y": 0,
+          "height": 724,
+          "x": 573
+        },
+        {
+          "pivotX": 278.0,
+          "pivotY": 629,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1086
+        },
+        {
+          "pivotX": 285.0,
+          "pivotY": 636,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1629
+        }
+      ],
+      "pivot": [
+        280,
+        255
+      ],
+      "scale": 0.3,
+      "file": "./assets/class-tower-candidates/warrior-male-v001.png",
+      "id": "male",
+      "release": {
+        "dy": 80,
+        "y": -10,
+        "x": 65,
+        "dx": 125
+      },
+      "effectColor": "#7ff7ff"
+    },
+    {
+      "frames": [
+        {
+          "pivotX": 267.0,
+          "pivotY": 648,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 0
+        },
+        {
+          "pivotX": 233,
+          "pivotY": 649,
+          "width": 513,
+          "y": 0,
+          "height": 724,
+          "x": 573
+        },
+        {
+          "pivotX": 287.0,
+          "pivotY": 647,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1086
+        },
+        {
+          "pivotX": 252,
+          "pivotY": 648,
+          "width": 523,
+          "y": 0,
+          "height": 724,
+          "x": 1649
+        }
+      ],
+      "pivot": [
+        280,
+        255
+      ],
+      "scale": 0.3,
+      "file": "./assets/class-tower-candidates/warrior-female-v002.png",
+      "id": "female",
+      "release": {
+        "dy": 90,
+        "y": -30,
+        "x": -70,
+        "dx": -115
+      },
+      "effectColor": "#7ff7ff"
+    }
+  ],
+  "generatedOn": "2026-10-18",
+  "direction": "three-quarter-front-only",
+  "cycleMs": 2400,
+  "tower": {
+    "y": 200,
+    "width": 360,
+    "file": "./assets/class-tower-candidates/tower-v002.png",
+    "height": 392,
+    "x": 100
+  },
+  "guard": {
+    "file": "./assets/class-tower-candidates/guard-tower-v001.png"
+  }
+}

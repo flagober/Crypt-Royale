@@ -1,0 +1,8 @@
+# Guerreira — contato oposto por referência limpa e guia visual
+03/10/2026: usuário pediu prosseguir. Nova conversa Gemini a36bd786315f004d, somente female_left-contact_approved_v001.jpg enviada. Pedido de troca das pernas inteiras. Nano Pro2/2 v003 mantém passo original, REJEITADO.
+Desenhadas guias na UI Gemini: vermelho perto/avançado esquerda, verde distante/recuado direita. Imagem marcada anexada com pedido de reconstrução e remoção das guias. Nano Pro2/2 v004 também mantém ordem das pernas; REJEITADO. Ambas JPEG preservadas, nenhum aprovado substituído.
+Teste complementar informado ao usuário com skill imagegen/ferramenta integrada OpenAI, edição isolada da mesma referência aprovada, fundo transparente. Resultado ainda em geração. Não confundir provedores e não integrar sem revisão.
+
+## Resultado complementar imagegen
+Gerador: ferramenta integrada OpenAI image_gen (não Nano Banana). Original exec-898f1bd6-9c01-4b01-8a1c-8e70e45ff4cc.png, copiado para female_left-opposite_imagegen_v001.png. Revisão visual: joelheira grande/próxima e bota avançam esquerda da imagem; perna distante recuada direita. Alternância agora visível, identidade e armas preservadas em termos gerais. CANDIDATA para aprovação do usuário; escala/enquadramento diferem da fonte e precisarão ser normalizados na montagem. Alpha verificado nos cantos, PNG verdadeiro. Nenhuma integração.
+Prompt utilizado: editar a referência feminina aprovada, somente pernas; perna próxima com joelheira grande na esquerda à frente sobrepondo coxa distante, perna distante atrás à direita, duas pernas naturais, pés apontando esquerda; preservar cabeça/cabelo/capa/tronco/espada/escudo, não espelhar, uma pose inteira e fundo alpha transparente.

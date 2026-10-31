@@ -1,0 +1,23 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const auth=require('C:/Users/flavi/AppData/Local/npm-cache/_npx/36e7d4fb91a22cc5/node_modules/firebase-tools/lib/auth.js');
+(async()=>{
+ const account=auth.getGlobalDefaultAccount();if(!account)throw Error('Login Firebase necessário.');
+ const {access_token}=await auth.getAccessToken(account.tokens.refresh_token,[]);
+ const call=async(url,method='GET',body)=>{const r=await fetch(url,{method,headers:{Authorization:'Bearer '+access_token,'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined});const d=await r.json();if(!r.ok)throw Error('Firebase HTTP '+r.status+' '+JSON.stringify(d.error?.message));return d;};
+ const base='https://firebaserules.googleapis.com/v1/projects/monstercrypt-core',release=await call(base+'/releases/cloud.firestore'),before=await call('https://firebaserules.googleapis.com/v1/'+release.rulesetName);
+ if(before.source.files.length!==1)throw Error('Regras com múltiplas fontes.');
+ const original=before.source.files[0].content,fragment=fs.readFileSync(path.resolve(__dirname,'../../firestore.mailbox.rules'),'utf8');
+ if(original.includes('match /cryptroyale_mailboxes/'))throw Error('Regras de correio já existentes; revisar antes de alterar.');
+ const point=original.lastIndexOf('\n  }');if(point<0)throw Error('Estrutura de regras desconhecida.');
+ const inserted='\n    '+fragment.replaceAll('\n','\n    ')+'\n',updated=original.slice(0,point)+inserted+original.slice(point);
+ if(updated.replace(inserted,'')!==original)throw Error('Preservação de regras falhou.');
+ const dir=path.join(process.env.LOCALAPPDATA,'MonsterCrypt','CryptRoyale','CloudSnapshot','mailbox-'+Date.now());fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,'before.json'),JSON.stringify({release,before},null,2));fs.writeFileSync(path.join(dir,'proposed.rules'),updated);
+ const created=await call(base+'/rulesets','POST',{source:{files:[{name:before.source.files[0].name,content:updated}]}});
+ if((await call(base+'/releases/cloud.firestore')).rulesetName!==release.rulesetName)throw Error('Regras alteradas por outra sessão.');
+ const applied=await call(base+'/releases/cloud.firestore?updateMask=rulesetName','PATCH',{release:{name:release.name,rulesetName:created.name}});
+ const verified=await call('https://firebaserules.googleapis.com/v1/'+applied.rulesetName),hash=s=>crypto.createHash('sha256').update(s).digest('hex');
+ if(hash(verified.source.files[0].content)!==hash(updated))throw Error('Verificação remota falhou.');
+ fs.writeFileSync(path.join(dir,'verified.json'),JSON.stringify({ruleset:created.name,beforeSha:hash(original),afterSha:hash(updated)},null,2));
+ console.log('MAILBOX_RULES_MERGED_AND_VERIFIED previous_apps_byte_identical backup='+dir);
+})().catch(e=>{console.error(e.message);process.exitCode=1;});

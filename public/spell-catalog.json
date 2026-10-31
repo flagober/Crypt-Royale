@@ -1,0 +1,162 @@
+[
+  {
+    "id": "bit-bug",
+    "name": "Enxame Binário",
+    "kind": "ring",
+    "color": "#22d3ee",
+    "description": "bônus visual e pequeno aumento de velocidade quando dois ou mais Bit Bugs atacam o mesmo alvo.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "data-mouse",
+    "name": "Checksum",
+    "kind": "beam",
+    "color": "#fbbf24",
+    "description": "o terceiro disparo consecutivo no mesmo alvo causa pequeno dano extra.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "code-slime",
+    "name": "Fragmentação",
+    "kind": "ground",
+    "color": "#4ade80",
+    "description": "Ao cair, deixa gosma corrosiva por 3 segundos: 8 de dano a cada 0,5 s às tropas terrestres inimigas em contato. Primeiro pulso após 0,5 s. Poças sobrepostas não acumulam dano. Mantém lentidão leve; aliados, voadores e estruturas são imunes.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "pixel-pup",
+    "name": "Rastro Leal",
+    "kind": "ghost",
+    "color": "#60a5fa",
+    "description": "ganha curta aceleração ao aproximar-se de um aliado sob ataque.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "circuit-hare",
+    "name": "Salto de Circuito",
+    "kind": "beam",
+    "color": "#c084fc",
+    "description": "primeiro contato após percorrer distância mínima causa dano adicional, sempre com aviso luminoso.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "cache-crow",
+    "name": "Memória de Alvo",
+    "kind": "ring",
+    "color": "#f472b6",
+    "description": "mantém o alvo por um breve período mesmo se ele atravessar a multidão.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "byte-boar",
+    "name": "Cabeçada de Byte",
+    "kind": "ground",
+    "color": "#fb923c",
+    "description": "o primeiro golpe numa estrutura causa impacto adicional moderado.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "socket-crab",
+    "name": "Porta Travada",
+    "kind": "shield",
+    "color": "#fbbf24",
+    "description": "após parar para atacar, recebe pequena redução de dano frontal.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "copper-mole",
+    "name": "Túnel de Cobre",
+    "kind": "ground",
+    "color": "#2dd4bf",
+    "description": "no posicionamento, percorre sob o solo durante até 1,2 s. O ponto de saída aparece ao adversário e pode ser preparado; a habilidade ocorre uma vez por invocação.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "fiber-finch",
+    "name": "Pulso Óptico",
+    "kind": "ring",
+    "color": "#a78bfa",
+    "description": "o primeiro ataque revela efeitos de camuflagem do alvo por curto período.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "patch-toad",
+    "name": "Hotfix",
+    "kind": "heal",
+    "color": "#4ade80",
+    "description": "a cada 4 s emite cura curta de 45 HP no aliado mais ferido próximo. Não cura estruturas e não se autocura.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "logic-lizard",
+    "name": "Lógica Encadeada",
+    "kind": "beam",
+    "color": "#38bdf8",
+    "description": "o disparo alcança um segundo alvo por 50% do dano e um terceiro por 25%; não retorna ao mesmo alvo.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "kernel-goat",
+    "name": "Kernel Panic",
+    "kind": "ground",
+    "color": "#f97316",
+    "description": "a primeira cabeçada e depois uma a cada 5 s empurra levemente unidades terrestres; chefes e estruturas resistem.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "packet-fox",
+    "name": "Pacote Fantasma",
+    "kind": "ghost",
+    "color": "#a855f7",
+    "description": "fica camuflada após 2 s sem atacar ou sofrer dano; o primeiro golpe saindo da camuflagem recebe +40%. Uma distorção visível permite reação.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "buffer-bison",
+    "name": "Zona de Buffer",
+    "kind": "shield",
+    "color": "#22d3ee",
+    "description": "aliados num raio curto recebem 12% de redução de dano; o efeito não acumula com outro Buffer Bison.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  },
+  {
+    "id": "cache-mantis",
+    "name": "Cache Hit",
+    "kind": "slash",
+    "color": "#34d399",
+    "description": "ao adquirir seu primeiro alvo, avança até 45 unidades e causa +30% no primeiro golpe. O salto não reinicia ao trocar de alvo.",
+    "status": "integrated-local-test",
+    "mechanicsActive": true,
+    "visualApprovedOn": "2026-10-18"
+  }
+]

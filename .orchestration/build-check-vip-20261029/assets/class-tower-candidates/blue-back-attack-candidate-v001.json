@@ -1,0 +1,203 @@
+{
+  "status": "candidate",
+  "direction": "up/back",
+  "globalFlipAllowed": false,
+  "actors": [
+    {
+      "id": "archer-female",
+      "source": [
+        1322,
+        1190
+      ],
+      "frames": [
+        {
+          "label": 1,
+          "area": 106393,
+          "x": 62,
+          "y": 1,
+          "width": 534,
+          "height": 594,
+          "pivotX": 275,
+          "pivotY": 593
+        },
+        {
+          "label": 1,
+          "area": 117327,
+          "x": 727,
+          "y": 1,
+          "width": 547,
+          "height": 594,
+          "pivotX": 262.5,
+          "pivotY": 593
+        },
+        {
+          "label": 2,
+          "area": 106407,
+          "x": 68,
+          "y": 595,
+          "width": 525,
+          "height": 586,
+          "pivotX": 269,
+          "pivotY": 585
+        },
+        {
+          "label": 2,
+          "area": 106632,
+          "x": 739,
+          "y": 595,
+          "width": 528,
+          "height": 586,
+          "pivotX": 268,
+          "pivotY": 585
+        }
+      ]
+    },
+    {
+      "id": "archer-male",
+      "source": [
+        1374,
+        1145
+      ],
+      "frames": [
+        {
+          "label": 1,
+          "area": 115439,
+          "x": 48,
+          "y": 14,
+          "width": 606,
+          "height": 553,
+          "pivotX": 302,
+          "pivotY": 552
+        },
+        {
+          "label": 1,
+          "area": 122149,
+          "x": 723,
+          "y": 14,
+          "width": 606,
+          "height": 553,
+          "pivotX": 305,
+          "pivotY": 552
+        },
+        {
+          "label": 1,
+          "area": 119329,
+          "x": 49,
+          "y": 576,
+          "width": 605,
+          "height": 550,
+          "pivotX": 302.5,
+          "pivotY": 549
+        },
+        {
+          "label": 1,
+          "area": 122651,
+          "x": 720,
+          "y": 577,
+          "width": 613,
+          "height": 549,
+          "pivotX": 308.5,
+          "pivotY": 548
+        }
+      ]
+    },
+    {
+      "id": "warrior-male",
+      "source": [
+        1254,
+        1254
+      ],
+      "frames": [
+        {
+          "label": 1,
+          "area": 134797,
+          "x": 82,
+          "y": 135,
+          "width": 538,
+          "height": 492,
+          "pivotX": 266.5,
+          "pivotY": 491
+        },
+        {
+          "label": 1,
+          "area": 148623,
+          "x": 710,
+          "y": 12,
+          "width": 530,
+          "height": 615,
+          "pivotX": 265,
+          "pivotY": 614
+        },
+        {
+          "label": 3,
+          "area": 151194,
+          "x": 96,
+          "y": 639,
+          "width": 531,
+          "height": 580,
+          "pivotX": 237,
+          "pivotY": 579
+        },
+        {
+          "label": 4,
+          "area": 138011,
+          "x": 702,
+          "y": 719,
+          "width": 515,
+          "height": 499,
+          "pivotX": 272.5,
+          "pivotY": 498
+        }
+      ]
+    },
+    {
+      "id": "warrior-female",
+      "source": [
+        1254,
+        1254
+      ],
+      "frames": [
+        {
+          "label": 1,
+          "area": 144664,
+          "x": 92,
+          "y": 164,
+          "width": 519,
+          "height": 463,
+          "pivotX": 247.5,
+          "pivotY": 462
+        },
+        {
+          "label": 1,
+          "area": 162166,
+          "x": 694,
+          "y": 2,
+          "width": 498,
+          "height": 625,
+          "pivotX": 255.5,
+          "pivotY": 624
+        },
+        {
+          "label": 2,
+          "area": 172722,
+          "x": 89,
+          "y": 627,
+          "width": 538,
+          "height": 582,
+          "pivotX": 266.5,
+          "pivotY": 581
+        },
+        {
+          "label": 4,
+          "area": 147163,
+          "x": 697,
+          "y": 747,
+          "width": 522,
+          "height": 468,
+          "pivotX": 250,
+          "pivotY": 467
+        }
+      ]
+    }
+  ]
+}

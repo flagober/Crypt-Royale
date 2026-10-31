@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-29T05:43:05.9605850-03:00",
+  "completedAt": "2026-09-29T05:45:57.7128106-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0013-circuit-hare-exploration-v001-qa.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-054305-mc-0013-circuit-hare-exploration-v001-qa\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-054305-mc-0013-circuit-hare-exploration-v001-qa\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-054305-mc-0013-circuit-hare-exploration-v001-qa\\stderr.log"
+}

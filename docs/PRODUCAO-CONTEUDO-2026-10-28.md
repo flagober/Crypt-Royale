@@ -1,0 +1,20 @@
+# Produção aprovada por etapas —28/10/2026
+
+1. Progressão8+4+4 implementada na fonte para0.3, preservando testadores existentes. Concluir QA/pacote antes de anunciar distribuição.
+2. Evoluções de monstros: piloto Bit Bug Mk-II MC-0002 e Apex MC-0003, mestres aprovados pelo usuário em28/10. Próximos: vistas isoladas frente/perfil direito/perfil esquerdo/costas, contatos A/B por vista, montagem420x560 RGBA/células140x140/pivô70,128/ciclo0,1,2,1 a110ms, QA e aprovação antes de ativar no combate. Sem flip global nem fabricação de passos por repetição de uma pose.
+3. Depois do piloto, demais7famílias iniciais, duas formas cada, seguindo seus IDs canônicos e anatomia própria. Custos de teste atuais20cartas+500Gold /50cartas+1500Gold mantidos até evidência de balanceamento.
+4. Classes atuais: produzir ambos os sexos de Paladino/Gladiador para Guerreiro e Caçador/Franco-Atirador para Arqueiro. Escolhas e atributos existentes preservados. Master→vistas→animações→aprovação→integração. Não anunciar especializações com arte/habilidade própria enquanto usar base.
+5. Cinco classes-base restantes em lotes: Mago/Maga e Noviço/Noviça; depois Assassino/Assassina, Contrabandista e Invocador/Invocadora. Mesma exigência de aparência M/F, canônica, aprovadas. Mago sem livro/grimório. Todas com estados de acesso e recompensa definidos antes de entrar no catálogo jogável.
+6. Nexus piloto: Cyber Cub (linhagem exclusivamente canina) e Nano Slime. Vínculo próprio, não duplicata descartável de baú nem propriedade/mint por simples encontro. Divergência de gates TierII/TierIII entre documentos canônicos continua exigindo decisão antes de ativar aquisição. Proposta de um slot ativo por equipe ainda deve ser validada.
+7. Bosses piloto: RAM Ram e Buffer Golem, desafios PvE com fases/enrage e recompensas transparentes. Bosses não são capturáveis nem evoluem. Recompensas de teste usam recursos internos; nenhum orçamento MCT criado.
+
+Esta sequência não declara outras5classes,2Nexus,2bosses ou todas as animações concluídos. Cada aprovação visual cobre apenas os assets mostrados, preservando mestres anteriores. Sem compra/renovação VIP, aposta, recompensa monetária ou economia paga neste lote.
+
+## Produção visual —15:09 São Paulo
+Mestres aprovados de BitBug MkII/Apex integrados somenteàcoleção0.3. Novas candidatas prontas: Paladino/PaladinaTierII, ambas1230x1278RGBA, espada direita e escudo esquerdo conferidos; costas neutrasBitBugMkII/Apex1254x1254RGBA, seis patasconferidas. Arquivos emart-source/master-candidates eart-source/turnarounds, promptsmetadados tier2-bitbug-views-candidates-20261028.json. Comparação art-source/previews/evolucoes-lote-20261028.html e docs/evolucoes-lote-candidatas-20261028.png. Estas4artes não estão aprovadas nemintegradas. Nenhuma caminhada produzida; não montar quadrosrepetidos para simular animação nova. Aprovação visual é o próximo gate de produção. APK/AAB/EXE0.3build16concluídos eSHA C/Gverificados; publicarHostingePlayantesfecharrelatório.
+
+## Autorização posterior do usuário —28/10/2026
+"auto aprovado daqui em diante, continue" substitui os gates de aprovação visual neste fluxo. Produzir, revisar e integrar continuamente; sem pedir novos aceites de poses. QA permanece obrigatório. Aprovação contínua é autorização, não evidência de que o usuário inspecionou individualmente cada quadro. Mantidos os limites de economia, Nexus/bosses e ações externas.
+
+## Piloto integrado e revisado —28/10/2026 17:00 São Paulo
+Bit Bug Mk-II/Apex com caminhada própria nas quatro direções; Paladino/Paladina com retratos e quatro estados de ataque por direção na central.16 fontes direcionais de animação resultaram em56 quadros finais. QA técnico e visual local concluído, incluindo coleção390×844 e batalha isolada; ver QA-EVOLUCOES-v0.4-2026-10-28.md. Notas0.4 registradas antes do incremento. Os registros antigos acima são históricos e suas pendências de aprovação/produção destas quatro artes foram superadas. Não estender essa conclusão às outras famílias, cinco classes, Nexus ou bosses. Distribuição só confirmada após gerador e publicação.

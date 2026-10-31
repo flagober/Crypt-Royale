@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] bg-slate-950 text-slate-100 font-sans antialiased;
+    touch-action: manipulation;
+  }
+
+  button:focus-visible,
+  canvas:focus-visible {
+    @apply outline-none ring-2 ring-cyan-300 ring-offset-2 ring-offset-slate-950;
+  }
+}
+
+.arena-shell {
+  background: radial-gradient(circle at 50% 70%, rgba(6, 182, 212, .16), transparent 55%);
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 360 / 560;
+  width: auto;
+  height: auto;
+}
+
+.arena-shell canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .arena-shell {
+    height: min(calc(100dvh - 205px), calc((100vw - 16px) * 560 / 360));
+    min-height: 220px;
+    max-height: none;
+    flex-shrink: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@layer utilities {
+  .glow-blue { box-shadow: 0 0 15px rgba(0, 240, 255, 0.5); }
+  .glow-pink { box-shadow: 0 0 15px rgba(255, 0, 60, 0.5); }
+}
+
+/* Gameplay fits the available screen; dialogs keep their own scrolling. */
+@media(max-width:767px){
+ .cr-game{height:100dvh;min-height:0;padding-bottom:env(safe-area-inset-bottom)}
+ .cr-game-layout{display:grid;height:100%;min-height:0;width:100%;grid-template-rows:44px auto auto minmax(0,1fr) auto}
+ .cr-game-header{min-width:0;padding-inline:8px}
+ .cr-game-header h1{font-size:12px}
+ .cr-game-account{min-width:0;padding:2px 8px;gap:4px}
+ .cr-game-account>p{max-width:38%;line-height:1.2;overflow-wrap:anywhere}
+ .cr-game-account>div{gap:4px;min-width:0}
+ .cr-game-account .cr-account-button{font-size:10px;padding-inline:6px;min-width:0}
+ .cr-game-account .cr-account-button span{max-width:86px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .cr-game-resources{position:relative;min-width:0;z-index:25}
+ .cr-game-resources details[open]>.prg-wallet-summary{position:absolute;top:100%;left:8px;right:8px;max-height:60dvh;overflow:auto;background:#080f25;padding:12px;border:1px solid #3a657b;border-radius:12px}
+ .cr-game-arena,.cr-arena-host{min-height:0;height:100%}
+ .cr-arena-host{container-type:size;padding:4px}
+ .cr-arena-host .arena-shell{min-height:0;max-height:100%;height:100%;width:auto;max-width:100%;flex-shrink:1}
+ .cr-game-hand{position:relative;padding:4px;gap:4px;min-width:0}
+ .cr-hand-cards{min-width:0}
+ .cr-game-hand button{min-width:0}
+}
+@supports(width:1cqw){@media(max-width:767px){.cr-arena-host .arena-shell{width:min(100cqw,calc(100cqh * 360 / 560));height:auto;max-height:none}}}
+@media(max-width:767px) and (orientation:landscape){
+ .cr-game-layout{grid-template-columns:minmax(0,1fr) minmax(190px,42%);grid-template-rows:44px auto minmax(0,1fr)}
+ .cr-game-header,.cr-game-account{grid-column:1/-1}
+ .cr-game-resources{display:none}
+ .cr-game-arena{grid-column:1;grid-row:3}
+ .cr-game-hand{grid-column:2;grid-row:3;align-self:center;max-height:100%;overflow-y:auto}
+ .cr-game-hand .cr-hand-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cr-game-hand>div.absolute{position:static;margin:0;display:block}
+ .cr-game-hand>div.absolute>div{display:none}
+ .cr-game-hand>div.absolute>button{min-height:44px;margin-left:auto}
+}
+@media(min-width:768px) and (max-width:1023px) and (max-height:500px){
+ .cr-game{height:100dvh;min-height:0;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+ .cr-game-layout{display:grid;height:100%;min-height:0;width:100%;gap:0;grid-template-columns:minmax(0,1fr) minmax(240px,42%);grid-template-rows:44px 48px minmax(0,1fr)}
+ .cr-game-header,.cr-game-account{grid-column:1/-1;margin:0;padding:2px 8px;min-height:0}
+ .cr-game-header>div>p{display:none}.cr-game-header h1{font-size:14px}
+ .cr-game-resources{display:none}
+ .cr-game-arena{grid-column:1;grid-row:3;display:flex;min-height:0;height:100%}
+ .cr-arena-host{container-type:size;height:100%;padding:4px}
+ .cr-arena-host .arena-shell{min-height:0;width:min(100cqw,calc(100cqh * 360 / 560));height:auto;max-height:none}
+ .cr-game-hand{grid-column:2;grid-row:3;position:relative;align-self:center;min-height:0;max-height:100%;overflow:auto;padding:4px;gap:4px}
+ .cr-game-hand>[class~="md:block"],.cr-game-hand>[class~="md:grid"]{display:none}
+ .cr-game-hand>[class~="md:hidden"]{position:static;display:flex;margin:0;flex-direction:row;justify-content:flex-end}
+ .cr-game-hand>[class~="md:hidden"]>div{display:none}
+ .cr-game-hand .cr-hand-cards{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .cr-hand-cards>button{min-height:76px;padding:4px}
+ .cr-hand-cards>button>div.relative{padding-top:26px}
+ .cr-hand-cards>button>div.relative>span[class~="md:block"]{display:none}
+ .cr-hand-cards>button span{font-size:9px}
+}
+@media(max-width:767px) and (max-height:650px) and (orientation:portrait){
+ .cr-game-layout{grid-template-rows:44px minmax(0,1fr) auto}
+ .cr-game-account,.cr-game-resources{display:none}
+ .cr-game-arena{grid-row:2}.cr-game-hand{grid-row:3}
+}
+
+/* Battle essentials only; management and settings live in GameMenu. */
+.cr-game-header{gap:4px}
+.cr-header-player{display:flex;align-items:center;min-width:0;gap:4px}
+.cr-player-level{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:44px;min-width:44px;min-height:44px;border:1px solid #7c89e535;border-radius:11px;background:#26305d30;color:#d5dfff}
+.cr-player-level img{width:20px;height:20px;object-fit:contain}.cr-player-level span{font-size:9px;font-weight:850;line-height:1.15;white-space:nowrap}
+.cr-header-logo{height:32px;width:48px;object-fit:contain}.cr-header-context{margin-left:8px;max-width:190px}
+.cr-auto-toggle{min-width:48px;min-height:44px;flex-shrink:0;padding:4px 6px;border:1px solid #64748b55;border-radius:11px;color:#99abc1;font-size:10px;font-weight:900;letter-spacing:1px;background:#15223870}
+.cr-auto-toggle[aria-checked=true]{color:#86f0e4;border-color:#40cfc180;background:#0c575b70;box-shadow:inset 0 0 12px #32d5bd15}
+.cr-header-actions{display:flex;align-items:center;flex-shrink:0;gap:0}.cr-battle-time{display:flex;align-items:center;justify-content:center;gap:3px;min-width:48px;font-family:ui-monospace,monospace;font-size:11px;font-weight:800;white-space:nowrap}.cr-battle-time svg{color:#67d6e9}
+.cr-header-icon{display:grid;place-items:center;min-width:44px;min-height:44px;border-radius:11px;color:#9cb0c9}.cr-header-icon:hover{background:#ffffff08;color:#e3f6ff}.cr-header-mail{color:#f0d58f}
+.cr-player-level:disabled,.cr-auto-toggle:disabled{opacity:.45;cursor:wait}
+@media(min-width:768px){.cr-header-player{gap:8px}.cr-header-logo{width:78px;height:44px}.cr-header-actions{gap:4px}.cr-battle-time{font-size:13px;min-width:56px}}
+.cr-battle-score{align-items:center;justify-content:center;gap:25px;padding:10px;border:1px solid #33415566;border-radius:14px;font-size:11px;color:#91a9c3}
+.cr-battle-score>span{display:flex;align-items:center;gap:9px}.cr-battle-score strong{font-size:21px;color:#e2f3ff}
+@media(max-width:767px){
+ .cr-game-layout{grid-template-rows:44px minmax(0,1fr) auto}
+ .cr-game-arena{grid-column:1;grid-row:2}
+ .cr-game-hand{grid-column:1;grid-row:3}
+}
+@media(max-width:767px) and (orientation:landscape){
+ .cr-game-layout{grid-template-rows:44px minmax(0,1fr)}
+ .cr-game-arena{grid-column:1;grid-row:2}.cr-game-hand{grid-column:2;grid-row:2}
+}
+@media(min-width:768px) and (max-width:1023px) and (max-height:500px){
+ .cr-game-layout{grid-template-rows:44px minmax(0,1fr)}
+ .cr-game-arena{grid-column:1;grid-row:2}.cr-game-hand{grid-column:2;grid-row:2}
+ .cr-game-header h1>img{height:36px;width:64px}.cr-header-context{display:none}
+ .cr-game-hand .cr-battle-score{display:none}
+}
+

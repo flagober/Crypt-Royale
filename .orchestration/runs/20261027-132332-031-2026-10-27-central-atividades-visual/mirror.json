@@ -1,0 +1,117 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261027-132332-031-2026-10-27-central-atividades-visual\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "9DBAB2C92ACF3C235DD8E9C4621A5A80746F28A628EE6A8BA1CD1918EE8B9AA9"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-132332-031-2026-10-27-central-atividades-visual\\request.md",
+    "status": "copied-verified",
+    "sha256": "94F35F1BACDB3836617CDB7313A7997D0DBA7A79539403D37FA4B260177E2D23"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-132332-031-2026-10-27-central-atividades-visual\\result.json",
+    "status": "copied-verified",
+    "sha256": "44E7CAD5DD5722F467800886D1FEB82CA7F635C64ED29548F66715186F32D97A"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-132332-031-2026-10-27-central-atividades-visual\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": ".orchestration\\tools\\integrate-blue-defense-20261027.mjs",
+    "status": "copied-verified",
+    "sha256": "62E28A999D1BC09F18F5F0B6CF97AA20A93121AD3D528FD645FA840C0DE430FC"
+  },
+  {
+    "path": ".orchestration\\tools\\probe-blue-components-20261027.mjs",
+    "status": "copied-verified",
+    "sha256": "E9BDD0E1E4D33EB4202F0596C709DA91D0FF2D3FF4D1F92D6A5F7FDA492D467B"
+  },
+  {
+    "path": "activities-preview.html",
+    "status": "copied-verified",
+    "sha256": "B28A4E0DDFF478CE5AD1BF1D418C8E5226FACDDED4AF2E0DE165154954A81385"
+  },
+  {
+    "path": "public\\assets\\class-tower-candidates\\approval-blue-back-attacks-20261027.json",
+    "status": "copied-verified",
+    "sha256": "B8C55C847DCEF122AF3F9C6888F066AB533B5B494F808ACBDAFE37D466C4F3CA"
+  },
+  {
+    "path": "public\\assets\\rewards\\vila-byte-chest-v001.png",
+    "status": "copied-verified",
+    "sha256": "72CE34ECA95558CF77AF0E83CE01FFA1C0525FD159086382E8825F7F08302504"
+  },
+  {
+    "path": "public\\assets\\rewards\\vila-byte-coins-v001.png",
+    "status": "copied-verified",
+    "sha256": "101FC5B0F1DE10C8816EAA8DD64045ED319BC4F27F3C0BB62571E267BEA2920B"
+  },
+  {
+    "path": "public\\assets\\rewards\\vila-byte-fragments-v001.png",
+    "status": "copied-verified",
+    "sha256": "F760B9F149B9E14D7A4733B28A7C769A3EA92FA179B1874CCEF3C422AAFF3AAC"
+  },
+  {
+    "path": "public\\assets\\rewards\\vila-byte-gift-v001.png",
+    "status": "copied-verified",
+    "sha256": "F406E6D9420D2B2F21ED8C748679F872FEAA269D547253BB0F1E91C25F24394C"
+  },
+  {
+    "path": "public\\class-tower-frames.js",
+    "status": "copied-verified",
+    "sha256": "7C9E4B5241144DFEA56273D66193966871C215135C35956D5A010AF00EF519C0"
+  },
+  {
+    "path": "src\\activities-preview.jsx",
+    "status": "copied-verified",
+    "sha256": "A559177A9A27759407D02504274CF545F950075B7FD6EF91B400E86315DD75FB"
+  },
+  {
+    "path": "src\\activities-v2.css",
+    "status": "copied-verified",
+    "sha256": "BC76247520FE8D20335C26517EF97B807AAAA375D742E711D08A4FD9B1F92FCD"
+  },
+  {
+    "path": "src\\ActivitiesPanelV2.jsx",
+    "status": "copied-verified",
+    "sha256": "71276CD41135BA1D09A73E731AA67C4CF15F63CF259319CC40FA3DF7F9F6E2E6"
+  },
+  {
+    "path": "src\\game\\blue-defense.test.js",
+    "status": "copied-verified",
+    "sha256": "B12A92E2FA25824F2C3351BE48566616898FB108D51815AB78FB1E1D9006CE02"
+  },
+  {
+    "path": "src\\game\\tower-animation.js",
+    "status": "copied-verified",
+    "sha256": "940603401F2438C135AFC40188897978AED9A9AF4B0594CFBE269F81033A1C1A"
+  },
+  {
+    "path": "src\\game\\tower-art.json",
+    "status": "copied-verified",
+    "sha256": "28EEF83DA0C158DBAD41348928ED51B5FE7E948F7265571097CCF5B5BA3BEFDB"
+  },
+  {
+    "path": "src\\game\\tower-assets.js",
+    "status": "copied-verified",
+    "sha256": "31CBBD3AE5246AE81DC47A325599FC949CF92B659CEECA12181CD2E6E1827D76"
+  },
+  {
+    "path": "src\\game\\tower-frames.js",
+    "status": "copied-verified",
+    "sha256": "7C9E4B5241144DFEA56273D66193966871C215135C35956D5A010AF00EF519C0"
+  },
+  {
+    "path": "src\\game\\tower-render.js",
+    "status": "copied-verified",
+    "sha256": "9BCD30C9BE31FA3D88DAF5DCB090A4F8336908C33379B034EA80F7E795DA3608"
+  },
+  {
+    "path": "src\\game\\tower-render.test.js",
+    "status": "copied-verified",
+    "sha256": "305767D35B4755F6DE3605502705791EF1D482F8985643550747CDB19CB29269"
+  }
+]

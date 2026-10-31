@@ -1,0 +1,52 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261027-134920-853-2026-10-27-audio-popover\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "EABE83B0E2BA0959B1B01FE873DDBFC09501F9D668E91D0B4F1CD03DFB225E42"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-134920-853-2026-10-27-audio-popover\\request.md",
+    "status": "copied-verified",
+    "sha256": "DD5FFC91649E7CB6B66EA48FA883BA26A24C8FBD6D71E3D3FFF0A84989FDC7C8"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-134920-853-2026-10-27-audio-popover\\result.json",
+    "status": "copied-verified",
+    "sha256": "BD63A8F1265BBF610A2C3F87EB2492468FE79D8372D759627EB11DFF3854EB8A"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-134920-853-2026-10-27-audio-popover\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "src\\audio-popover.js",
+    "status": "copied-verified",
+    "sha256": "7944DE711EB237541EB86A2B22301401D58FA82C127C18ED23F1B7A6CAC392A4"
+  },
+  {
+    "path": "src\\audio-popover.test.js",
+    "status": "copied-verified",
+    "sha256": "D003C7CB642DE4DCF4262A8FF2791E938EB24AE22ECA7070FC9D8C61EC1372E8"
+  },
+  {
+    "path": "src\\AudioControl.jsx",
+    "status": "copied-verified",
+    "sha256": "790B10A0E7104CA3FDD053B35A1511FFBF0E4F20C5E6AEF6AACB3F830E4E6E88"
+  },
+  {
+    "path": "src\\game\\cards.js",
+    "status": "copied-verified",
+    "sha256": "AD76C920C8FD877A82E4C2B4F5073560E000BEDC4F159923677F33242D706FA6"
+  },
+  {
+    "path": "src\\game\\engine.js",
+    "status": "copied-verified",
+    "sha256": "E3703305266C69B7C44806CED300D1F7D44F5FFA0118CC2A51E7B013FF7E4C72"
+  },
+  {
+    "path": "src\\game\\structure-targeting.test.js",
+    "status": "copied-verified",
+    "sha256": "5414F00C29BD599F1D4FA2026B5670E09771C3DED26CB606630A4E92F5F9DEFD"
+  }
+]

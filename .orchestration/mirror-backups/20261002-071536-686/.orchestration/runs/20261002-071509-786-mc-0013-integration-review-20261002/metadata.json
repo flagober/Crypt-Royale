@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-02T07:15:09.7896812-03:00",
+  "completedAt": "2026-10-02T07:15:35.6099711-03:00",
+  "exitCode": 0,
+  "resultStatus": "SUCCESS",
+  "backupRoot": "C:\\FlavioG\\Backups\\2026-10-02\\071459-171-antigravity-before-task-45c4fbc6",
+  "account": "flagober@gmail.com",
+  "accountConfirmedAt": "2026-10-01T13:41:06.2119714-03:00",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "mode": "plan",
+  "project": "C:\\FlavioG\\Crypt-Royale",
+  "promptSource": "C:\\FlavioG\\Crypt-Royale\\.orchestration\\requests\\mc-0013-integration-review-20261002.md",
+  "mirrorStatus": "pending",
+  "error": null,
+  "deletedPaths": []
+}

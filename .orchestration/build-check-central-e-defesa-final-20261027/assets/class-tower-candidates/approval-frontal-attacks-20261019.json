@@ -1,0 +1,26 @@
+{
+  "poses": [
+    "ready",
+    "draw",
+    "release",
+    "recover"
+  ],
+  "assets": [
+    {
+      "file": "archer-female-front-attack-candidate-v001.png",
+      "sha256": "5DF0E916CC81888F34369BE63C644201D262E7C666F5EECE7E0EF0230A7BF312"
+    },
+    {
+      "file": "archer-male-front-attack-candidate-v001.png",
+      "sha256": "71252D9BE9B429494082EEBBD79AB5E0E6815A975847B388990AF2EE26683753"
+    },
+    {
+      "file": "archer-front-attack-candidate-v001.json",
+      "sha256": "0B8B7EF86797C763721FA161B62FB8A28E50936B5307714DEE9EEFCEECF2560C"
+    }
+  ],
+  "approvedOn": "2026-10-19",
+  "runtime": "src/game/tower-art.json",
+  "userApproval": "EXCELENTE APROVADO!!!",
+  "direction": "front"
+}

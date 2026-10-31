@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-29T06:28:24.4063002-03:00",
+  "completedAt": "2026-09-29T06:29:36.3815801-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0013-circuit-hare-master-candidate-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-062824-mc-0013-circuit-hare-master-candidate-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-062824-mc-0013-circuit-hare-master-candidate-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-062824-mc-0013-circuit-hare-master-candidate-v001\\stderr.log"
+}

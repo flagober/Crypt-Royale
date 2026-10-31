@@ -1,0 +1,315 @@
+{
+  "status": "candidate",
+  "poseCount": 16,
+  "mobile": {
+    "width": 390,
+    "viewport": 390
+  },
+  "errors": [],
+  "metrics": [
+    {
+      "actor": "archer-female",
+      "pose": 0,
+      "bounds": [
+        62,
+        1,
+        534,
+        594
+      ],
+      "pivot": [
+        275,
+        593
+      ],
+      "cell": [
+        661,
+        595
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "archer-female",
+      "pose": 1,
+      "bounds": [
+        66,
+        1,
+        547,
+        594
+      ],
+      "pivot": [
+        262.5,
+        593
+      ],
+      "cell": [
+        661,
+        595
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "archer-female",
+      "pose": 2,
+      "bounds": [
+        68,
+        0,
+        525,
+        586
+      ],
+      "pivot": [
+        269,
+        585
+      ],
+      "cell": [
+        661,
+        595
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "archer-female",
+      "pose": 3,
+      "bounds": [
+        78,
+        0,
+        528,
+        586
+      ],
+      "pivot": [
+        268,
+        585
+      ],
+      "cell": [
+        661,
+        595
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "archer-male",
+      "pose": 0,
+      "bounds": [
+        48,
+        14,
+        606,
+        553
+      ],
+      "pivot": [
+        302,
+        552
+      ],
+      "cell": [
+        687,
+        572
+      ],
+      "touchesCell": false
+    },
+    {
+      "actor": "archer-male",
+      "pose": 1,
+      "bounds": [
+        36,
+        14,
+        606,
+        553
+      ],
+      "pivot": [
+        305,
+        552
+      ],
+      "cell": [
+        687,
+        572
+      ],
+      "touchesCell": false
+    },
+    {
+      "actor": "archer-male",
+      "pose": 2,
+      "bounds": [
+        49,
+        4,
+        605,
+        550
+      ],
+      "pivot": [
+        302.5,
+        549
+      ],
+      "cell": [
+        687,
+        573
+      ],
+      "touchesCell": false
+    },
+    {
+      "actor": "archer-male",
+      "pose": 3,
+      "bounds": [
+        33,
+        5,
+        613,
+        549
+      ],
+      "pivot": [
+        308.5,
+        548
+      ],
+      "cell": [
+        687,
+        573
+      ],
+      "touchesCell": false
+    },
+    {
+      "actor": "warrior-male",
+      "pose": 0,
+      "bounds": [
+        82,
+        135,
+        538,
+        492
+      ],
+      "pivot": [
+        266.5,
+        491
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-male",
+      "pose": 1,
+      "bounds": [
+        83,
+        12,
+        530,
+        615
+      ],
+      "pivot": [
+        265,
+        614
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-male",
+      "pose": 2,
+      "bounds": [
+        96,
+        12,
+        531,
+        580
+      ],
+      "pivot": [
+        237,
+        579
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-male",
+      "pose": 3,
+      "bounds": [
+        75,
+        92,
+        515,
+        499
+      ],
+      "pivot": [
+        272.5,
+        498
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": false
+    },
+    {
+      "actor": "warrior-female",
+      "pose": 0,
+      "bounds": [
+        92,
+        164,
+        519,
+        463
+      ],
+      "pivot": [
+        247.5,
+        462
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-female",
+      "pose": 1,
+      "bounds": [
+        67,
+        2,
+        498,
+        625
+      ],
+      "pivot": [
+        255.5,
+        624
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-female",
+      "pose": 2,
+      "bounds": [
+        89,
+        0,
+        538,
+        582
+      ],
+      "pivot": [
+        266.5,
+        581
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": true
+    },
+    {
+      "actor": "warrior-female",
+      "pose": 3,
+      "bounds": [
+        70,
+        120,
+        522,
+        468
+      ],
+      "pivot": [
+        250,
+        467
+      ],
+      "cell": [
+        627,
+        627
+      ],
+      "touchesCell": false
+    }
+  ]
+}

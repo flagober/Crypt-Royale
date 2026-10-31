@@ -1,0 +1,16 @@
+{
+  "status":"preview-not-approved",
+  "sourcePolicy":"Cópias para composição; originais não alterados. Sem integração de candidatos no jogo.",
+  "assets":[
+    {"file":"fontes/icon-candidate-v001.png","source":"art-source/branding/crypt-royale-icon-candidate-v001.png","approval":"pending"},
+    {"file":"fontes/chest-candidate-v001.png","source":"art-source/rewards/founder-chest-candidate-v001.png","approval":"pending"},
+    {"file":"fontes/vila-byte-approved-v001.png","source":"public/assets/maps/vila-byte-v001.png","approval":"existing-approved","usage":"reference-copy"},
+    {"file":"fontes/bit-bug-approved.webp","source":"public/assets/cards/bit-bug-card_v002.webp","approval":"existing-approved"},
+    {"file":"fontes/data-mouse-approved.webp","source":"public/assets/cards/data-mouse-card_v002.webp","approval":"existing-approved"},
+    {"file":"fontes/copper-mole-approved.webp","source":"public/assets/cards/copper-mole-card_v001.webp","approval":"existing-approved"},
+    {"file":"fontes/vinheta-original-v001.wav","source":"orquestracao/video.mjs","approval":"candidate-original-audio"}
+  ],
+  "fonts":"Segoe UI/Arial instaladas no Windows. Nenhum arquivo de fonte redistribuído.",
+  "newImageGenerationInThisKit":false,
+  "imageComposition":"HTML/CSS renderizado noChrome; assets raster existentes preservados."
+}

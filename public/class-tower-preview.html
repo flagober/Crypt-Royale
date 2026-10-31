@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crypt Royale · Classes sobre a torre</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui;background:#07121e;color:#e4f5ff}body{margin:0}main{max-width:1200px;margin:auto;padding:24px}h1{margin:8px 0;font-size:clamp(25px,4vw,40px)}p{color:#a8c0d4;line-height:1.6}.tag{color:#5de7f5;letter-spacing:.13em;font-size:12px}nav,.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0}button,select,a{font:inherit;color:inherit;border:1px solid #32516b;background:#11263b;border-radius:10px;padding:10px 14px;text-decoration:none}button{cursor:pointer}button:hover,a:hover{border-color:#5de7f5}label{display:flex;gap:8px;align-items:center}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}article{background:#0d2033;border:1px solid #29475f;border-radius:18px;overflow:hidden}h2{margin:18px 20px 4px;font-size:21px}.phase{margin:0 20px;color:#74d9e8;font-size:14px}canvas{display:block;width:100%;height:auto}.note{font-size:13px}.error{color:#ffb1b1}input[type=range]{width:200px}@media(max-width:700px){main{padding:16px}.grid{grid-template-columns:1fr}}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #5de7f5}#status{min-height:24px}
+</style>
+<main>
+<div class="tag">CRYPT ROYALE · ESTÚDIO DE CLASSES</div>
+<h1>Guerreiro e Guerreira na torre</h1>
+<p>Artes aprovadas v004 · ataque frontal, esquerda e direita. Cada Guardiã defende sua rota; a central cobre o centro dentro do alcance.</p>
+<nav><a href="/">Voltar ao jogo</a><a href="./tower-preview.html">Efeitos das torres</a></nav>
+<div class="controls">
+<button id="pause">Pausar</button><button id="restart">Reiniciar</button><button id="step">Avançar pose</button>
+<label>Velocidade <select id="speed"><option value="0.5">0,5×</option><option selected value="1">1×</option><option value="1.5">1,5×</option></select></label>
+<label>Fundo <select id="background"><option value="arena">Arena</option><option value="light">Claro</option><option value="grid">Grade</option></select></label>
+<label><input type="checkbox" id="effects" checked>Efeito de energia</label>
+<label><input type="checkbox" id="feet">Mostrar apoio dos pés</label>
+<label>Alvo <select id="aim-mode"><option value="auto">Movimento automático</option><option value="left">À esquerda</option><option value="center">À frente / centro</option><option value="right">À direita</option><option value="pointer">Mouse / toque no cenário</option></select></label>
+<label><input type="checkbox" id="aim-lines">Mostrar linhas de mira</label>
+</div>
+<label>Instante do ciclo <input id="scrub" type="range" min="0" max="2399" value="0"><output id="clock">0 ms</output></label>
+<p id="status" role="status">Carregando artes…</p>
+<p id="tracking-status"></p>
+<section class="grid"><article><h2>Guerreiro</h2><p class="phase" id="male-phase"></p><canvas id="male" width="560" height="600" aria-label="Guerreiro animado no topo da torre"></canvas></article><article><h2>Guerreira</h2><p class="phase" id="female-phase"></p><canvas id="female" width="560" height="600" aria-label="Guerreira animada no topo da torre"></canvas></article></section>
+<h2>Conjunto defensivo</h2><p>Estudo da metade defensiva: Guardiã esquerda na rota esquerda, direita na rota direita, sem cruzar o centro. A linha central pertence ao Núcleo. Só há disparo com alvo válido dentro do alcance. Toque no cenário para mover o alvo.</p>
+<label>Classe na central <select id="lineup-class"><option value="male">Guerreiro</option><option value="female">Guerreira</option></select></label>
+<article><canvas id="lineup" width="1120" height="650" aria-label="Conjunto com torre central e duas torres laterais sem personagens"></canvas></article>
+<p class="note">Três direções próprias por personagem, sem espelhamento global. Os cards acima demonstram as poses; o conjunto abaixo demonstra os limites de defesa. Artes e regras integradas ao combate local; a arena tem seleção Guerreiro/Guerreira para a torre central.</p>
+</main><script type="module" src="./class-tower-preview.js"></script>
+</html>

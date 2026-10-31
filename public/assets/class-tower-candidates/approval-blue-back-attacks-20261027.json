@@ -1,0 +1,241 @@
+{
+  "status": "approved",
+  "approvedOn": "2026-10-27",
+  "userApproval": "Aprovo o visual das quatro",
+  "direction": "up/back",
+  "globalFlipAllowed": false,
+  "actors": [
+    {
+      "id": "archer-female",
+      "file": "./assets/class-tower-candidates/archer-female-back-attack-candidate-v001.png",
+      "sheet": [
+        1322,
+        1190
+      ],
+      "isolation": {
+        "minPoseAreaFraction": 0.03
+      },
+      "frames": [
+        {
+          "label": 1,
+          "area": 107001,
+          "x": 62,
+          "y": 1,
+          "width": 534,
+          "height": 601,
+          "pivotX": 275,
+          "pivotY": 600
+        },
+        {
+          "label": 2,
+          "area": 117930,
+          "x": 727,
+          "y": 1,
+          "width": 547,
+          "height": 601,
+          "pivotX": 262.5,
+          "pivotY": 600
+        },
+        {
+          "label": 3,
+          "area": 106407,
+          "x": 68,
+          "y": 595,
+          "width": 525,
+          "height": 586,
+          "pivotX": 269,
+          "pivotY": 585
+        },
+        {
+          "label": 4,
+          "area": 106632,
+          "x": 739,
+          "y": 595,
+          "width": 528,
+          "height": 586,
+          "pivotX": 268,
+          "pivotY": 585
+        }
+      ],
+      "sha256": "3be8cc13e84c688c775bf9545d4b4e96059872e9245065e704faea781b33b959"
+    },
+    {
+      "id": "archer-male",
+      "file": "./assets/class-tower-candidates/archer-male-back-attack-candidate-v001.png",
+      "sheet": [
+        1374,
+        1145
+      ],
+      "isolation": {
+        "minPoseAreaFraction": 0.03
+      },
+      "frames": [
+        {
+          "label": 1,
+          "area": 115439,
+          "x": 48,
+          "y": 14,
+          "width": 606,
+          "height": 553,
+          "pivotX": 302,
+          "pivotY": 552
+        },
+        {
+          "label": 2,
+          "area": 122149,
+          "x": 723,
+          "y": 14,
+          "width": 606,
+          "height": 553,
+          "pivotX": 305,
+          "pivotY": 552
+        },
+        {
+          "label": 3,
+          "area": 119329,
+          "x": 49,
+          "y": 576,
+          "width": 605,
+          "height": 550,
+          "pivotX": 302.5,
+          "pivotY": 549
+        },
+        {
+          "label": 4,
+          "area": 122651,
+          "x": 720,
+          "y": 577,
+          "width": 613,
+          "height": 549,
+          "pivotX": 308.5,
+          "pivotY": 548
+        }
+      ],
+      "sha256": "fa8849bffd3ae6aa7225d7263097cc2c8c6a937552b25787f80fead98ba91981"
+    },
+    {
+      "id": "warrior-male",
+      "file": "./assets/class-tower-candidates/warrior-male-back-attack-candidate-v001.png",
+      "sheet": [
+        1254,
+        1254
+      ],
+      "isolation": {
+        "minPoseAreaFraction": 0.03
+      },
+      "frames": [
+        {
+          "label": 2,
+          "area": 135012,
+          "x": 82,
+          "y": 135,
+          "width": 538,
+          "height": 495,
+          "pivotX": 266.5,
+          "pivotY": 494
+        },
+        {
+          "label": 1,
+          "area": 148835,
+          "x": 710,
+          "y": 12,
+          "width": 530,
+          "height": 618,
+          "pivotX": 265,
+          "pivotY": 617
+        },
+        {
+          "label": 3,
+          "area": 160749,
+          "x": 96,
+          "y": 639,
+          "width": 583,
+          "height": 580,
+          "pivotX": 237,
+          "pivotY": 579
+        },
+        {
+          "label": 4,
+          "area": 138011,
+          "x": 702,
+          "y": 719,
+          "width": 515,
+          "height": 499,
+          "pivotX": 272.5,
+          "pivotY": 498
+        }
+      ],
+      "sha256": "bd078029fab71cf24752313dd780012757aaadd79ed13b9e0b1a785844185149"
+    },
+    {
+      "id": "warrior-female",
+      "file": "./assets/class-tower-candidates/warrior-female-back-attack-candidate-v001.png",
+      "sheet": [
+        1254,
+        1254
+      ],
+      "isolation": {
+        "minPoseAreaFraction": 0.03,
+        "regions": [
+          [
+            0,
+            0,
+            1254,
+            627,
+            2
+          ],
+          [
+            0,
+            627,
+            1254,
+            627,
+            2
+          ]
+        ]
+      },
+      "frames": [
+        {
+          "label": 2,
+          "area": 144664,
+          "x": 92,
+          "y": 164,
+          "width": 519,
+          "height": 463,
+          "pivotX": 247.5,
+          "pivotY": 462
+        },
+        {
+          "label": 1,
+          "area": 162166,
+          "x": 694,
+          "y": 2,
+          "width": 498,
+          "height": 625,
+          "pivotX": 255.5,
+          "pivotY": 624
+        },
+        {
+          "label": 2,
+          "area": 180124,
+          "x": 89,
+          "y": 627,
+          "width": 615,
+          "height": 582,
+          "pivotX": 266.5,
+          "pivotY": 581
+        },
+        {
+          "label": 6,
+          "area": 147163,
+          "x": 697,
+          "y": 747,
+          "width": 522,
+          "height": 468,
+          "pivotX": 250,
+          "pivotY": 467
+        }
+      ],
+      "sha256": "743d82965b59ea424ad6867e72190a46c4213c5d39f3c7797528ef7c26c27acb"
+    }
+  ]
+}

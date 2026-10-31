@@ -1,0 +1,115 @@
+{
+  "globalFlipAllowed": false,
+  "status": "candidate-not-integrated",
+  "source": "Built-in image_gen; references torre 2.jpg and torre 4 f.jpg",
+  "characters": [
+    {
+      "frames": [
+        {
+          "pivotX": 273.0,
+          "pivotY": 633,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 0
+        },
+        {
+          "pivotX": 237.0,
+          "pivotY": 633,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 543
+        },
+        {
+          "pivotX": 278.0,
+          "pivotY": 629,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1086
+        },
+        {
+          "pivotX": 285.0,
+          "pivotY": 636,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1629
+        }
+      ],
+      "pivot": [
+        280,
+        247
+      ],
+      "scale": 0.3,
+      "file": "./assets/class-tower-candidates/warrior-male-v001.png",
+      "id": "male",
+      "release": {
+        "dy": 80,
+        "y": -10,
+        "x": 65,
+        "dx": 125
+      }
+    },
+    {
+      "frames": [
+        {
+          "pivotX": 267.0,
+          "pivotY": 648,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 0
+        },
+        {
+          "pivotX": 263.0,
+          "pivotY": 649,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 543
+        },
+        {
+          "pivotX": 287.0,
+          "pivotY": 647,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1086
+        },
+        {
+          "pivotX": 272.0,
+          "pivotY": 648,
+          "width": 543,
+          "y": 0,
+          "height": 724,
+          "x": 1629
+        }
+      ],
+      "pivot": [
+        280,
+        247
+      ],
+      "scale": 0.3,
+      "file": "./assets/class-tower-candidates/warrior-female-v001.png",
+      "id": "female",
+      "release": {
+        "dy": 90,
+        "y": -30,
+        "x": -70,
+        "dx": -115
+      }
+    }
+  ],
+  "generatedOn": "2026-10-18",
+  "direction": "three-quarter-front-only",
+  "cycleMs": 2400,
+  "tower": {
+    "y": 200,
+    "width": 360,
+    "file": "./assets/class-tower-candidates/tower-v001.png",
+    "height": 392,
+    "x": 100
+  }
+}

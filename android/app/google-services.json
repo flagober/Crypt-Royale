@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "55881240320",
+    "project_id": "monstercrypt-core",
+    "storage_bucket": "monstercrypt-core.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55881240320:android:d9dc02768db2fe8005ede5",
+        "android_client_info": {
+          "package_name": "com.monstercrypt.cryptroyale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55881240320-355lc7ucm7pnevu9hv01145me6kfufr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monstercrypt.cryptroyale",
+            "certificate_hash": "df2cb06fa3de435c4774865a7f5dfeca4036f76d"
+          }
+        },
+        {
+          "client_id": "55881240320-7j78fuklq9r1fna8osihva2cjsfr4v4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monstercrypt.cryptroyale",
+            "certificate_hash": "2bb1c72e29e5b4fbd943eb931bf4a846f00d9391"
+          }
+        },
+        {
+          "client_id": "55881240320-lgm8lalt65fag09g41j9v09v8k9vatr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monstercrypt.cryptroyale",
+            "certificate_hash": "17708f07e42c049aacf47bb853b770ee8144278d"
+          }
+        },
+        {
+          "client_id": "55881240320-osrb2hmat4rir9ht15mmu605kf1fbofp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.monstercrypt.cryptroyale",
+            "certificate_hash": "667ae8b55f89a84d7d03cd4d435890fb58cbfa29"
+          }
+        },
+        {
+          "client_id": "55881240320-tbbav8bbiuc1ouk99njevohq65ojagga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApTv8UScPix9ZAJsoSbUA43lWBsGqP1mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55881240320-tbbav8bbiuc1ouk99njevohq65ojagga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

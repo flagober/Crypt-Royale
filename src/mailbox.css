@@ -1,0 +1,46 @@
+.mail-overlay{position:fixed;inset:0;z-index:80;overflow:auto;background:#050a1ceF;padding:clamp(12px,4vw,42px);overscroll-behavior:contain;color:#eaf2ff}.mail-shell{max-width:920px;margin:auto}.mail-shell header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:28px}.mail-shell small{color:#5ee4f6;letter-spacing:.15em;font-weight:800}.mail-shell h2{display:flex;align-items:center;gap:12px;font-size:clamp(24px,4vw,38px);font-weight:900;margin:8px 0}.mail-shell p{color:#b5c7df;line-height:1.65}.mail-shell button{min-height:44px;border-radius:12px;padding:10px 16px;border:1px solid #536681;background:#14203a;font-weight:800}.mail-shell button:disabled{opacity:.55}.mail-item{padding:24px;border:1px solid #496ba0;border-radius:22px;background:linear-gradient(125deg,#15263e,#171332);margin-bottom:18px}.mail-item.claimed{border-color:#2b4355}.mail-item-heading{display:flex;gap:12px;align-items:center}.mail-item-heading>svg{color:#f2cd65;width:32px;height:32px;flex:none}.mail-item h3{font-size:20px;font-weight:850;overflow-wrap:anywhere}.mail-item time{font-size:12px;color:#92aac7}.mail-item-heading>span{margin-left:auto;font-size:12px;color:#77ded4}.mail-body{white-space:pre-wrap;overflow-wrap:anywhere;margin:18px 0}.mail-rewards{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.mail-rewards>span{background:#081323;border:1px solid #58694c;color:#ffe59c;border-radius:9px;padding:7px 10px;font-size:13px}.mail-empty{padding:30px 12px;text-align:center}.mail-empty>svg{margin:0 auto 12px;width:48px;height:48px;color:#edc863}.mail-error{padding:12px;border:1px solid #b86573;border-radius:12px}.mail-note{font-size:12px}@media(max-width:480px){.mail-item{padding:16px}.mail-item-heading{flex-wrap:wrap}.mail-item-heading>span{margin-left:0;flex-basis:100%}.mail-shell h2{font-size:24px}.mail-item button{width:100%}}
+.mail-chest{width:150px;height:150px;object-fit:contain;margin:0 auto 14px;filter:drop-shadow(0 8px 16px #6930cb55)}.mail-item-heading>img{width:70px;height:70px;object-fit:contain;flex:none}@media(max-width:480px){.mail-item-heading>img{width:56px;height:56px}}
+
+
+/* --- Mailbox Reward Item Cards --- */
+.mail-rewards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:16px 0}
+.mail-reward-card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:12px 10px;border-radius:14px;background:#091426;border:1px solid #1e3a5f;position:relative;overflow:hidden;transition:all .2s ease;box-shadow:0 4px 12px #0004}
+.mail-reward-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0006}
+.mail-reward-card--gold{border-color:#eab30866;background:linear-gradient(150deg,#1c1907,#091426 70%)}
+.mail-reward-card--gold:hover{border-color:#facc15;box-shadow:0 0 16px #eab30833}
+.mail-reward-card--purple{border-color:#a855f766;background:linear-gradient(150deg,#190928,#091426 70%)}
+.mail-reward-card--purple:hover{border-color:#c084fc;box-shadow:0 0 16px #a855f733}
+.mail-reward-card--cyan{border-color:#06b6d466;background:linear-gradient(150deg,#061e2c,#091426 70%)}
+.mail-reward-card--cyan:hover{border-color:#22d3ee;box-shadow:0 0 16px #06b6d433}
+.mail-reward-card--blue{border-color:#3b82f666;background:linear-gradient(150deg,#091a38,#091426 70%)}
+.mail-reward-card--blue:hover{border-color:#60a5fa;box-shadow:0 0 16px #3b82f633}
+.mail-reward-card--emerald{border-color:#10b98166;background:linear-gradient(150deg,#06231a,#091426 70%)}
+.mail-reward-card--emerald:hover{border-color:#34d399;box-shadow:0 0 16px #10b98133}
+.mail-reward-visual{position:relative;width:52px;height:52px;display:grid;place-items:center;margin-bottom:8px}
+.mail-reward-img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 4px 8px #0006)}
+.mail-reward-icon{color:#cbd5e1}
+.mail-reward-card--gold .mail-reward-icon{color:#facc15}
+.mail-reward-card--purple .mail-reward-icon{color:#c084fc}
+.mail-reward-card--cyan .mail-reward-icon{color:#38bdf8}
+.mail-reward-card--emerald .mail-reward-icon{color:#34d399}
+.mail-reward-multiplier{position:absolute;bottom:-3px;right:-5px;background:#0f172a;border:1px solid #64748b;color:#f8fafc;font-size:10px;font-weight:900;padding:1px 5px;border-radius:6px;box-shadow:0 2px 6px #0008}
+.mail-reward-details{display:flex;flex-direction:column;align-items:center;width:100%}
+.mail-reward-badge{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:2px 6px;border-radius:4px;background:#1e293b;color:#94a3b8;margin-bottom:4px}
+.mail-reward-card--gold .mail-reward-badge{background:#713f1244;color:#fde047}
+.mail-reward-card--purple .mail-reward-badge{background:#581c8744;color:#e9d5ff}
+.mail-reward-card--cyan .mail-reward-badge{background:#164e6344;color:#a5f3fc}
+.mail-reward-card--blue .mail-reward-badge{background:#1e3a8a44;color:#bfdbfe}
+.mail-reward-card--emerald .mail-reward-badge{background:#064e3b44;color:#a7f3d0}
+.mail-reward-title{font-size:12px;font-weight:800;color:#f8fafc;line-height:1.3;margin-bottom:2px}
+.mail-reward-subtitle{font-size:10px;color:#94a3b8;line-height:1.2}
+
+/* --- Mail Celebration Dialog --- */
+.mail-celebration-overlay{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:16px;background:#020617ee;backdrop-filter:blur(10px)}
+.mail-celebration-card{max-width:520px;width:100%;padding:28px 24px;border-radius:24px;background:linear-gradient(155deg,#12243d,#1a1438);border:2px solid #eab308;text-align:center;box-shadow:0 0 50px #eab30833;animation:popIn .3s cubic-bezier(0.175, 0.885, 0.32, 1.275)}
+@keyframes popIn{from{transform:scale(0.85);opacity:0}to{transform:scale(1);opacity:1}}
+.mail-celebration-icon{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#eab308,#ca8a04);color:#0f172a;display:grid;place-items:center;margin:0 auto 16px;box-shadow:0 8px 24px #eab30855}
+.mail-celebration-card h3{font-size:22px;font-weight:900;color:#fef08a;margin:0 0 8px}
+.mail-celebration-card p{font-size:13px;color:#cbd5e1;margin:0 0 20px}
+.mail-celebration-items{margin-bottom:24px;max-height:50vh;overflow-y:auto}
+.mail-celebration-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 28px;border-radius:14px;background:linear-gradient(135deg,#eab308,#f59e0b);color:#0f172a;font-weight:900!important;font-size:15px;border:none;cursor:pointer;box-shadow:0 4px 16px #eab30844;transition:all .2s ease}
+.mail-celebration-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #eab30866}

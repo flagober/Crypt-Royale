@@ -1,0 +1,19 @@
+# Code Slime — animação elástica renovada
+
+Gerador: imagegen integrado. Referência: turnaround aprovado da renovação.
+12 poses, 3 colunas (compressão, repouso, alongamento), 4 linhas (frente, direita, esquerda, costas). Ciclo previsto 0/1/2/1. Fundo transparente. Três bolhas por pose. Candidatas anteriores preservadas para rastreabilidade.
+
+## Prompt inicial
+Create a transparent sprite animation source sheet for Crypt Royale Code Slime, matching the attached approved character reference exactly: glossy dimensional green-cyan translucent elastic gel, graphite spherical core suspended inside, luminous friendly eyes and smile, two short pseudopod arms, two broad base lobes, sparse square data/circuit details. EXACTLY 12 full-body sprites arranged in uniform 3 columns by 4 rows, large transparent gutters, no labels, no text, no ground shadows, no cell borders. Row1 front facing viewer; row2 strict right-facing profile; row3 strict left-facing profile; row4 rear, no face. In EVERY row column1 is a short wide compressed landing pose, column2 neutral normal height resting pose, column3 taller narrower elastic stretch hop pose. Clear modest squash and stretch cycle playable 0,1,2,1. Keep same character size and identity across directions, contained in each cell with ample margins. Crucial: EXACTLY THREE detached luminous green cyan data bubbles accompany EVERY sprite, including all THREE rear-view sprites. Three bubbles total per cell, floating near body, never touching neighboring cells. Rear shows spherical core through gel and both pseudopods but NO eyes or mouth. Maintain polished lively collectible game art matching reference, sharp readable silhouette and consistent lighting. Transparent alpha background.
+
+## Correção 1
+Edit this sprite sheet minimally. Preserve all 12 slime poses, their art and 3-column 4-row direction layout. Fix bubbles: add one small matching detached cyan-green glossy bubble to row2 column2, row2 column3, row3 column2, row3 column3, row4 column3, so EVERY cell has EXACTLY THREE separate clearly visible bubbles. Other cells already have3; preserve them. Also expand transparent canvas margins and gutters vertically so the bottom row is completely visible with ample transparent space beneath each slime, nothing clipped, all12 poses remain separated. Keep transparent background. No labels or text. Only correct missing bubbles and framing, retain the friendly gel identity and squash stretch poses.
+
+## Correção 2
+Correct only three missing bubbles on this exact sprite sheet. In row THREE column TWO (left facing middle), there are2 bubbles on left: add third small bubble on RIGHT of body. In row THREE column THREE (left facing tall), there are2 bubbles on left: add third small bubble on RIGHT of body. In row FOUR column THREE (rear tall), there are2 bubbles: add third small bubble on LEFT of body, near left arm. Thus all12cells have3 detached bubbles. Preserve ALL existing artwork and positions. Add transparent padding beneath final row so green edges are entirely inside canvas. No other changes, no text, transparent alpha.
+
+## Correção 3
+Only edit BOTTOM RIGHT sprite (row4 column3 rear tall). It currently has TWO bubbles, one left and one right. ADD a THIRD detached glossy cyan-green bubble DIRECTLY ABOVE its head in the transparent gap. Do not remove either existing bubble. Preserve entire sheet exactly otherwise, with12 sprites and transparent background.
+
+## Ajustes técnicos durante integração
+V004: contato entre bolha traseira e linha anterior. V005: imagegen reposicionou bolha e isolou poses, mas faltou terceira bolha traseira. V006: imagegen adicionou terceira bolha à esquerda do corpo traseiro, preservando poses e transparência. Fonte final v006. Critério: doze corpos separados, três bolhas por pose e atlas sem contaminação entre quadros. Aprovação das poses v004; ajustes técnicos feitos na integração autorizada.

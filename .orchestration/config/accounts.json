@@ -1,0 +1,21 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "email": "flagober@gmail.com"
+    },
+    {
+      "id": 2,
+      "email": "flaviobji@gmail.com"
+    },
+    {
+      "id": 3,
+      "email": "flaviobji2010@gmail.com"
+    }
+  ],
+  "selectedAccount": 1,
+  "confirmedEmail": "flagober@gmail.com",
+  "confirmedAt": "2026-10-01T13:41:06.2119714-03:00",
+  "confirmationSource": "E-mail observado no CLI ou confirmado explicitamente pelo usuário; agy models funcional.",
+  "preferredModel": "gemini-3.1-pro-high"
+}

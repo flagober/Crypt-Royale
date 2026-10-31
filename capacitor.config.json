@@ -1,0 +1,18 @@
+{
+  "appId": "com.monstercrypt.cryptroyale",
+  "appName": "Crypt Royale",
+  "webDir": "dist",
+  "server": {
+    "hostname": "cryptroyale.local",
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": true,
+      "providers": ["google.com"]
+    }
+  }
+}

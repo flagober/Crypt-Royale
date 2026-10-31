@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-27T18:38:05.8547392-03:00",
+  "completedAt": "2026-09-27T18:42:43.1821399-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\integrate-operator-core-vfx-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-183805-integrate-operator-core-vfx-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-183805-integrate-operator-core-vfx-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-183805-integrate-operator-core-vfx-v001\\stderr.log"
+}

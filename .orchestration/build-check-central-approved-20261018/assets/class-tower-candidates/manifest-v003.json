@@ -1,0 +1,273 @@
+{
+  "status": "candidate-not-integrated",
+  "generatedOn": "2026-10-18",
+  "globalFlipAllowed": false,
+  "cycleMs": 2400,
+  "directions": [
+    "left",
+    "right"
+  ],
+  "isolation": {
+    "alphaThreshold": 32,
+    "expectedPosesPerSheet": 4
+  },
+  "tower": {
+    "y": 200,
+    "width": 360,
+    "file": "./assets/class-tower-candidates/tower-v002.png",
+    "height": 392,
+    "x": 100
+  },
+  "characters": [
+    {
+      "id": "male",
+      "pivot": [
+        280,
+        255
+      ],
+      "effectColor": "#7ff7ff",
+      "directions": {
+        "left": {
+          "file": "./assets/class-tower-candidates/warrior-male-left-v001.png",
+          "sheet": [
+            1254,
+            1254
+          ],
+          "layout": "2x2 with component-isolated poses",
+          "frames": [
+            {
+              "area": 106174,
+              "x": 171,
+              "y": 96,
+              "width": 463,
+              "height": 506,
+              "pivotX": 223,
+              "pivotY": 505
+            },
+            {
+              "area": 112349,
+              "x": 695,
+              "y": 79,
+              "width": 442,
+              "height": 523,
+              "pivotX": 208.5,
+              "pivotY": 522
+            },
+            {
+              "area": 107382,
+              "x": 24,
+              "y": 741,
+              "width": 634,
+              "height": 424,
+              "pivotX": 387,
+              "pivotY": 423
+            },
+            {
+              "area": 104328,
+              "x": 728,
+              "y": 688,
+              "width": 469,
+              "height": 485,
+              "pivotX": 224.5,
+              "pivotY": 484
+            }
+          ],
+          "displayHeight": 195,
+          "tip": {
+            "x": 26,
+            "y": 900
+          }
+        },
+        "right": {
+          "file": "./assets/class-tower-candidates/warrior-male-right-v001.png",
+          "sheet": [
+            1254,
+            1254
+          ],
+          "layout": "2x2 with component-isolated poses",
+          "frames": [
+            {
+              "area": 114924,
+              "x": 79,
+              "y": 167,
+              "width": 487,
+              "height": 463,
+              "pivotX": 229,
+              "pivotY": 462
+            },
+            {
+              "area": 122323,
+              "x": 762,
+              "y": 87,
+              "width": 441,
+              "height": 545,
+              "pivotX": 247,
+              "pivotY": 544
+            },
+            {
+              "area": 118431,
+              "x": 62,
+              "y": 732,
+              "width": 675,
+              "height": 460,
+              "pivotX": 206,
+              "pivotY": 459
+            },
+            {
+              "area": 114594,
+              "x": 736,
+              "y": 724,
+              "width": 481,
+              "height": 474,
+              "pivotX": 223.5,
+              "pivotY": 473
+            }
+          ],
+          "displayHeight": 175,
+          "tip": {
+            "x": 730,
+            "y": 940
+          }
+        }
+      }
+    },
+    {
+      "id": "female",
+      "pivot": [
+        280,
+        255
+      ],
+      "effectColor": "#b8a3ef",
+      "directions": {
+        "left": {
+          "file": "./assets/class-tower-candidates/warrior-female-left-v001.png",
+          "sheet": [
+            1254,
+            1254
+          ],
+          "layout": "2x2 with component-isolated poses",
+          "frames": [
+            {
+              "area": 138278,
+              "x": 110,
+              "y": 131,
+              "width": 504,
+              "height": 502,
+              "pivotX": 221.5,
+              "pivotY": 501
+            },
+            {
+              "area": 142941,
+              "x": 743,
+              "y": 57,
+              "width": 449,
+              "height": 577,
+              "pivotX": 180,
+              "pivotY": 576
+            },
+            {
+              "area": 131057,
+              "x": 22,
+              "y": 771,
+              "width": 721,
+              "height": 431,
+              "pivotX": 418,
+              "pivotY": 430
+            },
+            {
+              "area": 118023,
+              "x": 776,
+              "y": 742,
+              "width": 454,
+              "height": 464,
+              "pivotX": 188,
+              "pivotY": 463
+            }
+          ],
+          "displayHeight": 190,
+          "tip": {
+            "x": 25,
+            "y": 895
+          }
+        },
+        "right": {
+          "file": "./assets/class-tower-candidates/warrior-female-right-v001.png",
+          "sheet": [
+            1254,
+            1254
+          ],
+          "layout": "2x2 with component-isolated poses",
+          "frames": [
+            {
+              "area": 160637,
+              "x": 74,
+              "y": 103,
+              "width": 495,
+              "height": 514,
+              "pivotX": 280,
+              "pivotY": 513
+            },
+            {
+              "area": 158848,
+              "x": 681,
+              "y": 54,
+              "width": 488,
+              "height": 563,
+              "pivotX": 284,
+              "pivotY": 562
+            },
+            {
+              "area": 148843,
+              "x": 41,
+              "y": 702,
+              "width": 664,
+              "height": 484,
+              "pivotX": 253.5,
+              "pivotY": 483
+            },
+            {
+              "area": 143620,
+              "x": 700,
+              "y": 702,
+              "width": 509,
+              "height": 484,
+              "pivotX": 277.5,
+              "pivotY": 483
+            }
+          ],
+          "displayHeight": 175,
+          "tip": {
+            "x": 700,
+            "y": 950
+          }
+        }
+      }
+    }
+  ],
+  "guard": {
+    "base": {
+      "file": "./assets/class-tower-candidates/guard-base-v001.png",
+      "sheet": [
+        1201,
+        1309
+      ],
+      "mount": {
+        "x": 610,
+        "y": 300
+      }
+    },
+    "cannon": {
+      "file": "./assets/class-tower-candidates/guard-cannon-v001.png",
+      "sheet": [
+        1536,
+        1024
+      ],
+      "pivot": {
+        "x": 545,
+        "y": 512
+      },
+      "muzzleDistance": 805,
+      "scale": 0.085
+    }
+  }
+}

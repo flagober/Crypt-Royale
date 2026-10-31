@@ -1,0 +1,30 @@
+const fs=require('node:fs'),path=require('node:path');
+const {run,write}=require('./release-tools.cjs');
+const {spawnSync}=require('node:child_process');
+function buildAndroid(root,version,toolchain,signing){
+ const env={...process.env,JAVA_HOME:toolchain.javaHome,ANDROID_HOME:toolchain.sdk,ANDROID_SDK_ROOT:toolchain.sdk};
+ run(process.execPath,[path.join(root,'node_modules','@capacitor','cli','bin','capacitor'),'sync','android'],{cwd:root,env});
+ write(path.join(root,'android','local.properties'),'sdk.dir='+toolchain.sdk.replaceAll('\\','/')+'\n');
+ run(toolchain.java,['-classpath',path.join(root,'android','gradle','wrapper','gradle-wrapper.jar'),'org.gradle.wrapper.GradleWrapperMain','--no-daemon','assembleRelease','bundleRelease'],{cwd:path.join(root,'android'),env});
+ const unsigned=path.join(root,'android','app','build','outputs','apk','release','app-release-unsigned.apk');
+ if(!fs.existsSync(unsigned))throw Error('Gradle não produziu o APK release.');
+ const result=path.join(root,'dist-apk',`Crypt_Royale_v${version.versao}.apk`);fs.mkdirSync(path.dirname(result),{recursive:true});
+ const signingEnv={...env,CRYPT_SIGN_PASS:signing.password};
+ run(toolchain.java,['-jar',toolchain.apksigner,'sign','--ks',signing.key,'--ks-key-alias','crypt-royale','--ks-pass','env:CRYPT_SIGN_PASS','--key-pass','env:CRYPT_SIGN_PASS','--out',result,unsigned],{cwd:root,env:signingEnv});
+ run(toolchain.java,['-jar',toolchain.apksigner,'verify','--verbose',result],{cwd:root,env});
+ const badging=spawnSync(toolchain.aapt,['dump','badging',result],{encoding:'utf8'});
+ if(badging.status!==0||!badging.stdout.includes("name='com.monstercrypt.cryptroyale'")||!badging.stdout.includes("versionCode='"+version.buildNumber+"'")||!badging.stdout.includes("versionName='"+version.versao+"'"))throw Error('Versão/identidade do APK compilado divergente.');
+ console.log('APK_VERSION_OK '+version.versao+' / '+version.buildNumber);
+ const unsignedBundle=path.join(root,'android','app','build','outputs','bundle','release','app-release.aab');
+ if(!fs.existsSync(unsignedBundle))throw Error('Gradle não produziu o AAB release.');
+ const aab=path.join(root,'dist-apk',`Crypt_Royale_v${version.versao}_BETA.aab`);
+ run(toolchain.jarsigner,['-keystore',signing.key,'-storepass:env','CRYPT_SIGN_PASS','-keypass:env','CRYPT_SIGN_PASS','-signedjar',aab,unsignedBundle,'crypt-royale'],{cwd:root,env:signingEnv});
+ const verified=spawnSync(toolchain.jarsigner,['-verify',aab],{encoding:'utf8',env:{...env,JAVA_TOOL_OPTIONS:'-Duser.language=en -Duser.country=US'}});
+ if(verified.status!==0||!verified.stdout.includes('jar verified.'))throw Error('Assinatura AAB não foi confirmada.');
+ run(toolchain.java,['-jar',toolchain.bundletool,'validate','--bundle='+aab],{cwd:root,env});
+ const dump=spawnSync(toolchain.java,['-jar',toolchain.bundletool,'dump','manifest','--bundle='+aab,'--module=base'],{encoding:'utf8',env});
+ if(dump.status!==0||!dump.stdout.includes('package="com.monstercrypt.cryptroyale"')||!dump.stdout.includes('android:versionCode="'+version.buildNumber+'"')||!dump.stdout.includes('android:versionName="'+version.versao+'"')||!dump.stdout.includes('android:targetSdkVersion="36"'))throw Error('Identidade, versão ou API36 do AAB divergente.');
+ console.log('AAB_SIGNATURE_IDENTITY_API36_OK '+version.versao);
+ return {apk:result,aab};
+}
+module.exports={buildAndroid};

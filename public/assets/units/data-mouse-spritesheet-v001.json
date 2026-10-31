@@ -1,0 +1,220 @@
+{
+  "sprite_id": "MC-0004",
+  "sprite_name": "data-mouse",
+  "status": "approved",
+  "dimensions": [
+    420,
+    560
+  ],
+  "mode": "RGBA",
+  "grid": {
+    "columns": 3,
+    "rows": 4,
+    "cell": [
+      140,
+      140
+    ]
+  },
+  "pivot": [
+    70,
+    128
+  ],
+  "baseline": 128,
+  "row_order": [
+    "down",
+    "right",
+    "left",
+    "up"
+  ],
+  "frame_order": [
+    "contact-a",
+    "passing",
+    "contact-b"
+  ],
+  "playback_pattern": [
+    0,
+    1,
+    2,
+    1
+  ],
+  "frame_duration_ms": 160,
+  "sources": {
+    "down": {
+      "file": "cr_mc-0004_data-mouse_walk-down_row_v001.png",
+      "sha256": "F683B9A336DEF99A510C95C16BB78F5EE744FBC39948058DDB9A9006DDA2D108"
+    },
+    "right": {
+      "file": "cr_mc-0004_data-mouse_walk-right_row_v002.png",
+      "sha256": "B64573F523431B2F7F74F1D65FDD099A3081FE4E4E186249424FF1F726F4B31B"
+    },
+    "left": {
+      "file": "cr_mc-0004_data-mouse_walk-left_row_v002.png",
+      "sha256": "51CEF640BC7F55474406A680A1516DF67AC48CA86AA908959F2BFE5DA66233BE"
+    },
+    "up": {
+      "file": "cr_mc-0004_data-mouse_walk-up_row_v001.png",
+      "sha256": "F8DE6D36F71567D7DE851C3C57D6E25A77FCA28043AEBF55191CFAA023C9F6C6"
+    }
+  },
+  "file": "cr_mc-0004_data-mouse_spritesheet_v001.png",
+  "sha256": "E944C7CDD654A15FD5B46CC84A635C8A8A3F51DB6A971612070E4EB35B55175F",
+  "alpha": {
+    "transparent_pixels": 166296,
+    "opaque_pixels": 67808,
+    "intermediate_pixels": 1096
+  },
+  "validation": {
+    "row_pixel_diffs": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "cells": [
+      {
+        "direction": "down",
+        "column": 0,
+        "components": 1,
+        "bbox": [
+          22,
+          23,
+          114,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "down",
+        "column": 1,
+        "components": 1,
+        "bbox": [
+          23,
+          22,
+          115,
+          128
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "down",
+        "column": 2,
+        "components": 1,
+        "bbox": [
+          24,
+          23,
+          116,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "right",
+        "column": 0,
+        "components": 3,
+        "bbox": [
+          12,
+          29,
+          127,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "right",
+        "column": 1,
+        "components": 3,
+        "bbox": [
+          12,
+          28,
+          127,
+          128
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "right",
+        "column": 2,
+        "components": 3,
+        "bbox": [
+          12,
+          29,
+          127,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "left",
+        "column": 0,
+        "components": 3,
+        "bbox": [
+          13,
+          29,
+          128,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "left",
+        "column": 1,
+        "components": 3,
+        "bbox": [
+          13,
+          28,
+          128,
+          128
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "left",
+        "column": 2,
+        "components": 3,
+        "bbox": [
+          13,
+          29,
+          128,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "up",
+        "column": 0,
+        "components": 1,
+        "bbox": [
+          15,
+          22,
+          121,
+          129
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "up",
+        "column": 1,
+        "components": 1,
+        "bbox": [
+          16,
+          21,
+          122,
+          128
+        ],
+        "safe_area_ok": true
+      },
+      {
+        "direction": "up",
+        "column": 2,
+        "components": 1,
+        "bbox": [
+          17,
+          22,
+          123,
+          129
+        ],
+        "safe_area_ok": true
+      }
+    ]
+  }
+}

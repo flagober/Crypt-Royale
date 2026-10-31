@@ -1,0 +1,26 @@
+// Merge only into the existing service. Gifts are created by trusted Admin SDK.
+match /cryptroyale_mailboxes/{uid}/messages/{id} {
+  function mailOwner() { return request.auth != null && request.auth.uid == uid; }
+  allow read: if mailOwner();
+  allow create: if mailOwner()
+    && id == 'a4e50c20-1e57-4a62-8b6b-0e8173619b01'
+    && !exists(/databases/$(database)/documents/cryptroyale_saves/$(uid))
+    && getAfter(/databases/$(database)/documents/cryptroyale_saves/$(uid)).data.revision == 1
+    && request.resource.data.keys().hasOnly(['owner','title','body','reward','createdAt','createdBy','claimedAt','readAt'])
+    && request.resource.data.owner == uid
+    && request.resource.data.title == 'Bem-vindo a Vila Byte!'
+    && request.resource.data.body == 'Seu Baú de Boas-Vindas chegou. Receba os recursos e comece sua coleção. Um presente por conta, com conteúdo fixo.'
+    && request.resource.data.reward == {'gold':300,'xp':0,'dataFragments':2,'cards':{'bit-bug':4,'data-mouse':4},'classCards':{}}
+    && request.resource.data.createdAt == request.time
+    && request.resource.data.createdBy == 'system:welcome-v1'
+    && request.resource.data.claimedAt == null && request.resource.data.readAt == null;
+  allow delete: if false;
+  allow update: if mailOwner()
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['readAt','claimedAt'])
+    && (request.resource.data.readAt == resource.data.readAt
+      || (resource.data.readAt == null && request.resource.data.readAt == request.time))
+    && (request.resource.data.claimedAt == resource.data.claimedAt
+      || (resource.data.claimedAt == null && request.resource.data.claimedAt == request.time
+        && getAfter(/databases/$(database)/documents/cryptroyale_saves/$(uid)).data.revision
+          == get(/databases/$(database)/documents/cryptroyale_saves/$(uid)).data.revision + 1));
+}

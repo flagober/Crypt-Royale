@@ -1,0 +1,5 @@
+{
+  "serviceUrl": "https://crypt-royale-pvp-beta.onrender.com",
+  "websocketUrl": "wss://crypt-royale-pvp-beta.onrender.com/pvp",
+  "devWebsocketUrl": "wss://crypt-royale-pvp-beta.onrender.com/pvp"
+}

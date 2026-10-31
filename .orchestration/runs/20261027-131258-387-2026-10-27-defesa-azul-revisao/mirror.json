@@ -1,0 +1,717 @@
+[
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\animation-audit.html",
+    "status": "copied-verified",
+    "sha256": "1EE9D4D3B2DB3834F6F012393EB4B2A6FE7671B92621E3308D327873CE1D36D2"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\animation-audit.json",
+    "status": "copied-verified",
+    "sha256": "CECB041D5C81086418C4ABF55F1963A7F1137BC5A6EC8DB1C8C40A56EC24A8FE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\archer-attack-preview.html",
+    "status": "copied-verified",
+    "sha256": "4AEF7B6CA21BEF9B177BC5DF0B688053E25E5AEBCD6C80C7CD7A1DF916EA0909"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\archer-attack-preview.js",
+    "status": "copied-verified",
+    "sha256": "94C7F836E2CE487B4462481BA25703C22C1E4904C8E7AD79D1C48E1965CC7340"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\lpc-walk-reference_credits.txt",
+    "status": "copied-verified",
+    "sha256": "6F16675C49F0ABED59FA79D9B357304FEC55456D590F2190EB06ED956D7A23CD"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\lpc-walk-reference.png",
+    "status": "copied-verified",
+    "sha256": "C00B0AC0DCB227E780959A84CDADF034024C978FD5D4D0A4E8E61962016280C3"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\warrior-male-down8-candidate-v002.png",
+    "status": "copied-verified",
+    "sha256": "EB47B34CB2C646922DCFB86D1374019E05B7C95A096D4BDB6126C14B8EE689BF"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\warrior-male-down8-candidate-v003.png",
+    "status": "copied-verified",
+    "sha256": "803CD1FCF518D120445E81A2B3C8BC5812C179B1B78A4CA9BA2B8DB2B72868E2"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\warrior-male-right8-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "F12CF5D98D2A0B7A35580D3705F6F969B7DB06ECD3679AF26A5E122CA2B6062D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\warrior-male-right8-candidate-v003.png",
+    "status": "copied-verified",
+    "sha256": "B64644ECA30C219C5CF21362E5E16DFBEB60016CB3E2C4084790231AB1A8263D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\animation-lab\\warrior-male-spritesheet-140x140.png",
+    "status": "copied-verified",
+    "sha256": "CF491DF52F0343628A7BB6282841F0BEF23ADF4CCFD688CE4E78851C81F8B7D5"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\arenas\\vila-byte.png",
+    "status": "copied-verified",
+    "sha256": "95753D1A039B55BE5962046CE385E590110111E7A1BA065E319312A1FF1B1505"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\bgm\\cr_bgm_arena-progression_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "9D6260294BF6EB2C5E987C15441D2EDC6A2685E1D01F4E01C6DA3AE218FE3369"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\bgm\\cr_bgm_main-menu_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "7218BAABBDE65C0476A5FEC920B708578A492E42FA9BAD27A0244DFD18570336"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\bgm\\cr_bgm_overtime_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "2EE47777ADA1753339C66A2A8C8A7FDA207B1244529F6D4A62975FD28219B553"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\bgm\\cr_bgm_ranked-climax_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "A06F81A1E3455EFB9C7373557C368DB452698098B2D6AC3CAB1AB82E92BF02AB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\bgm\\cr_bgm_vila-byte_battle_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "2E26E835011365F2CB2C829DD7516E06E845834A25ACC32E227F25057811929E"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\audio\\characters\\cr_theme_mc-0001_bit-bug_v001.mp3",
+    "status": "copied-verified",
+    "sha256": "A9AF47315F7845A732E08B75BC12BF92700353E6969BCEC01F29CCBF14CBFCC8"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\bit-bug-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "4A550F734885E64C0291D3A298996726437F2D56170EF033DB9EE9437C2C688E"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\bit-bug-card_v002.webp",
+    "status": "copied-verified",
+    "sha256": "D8C8C55A8B704B2707EEB564E04411EAB5073DE636BA12DDC8AB34B963747F4E"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\buffer-bison-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "769004B919D90BB2C126FA619826FB1EB12E59F58031573F2C3D8849067B4A1F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\byte-boar-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "61C1C6EC5157B7E88517250D53764F95EEF00E70CA8924CD0E6E31F768D79DAA"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\cache-crow-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "3C50A9E8C29F85ADAA1C916D126BE86EA5142A60982C364C5B974517E6917B82"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\cache-mantis-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "1AEB529CB4401423C4EC179A8D885DE5B9858CD0A77E0977AB8CF16CA8A4A4C8"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\circuit-hare-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "C06472760F30E4B8EF388C65AEDD0421CBD1BF41C300F4F2F493F0F223560F8B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\code-slime-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "55669CE95274E4881FBA2C320925CD2E8FDD813590D69B1A975B627BC0E8CF5A"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\code-slime-card_v002.webp",
+    "status": "copied-verified",
+    "sha256": "2221EEE47269EA8CE08D0B3ADEE7A3A54FB7FEC92CC77D8783A8774916726C25"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\copper-mole-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "6F842CB100922EF83E033DE0AC2B3C2954CEEFCD3843E186C439EBA05AF7D875"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\data-mouse-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "2CEAE28549697C2616400D7E2C7F6294642448F61B8D604085C0618F002665F6"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\data-mouse-card_v002.webp",
+    "status": "copied-verified",
+    "sha256": "BC2216557ABB17A637E064A4ADF425EB6359F9F7A65B6F50DF37129C0B81C97E"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\fiber-finch-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "5FB4A235560D2239FA27136C038B0F9E295340A019497835BC1FEF4FAA5BEC55"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\kernel-goat-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "DB90DCB4DC6F34E301FBFE6A7337FF484E23C77B2F8A8C9381B91E99DBB7A02B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\logic-lizard-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "CF643D8C6FCF6A73F2AA3F4095788D076D0FA6D845EC4DF265E5C64A8D26D06B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\packet-fox-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "9995F36F519C5FCD5117D76FF7D52AB1E85EF85AF4748E40525F684FE5F025FD"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\patch-toad-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "C710AA67615AFC02DCBE2261CDC0ADD42C41F6BFBEF9D3A9016715106D7FFED3"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\pixel-pup-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "C903DC7DA09242AC9801863A51488B48CDADA6057669748DFE5F5E61A5EE5145"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\pixel-pup-card_v002.webp",
+    "status": "copied-verified",
+    "sha256": "E764D446602B871926D19341ED0B0F8718F312FA8ED5192ED3835B5EAFE987C7"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\cards\\socket-crab-card_v001.webp",
+    "status": "copied-verified",
+    "sha256": "99495724755D4242ADFB680495CF720E3ABD5E063400E1D952941FBD6BAD056C"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\approval-20261018.json",
+    "status": "copied-verified",
+    "sha256": "A8C3E037F49C2BDAEE279A3181462B124C16F82E0F68F22F03749F2B67CDF473"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\approval-archers-v007-20261018.json",
+    "status": "copied-verified",
+    "sha256": "438527C3CD6E8F247F038E3F0CF460F699659EB3534B88BE66C42331FB47D630"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\approval-frontal-attacks-20261019.json",
+    "status": "copied-verified",
+    "sha256": "4CFBB6272827F74EE61DB1B2D0DFDFBB05FEFF36220F973A0B7CE9BF22427ED2"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-attack-candidate-v001.json",
+    "status": "copied-verified",
+    "sha256": "02C29AE7C06C61A535F42B6C9CF51E0C07AA0F018827DEC5BB18AEDF4B05D8CD"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-approved-v001.png",
+    "status": "copied-verified",
+    "sha256": "0B70724720274B6415330FCB8C1BD68379B2002470FC5293A3EB681DADBC62F5"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "F217ACE03BB000752CF95FD42E1626933721C97F4D210EC62517A7C3A45FB95D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-back-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "3BE8CC13E84C688C775BF9545D4B4E96059872E9245065E704FAEA781B33B959"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-front-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "5DF0E916CC81888F34369BE63C644201D262E7C666F5EECE7E0EF0230A7BF312"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-principal-candidate-20261018.json",
+    "status": "copied-verified",
+    "sha256": "4534C659E928C6A66340C4C14AD763E112F2D1B93BE0A926DB9A2B8FE283FA3D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-female-principal-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "721ADB4B3A9CA4C4DB1BE042E7B30ED2BC06F3DC5E67E24178B25416A2EE15EB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-front-attack-candidate-v001.json",
+    "status": "copied-verified",
+    "sha256": "0B8B7EF86797C763721FA161B62FB8A28E50936B5307714DEE9EEFCEECF2560C"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-male-approved-v001.png",
+    "status": "copied-verified",
+    "sha256": "E2F88CFEA6442B930D7DC7C0FEDDE2C7CD51186A2E38907A009F74F9D94FB957"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-male-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "8B098B299F6398FBBEDDEBC3D8D4AC9400C34FFC017B01E197869448050FEEC7"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-male-back-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "FA8849BFFD3AE6AA7225D7263097CC2C8C6A937552B25787F80FEAD98BA91981"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-male-front-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "71252D9BE9B429494082EEBBD79AB5E0E6815A975847B388990AF2EE26683753"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-platform-v001.png",
+    "status": "copied-verified",
+    "sha256": "DB645C524666EA78928680A6094B6482FC62E828FE4440754748354C8BB32FDC"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\archer-side-narrow-v001.png",
+    "status": "copied-verified",
+    "sha256": "01B0F44992E04488480608B136E5E17D4E53716B8D31DEF994C75DA6394C84A7"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\blue-back-attack-candidate-v001.json",
+    "status": "copied-verified",
+    "sha256": "1DF2F9E1CE97B73BF4A32BD51D1227D3A1F9E3513EE6AEEB3C8EAA6D43474ABE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\central-reference-approved-20261018.png",
+    "status": "copied-verified",
+    "sha256": "FD567A731E99C38A71AB745DC1F9E74BB0B4CE834D7840BE407FD40BD7D4CF91"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\guard-base-v001.png",
+    "status": "copied-verified",
+    "sha256": "B9B003057D29A4F36B61CCA8B7F0A52A1180659FAB55BE6FF587054BAF049867"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\guard-cannon-v001.png",
+    "status": "copied-verified",
+    "sha256": "A924DCEDBCED76A67A6CA382924E97F40C8B8F5D2995734BFEB688749CAE9A78"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\guard-tower-v001.png",
+    "status": "copied-verified",
+    "sha256": "2917BFBAAA54E0B407B48B9B4BE37C0CFC71342C82FAC646C31D2C07BAE8274D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\manifest-v001.json",
+    "status": "copied-verified",
+    "sha256": "5D9976C397A5568BAD27942F23E09C0CDC4D47945FA85925B72C69A93C697C12"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\manifest-v002.json",
+    "status": "copied-verified",
+    "sha256": "1F3C20E8B6D4012F241CC47D4E38C978DAF148EA3AEAFDFACF410EB6A6ACC867"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\manifest-v003.json",
+    "status": "copied-verified",
+    "sha256": "AFF65EB4862E75B8764641C1D3932B6E5D44DDC9C2E37428A4AE79D7B48136CF"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\manifest-v004.json",
+    "status": "copied-verified",
+    "sha256": "F33CDFDD6D042553D753BCD567449DC471ABE4DEB64ACC0A3BAF62EBCC267098"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v001.png",
+    "status": "copied-verified",
+    "sha256": "2092A6F23F8FF0A7969A51A82F32BF102CAC587E628E8CC53367555204A5D031"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v002.png",
+    "status": "copied-verified",
+    "sha256": "9F622D5BA0B8986DCA28916CECF394E006C6A2AA10174F3DA4E20C557D2F8E49"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v003.png",
+    "status": "copied-verified",
+    "sha256": "1013FEE47E6228210CA72927210EF4B60AD7057C9DB7F178ED55B54E0471FDE4"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v004.png",
+    "status": "copied-verified",
+    "sha256": "456780677BEB14545B0EEF69356A3FE13055BBA6DDCBC992E326B95091E1A9F4"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v005.png",
+    "status": "copied-verified",
+    "sha256": "11C601C3F0700E4EFBB8F949E78AEB33F179A08C132601F6848E4698BE066E26"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v006.png",
+    "status": "copied-verified",
+    "sha256": "B73EDEAB4D57985EAF728B2BBAF1AE538F560FBFD8EAC2CA086A2BE39AAADD1E"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\three-towers-heroes-preview-v007.png",
+    "status": "copied-verified",
+    "sha256": "70E9FAC79EB058465DA5B3CDE913DCE8862F5594795C5426ED15BAB40EC73803"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\tower-v001.png",
+    "status": "copied-verified",
+    "sha256": "AC4D5B0DECFB8F383C2F61FFA13F154D9BAEA09D8B64C381FA495C916BC5D864"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\tower-v002.png",
+    "status": "copied-verified",
+    "sha256": "C6D49DBFAC11483A61F2D01B2F92DA2E653D1FB398A3EB22B6F6451D609D3FFE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-back-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "743D82965B59EA424AD6867E72190A46C4213C5D39F3C7797528EF7C26C27ACB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-front-v001.png",
+    "status": "copied-verified",
+    "sha256": "0B85687FE68CFEEF125545AFD6F7137363FA75B8FF24D02CB0AA2363DE84F491"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-left-v001.png",
+    "status": "copied-verified",
+    "sha256": "6BC6E40FCFA0EF3C91D50CF61BA97B9CDDB9AEF46332BCEF4B93B7DCC8916ACB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-right-v001.png",
+    "status": "copied-verified",
+    "sha256": "6A0F4FBD4908E507CE69C64EE026B4F9768010B02E58E37F4CA64D0CF3F2E1C2"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-v001.png",
+    "status": "copied-verified",
+    "sha256": "68E2C620F8DEE1BC39366025CEDE68D1684D42BA544661A044285A52C96524DB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-female-v002.png",
+    "status": "copied-verified",
+    "sha256": "10FCEA2D34AC813DC74F2EDE2E34853B89BA77B750F00FE0D29C9EECA5C34D74"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-male-back-attack-candidate-v001.png",
+    "status": "copied-verified",
+    "sha256": "BD078029FAB71CF24752313DD780012757AAADD79ED13B9E0B1A785844185149"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-male-front-v001.png",
+    "status": "copied-verified",
+    "sha256": "598F46CBC1B0184F0456F107C976E827F7F54892A51151953A02207A02BE54EC"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-male-left-v001.png",
+    "status": "copied-verified",
+    "sha256": "27A612CF21B1981559B312014CBD303B90FDBC97E81DBB4273B5D7267E22711F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-male-right-v001.png",
+    "status": "copied-verified",
+    "sha256": "2BD2DFEBE04C121EF00749F12285FF80BDB113A4BD095543E393019F8865BECE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\class-tower-candidates\\warrior-male-v001.png",
+    "status": "copied-verified",
+    "sha256": "1FCCF76647AA543B4776F41575EE4F3BEB7B82BE9C6B9D0B58B411545D6B3EA1"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\index-9hQhlPnR.js",
+    "status": "copied-verified",
+    "sha256": "CB00583C24CA9E482031F32F29D8978E0AD1B1CF532BFD88C15DC7D4648577E0"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\index-Da-OHZ-c.css",
+    "status": "copied-verified",
+    "sha256": "F543242DFEDA5A06D797148A6FCA1D29EF9911DA87E3A5F5350A44796B40A658"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\towers\\cr_vila_byte_guard_tower_master_v001.png",
+    "status": "copied-verified",
+    "sha256": "E25D6CF24DC79A66D071B53C2DCCD0954268D89481CC3BA1F363786760A6FDEE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\towers\\cr_vila_byte_operator_core_master_v001.png",
+    "status": "copied-verified",
+    "sha256": "78D2143639F981F589B01585375DF38007B0F01098C98DE733759BE13580D37B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\bit-bug-spritesheet-v004.json",
+    "status": "copied-verified",
+    "sha256": "DC6002B1DDE2044215B8988E69024255FA61C4C17E3834E96C864F4AF6B11239"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\bit-bug-spritesheet-v004.png",
+    "status": "copied-verified",
+    "sha256": "B2F6D8360AA92DC6C8185F9C375A61DC60B2EB0EBAB79209B098B4C06C0E557B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\bit-bug-spritesheet-v005.png",
+    "status": "copied-verified",
+    "sha256": "E9DDD3FCB5484813432D3A2BBE4CE6213B6E91F7877BD568B48F3917F4F44230"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\bit-bug.png",
+    "status": "copied-verified",
+    "sha256": "649BD6876727C63E0C48094F798A21A423F53AF4BADB79387BAA13679590C0D7"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\buffer-bison-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "A797D1D44C499E1F83E9C33F1FFF8D598DD0C3147D3F24FD164FA2EB1B29D66B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\byte-boar-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "EA0917F1C059FC9BADE2C3D0CA5C1FDF12B0056D53AD2ECEFF5E66E58A02D7FC"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\byte-boar.png",
+    "status": "copied-verified",
+    "sha256": "E6B31E4B5268807DBF89E58FEAFCE65F14436B5FC88AAE6B2F63591F0322C499"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\cache-crow-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "0F16A20C69D5303DCD6C79119EC02CC4BDB9236192193CCE19DAE9C9F19E7BA1"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\cache-crow.png",
+    "status": "copied-verified",
+    "sha256": "C5B7105EB8792FA655FC93D2D3B795A3B80FD63BB5380D7FE78F6F84AFE31643"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\cache-mantis-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "FDCA19A59DCF7D079DAB5FEB6ED820D67C615B64B96B937B4718F305CA8A24CC"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\circuit-hare-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "3A6082A3FC2C0D4539019537ED49DBFA379813043D1491C3927057EF5BE96A3C"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\circuit-hare.png",
+    "status": "copied-verified",
+    "sha256": "5F58694CB5AD156778AE67337E0015DE381CE8D0EE2DFAEC4D168D5798BCE0F4"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\code-slime-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "2C1B1CBF12CC7D83330AE1EACE58EE3AEF8CEC243344A82DA471C282A6CF6FB5"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\code-slime-spritesheet-v002.png",
+    "status": "copied-verified",
+    "sha256": "24ABE331B63DF169356FEC872B948EA3E33B964630889757E1F56D0E3C6AF342"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\code-slime.png",
+    "status": "copied-verified",
+    "sha256": "FBD9213C6B7BBA721852D1D9168A42C23818D513491B66939956851598730995"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\copper-mole-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "E5FEFDF447FB8F882378E6CC18B17294F8684627BB83D86E00333EC6A75E3F44"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\data-mouse-spritesheet-v001.json",
+    "status": "copied-verified",
+    "sha256": "D6014FAF213455014BF8D0B88D310399CB6AB1C8388B65C7D94E857D231F0DCB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\data-mouse-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "E944C7CDD654A15FD5B46CC84A635C8A8A3F51DB6A971612070E4EB35B55175F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\data-mouse-spritesheet-v002.png",
+    "status": "copied-verified",
+    "sha256": "2E8B23ABABA7096ACBB867767D6D4ABAC99759B1C4F9EFADD85B40F1AC2CA740"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\data-mouse.png",
+    "status": "copied-verified",
+    "sha256": "4AFF4A4AF5DED2EFF22CC70E1F832B669765DC9B9A80B17592B3B0612C7ADF3F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\fiber-finch-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "B89B2F50021C740255F15F66B935DAEF298C77AAF6B5DEE83EFE741734244A1F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\kernel-goat-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "D42CDB92D62D8BA31B7169A79550BE247CB3E6552D2BA87AF4B95D5569E9177B"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\logic-lizard-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "FFD5DA7A874F1B9C949F67ACA4E05472484E2345BC59FF74567D68D12DCC6772"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\packet-fox-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "78F606B79A229E0AD7F7B43A4CE3F72E320F5C3172A3D480CC87C5FBA3D42C5D"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\patch-toad-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "A0CD6352DED157995569A570E516576AA88769A8A9F88C0E3BBB9D43CECBADEE"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\pixel-pup-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "572E201D8AFE2816DBD2E1769172AECBCA33B738125A7F3225993455D3134B8A"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\pixel-pup-spritesheet-v002.png",
+    "status": "copied-verified",
+    "sha256": "03C934828DB54420F740C0C0B3AB94ABA3F57CABDC01B38B5F619C2A5BCB6110"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\pixel-pup.png",
+    "status": "copied-verified",
+    "sha256": "AF88987D0462A155E0269958053869B829E2905599CB2472B2D2831F3822EAD7"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\socket-crab-spritesheet-v001.png",
+    "status": "copied-verified",
+    "sha256": "060274704E3D3E551028202E2D6B0A269975F47F80C1CDD1984DC5B407408BED"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\assets\\units\\socket-crab.png",
+    "status": "copied-verified",
+    "sha256": "B0803F7368C8C99F447FB50B47876188208B3D1DDE701126E19C9EE0E18FA119"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\blue-defense-preview.html",
+    "status": "copied-verified",
+    "sha256": "16B62C88B797E3B9539027D63858995378F7957F4FA0F9983C8CB2805EBDB091"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\blue-defense-preview.js",
+    "status": "copied-verified",
+    "sha256": "2D798B6E8A8F78B312B675749EDEE339340AF2A5B8A82DC3B964BF0F6C822EB8"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\class-tower-frames.js",
+    "status": "copied-verified",
+    "sha256": "00F72BEC05484C00E3EB06D4CF3AC18846E9FF8DF75D5060BBA8529BB9A558E2"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\class-tower-preview.html",
+    "status": "copied-verified",
+    "sha256": "AAD99D8A18442F661C49A52FA92C52566A538715A8510F3D8C491AF82C20D355"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\class-tower-preview.js",
+    "status": "copied-verified",
+    "sha256": "9DDDC24333C4CEDC87EE1184BFC0A94DB2B3967871D40DAE0ADEDCDBF231986F"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\class-tower-tracking.js",
+    "status": "copied-verified",
+    "sha256": "10EB5288FE180B598DB1C802A7D7EB2EDF23436957D73B58515FFF030EBE45CD"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\class-tower-tracking.test.js",
+    "status": "copied-verified",
+    "sha256": "0D473D92BB1AA25DFD0A2E5C9892CA6A6D86195D8F87488C584E989E2B4EA3EC"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\favicon.svg",
+    "status": "copied-verified",
+    "sha256": "61BC9A161DE58248288E6905425D7180F0624C2865007B97D763FDAC12043A66"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\icons.svg",
+    "status": "copied-verified",
+    "sha256": "B45FA506195CFCDEF406BA9F0C77B36DDC1A7C224040926EC70ABC2FDEA7B93A"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\index.html",
+    "status": "copied-verified",
+    "sha256": "D6AE062319FDB3814FAE7961465696238E96DBF675B2716A757D867E5DB34572"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\spell-catalog.json",
+    "status": "copied-verified",
+    "sha256": "6C170A3E7763834D7101162CBC8D11ABD2180681BE2CF94B583CF46F00AC1359"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\spell-effects-v001.js",
+    "status": "copied-verified",
+    "sha256": "5045175E5EF6888C8D05ED5A8EAD06146BD1E78C5B32512220921F2F3FC3F8D6"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\spell-effects-v002.js",
+    "status": "copied-verified",
+    "sha256": "729540BB2007F76D908D8D58CA48233A95E376B7747945B037294CA28265EE77"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\spell-effects.js",
+    "status": "copied-verified",
+    "sha256": "8E34B5A17267B8640187860DDAF140885E4017F3CF47D400F4F7A69368D308D3"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\spell-preview.html",
+    "status": "copied-verified",
+    "sha256": "A0AE1667AB67DD3B13410F05B40B31BE263A8D971239C67BEC6C066480AF94CB"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\tower-effects.js",
+    "status": "copied-verified",
+    "sha256": "387E264BD2CEF22F01395B3647F76DE2C3E8EDE1F7DA735F264265AEB48AFD01"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\tower-preview.html",
+    "status": "copied-verified",
+    "sha256": "F95B99009AB56916F635B8C5A2F7967600E11AA2C311F62033456C0D39CA5CA4"
+  },
+  {
+    "path": ".orchestration\\build-check-retomada-20261027\\tower-targeting.js",
+    "status": "copied-verified",
+    "sha256": "63ECCE5C8286EC1F9C0209AE70FD13B6E7ABD68550D69BB10B1F139459E2E066"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131258-387-2026-10-27-defesa-azul-revisao\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "FBB0627BB901AE8DDC0D25A2EEE5982B6886699889BA0AECC972DCD495EB3935"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131258-387-2026-10-27-defesa-azul-revisao\\request.md",
+    "status": "copied-verified",
+    "sha256": "F0016AB9AD0668A9F4AE80342B0C1227941C660DA2A8284BFDD825129C9C275C"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131258-387-2026-10-27-defesa-azul-revisao\\result.json",
+    "status": "copied-verified",
+    "sha256": "AAAA8F0627FA9B32B4BEF939B67946C852FFFFF6BD92A3F00EAEB003BF22B26E"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131258-387-2026-10-27-defesa-azul-revisao\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": ".orchestration\\tools\\review-blue-defense-20261027.mjs",
+    "status": "copied-verified",
+    "sha256": "F79C64AB40E7B34993301AFB54D0EED539FA68324FC936A05BAC885217AE904F"
+  },
+  {
+    "path": "package-lock.json",
+    "status": "copied-verified",
+    "sha256": "D1786DFFFFBB471503A569A3DE809F83DBFD73CD5574DB686C308C73BC54FB3C"
+  },
+  {
+    "path": "package.json",
+    "status": "copied-verified",
+    "sha256": "ABA32885BEC66E012207F28923DD37539EEE41B1D6F9004AA45B6837211A8D2D"
+  }
+]

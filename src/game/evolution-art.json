@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "authorization": "Flavio: auto aprovado daqui em diante, continue —28/10/2026; QA visual e técnico obrigatório",
+  "cellSize": 140,
+  "pivot": [
+    70,
+    128
+  ],
+  "unitForms": {
+    "bit-bug:1": {
+      "file": "/assets/units/bit-bug-mk2-spritesheet-v001.png",
+      "scale": 0.44,
+      "healthOffset": 54,
+      "frameDurationMs": 110
+    },
+    "bit-bug:2": {
+      "file": "/assets/units/bit-bug-apex-spritesheet-v001.png",
+      "scale": 0.46,
+      "healthOffset": 56,
+      "frameDurationMs": 110
+    }
+  },
+  "paladin": {
+    "male": {
+      "file": "/assets/class-evolutions/paladin-male-attack-v001.png",
+      "displayHeight": 72,
+      "tips": {
+        "front": [
+          31,
+          92
+        ],
+        "right": [
+          128,
+          87
+        ],
+        "left": [
+          14,
+          87
+        ],
+        "back": [
+          95,
+          63
+        ]
+      }
+    },
+    "female": {
+      "file": "/assets/class-evolutions/paladin-female-attack-v001.png",
+      "displayHeight": 72,
+      "tips": {
+        "front": [
+          34,
+          97
+        ],
+        "right": [
+          129,
+          84
+        ],
+        "left": [
+          19,
+          86
+        ],
+        "back": [
+          81,
+          39
+        ]
+      }
+    }
+  },
+  "attackRows": {
+    "front": 0,
+    "right": 1,
+    "left": 2,
+    "back": 3
+  },
+  "attackTip": {
+    "front": [
+      30,
+      110
+    ],
+    "right": [
+      125,
+      75
+    ],
+    "left": [
+      15,
+      75
+    ],
+    "back": [
+      110,
+      45
+    ]
+  }
+}

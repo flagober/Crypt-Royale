@@ -1,0 +1,72 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261027-142210-410-2026-10-27-progression-ui\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "FFF92E6037759BA0F479931DA6D572F21589B438513A29C2D2181B0AFA2A9AC9"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-142210-410-2026-10-27-progression-ui\\request.md",
+    "status": "copied-verified",
+    "sha256": "B2D2F6F7E05D1887AAEFA2F781A5A960F7FF02907C1A870E15CB37979252F844"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-142210-410-2026-10-27-progression-ui\\result.json",
+    "status": "copied-verified",
+    "sha256": "43DD61C0D93CE332E4937AADE68AD87FB024C14A6120C4117FE1B3490D00A106"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-142210-410-2026-10-27-progression-ui\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "282AF79B4D6095DF5C1C191FC0FC57A9214B2887478D490A6ED4E8D3147893F1"
+  },
+  {
+    "path": "docs\\PROGRESSAO_ROYALE_2026-10-27.md",
+    "status": "copied-verified",
+    "sha256": "0A49145B62FA17D4830D7597BE7EEDDB2A45ED7A9F37D8B6B3A28FD0C2C9431D"
+  },
+  {
+    "path": "src\\activities-storage.test.js",
+    "status": "copied-verified",
+    "sha256": "9DE5DBB60556C7129E87455DDF1C5E24C72B0ECB763BEB2E0853FF87777D50EB"
+  },
+  {
+    "path": "src\\ActivitiesPanelV2.jsx",
+    "status": "copied-verified",
+    "sha256": "1F66D5B52370F77578383ACFDA2F1D337D29B10E1F8B96E678420CB6CB8288B7"
+  },
+  {
+    "path": "src\\game\\activities.js",
+    "status": "copied-verified",
+    "sha256": "4224FEFDC79F89830E4B12E31D9B95D079A1A107EAA6663A9C05E4308B705F86"
+  },
+  {
+    "path": "src\\game\\engine.js",
+    "status": "copied-verified",
+    "sha256": "789A77791CD4FC9B827B9D3BB2465710FE744DEDE7326BDAC44875A3F6779EA0"
+  },
+  {
+    "path": "src\\game\\progression-engine.js",
+    "status": "copied-verified",
+    "sha256": "5A4BFE9BA291BB2027BE3EAE673FF63516504DD3883661A08F9D5577068B4D0B"
+  },
+  {
+    "path": "src\\game\\progression-engine.test.js",
+    "status": "copied-verified",
+    "sha256": "7DE0388CF893AEE69613B5EB5480BA59623D2B389562BDF85EA3CAEA6EBDF667"
+  },
+  {
+    "path": "src\\game\\progression.js",
+    "status": "copied-verified",
+    "sha256": "194BFAD5C9A8EE9951E624539D6C73F36625F752434C8044D7D66A6218CE3B4A"
+  },
+  {
+    "path": "src\\game\\progression.test.js",
+    "status": "copied-verified",
+    "sha256": "791E875A2F2430734710ACDCB38BF85C1B1E4CDE500546F3C05246989B0730A6"
+  },
+  {
+    "path": "src\\progression.css",
+    "status": "copied-verified",
+    "sha256": "F87F4486D8B19495CF64783437AFD5D0C9FF903D9529134C3CB2665EE348592E"
+  }
+]

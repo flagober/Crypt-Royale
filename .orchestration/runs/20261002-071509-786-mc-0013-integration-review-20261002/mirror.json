@@ -1,0 +1,22 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261002-071509-786-mc-0013-integration-review-20261002\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "CDA3155E7E0EAA8695E83C4EA374CFC9FEDC7D48E98C897ADF6E276B7C8C1074"
+  },
+  {
+    "path": ".orchestration\\runs\\20261002-071509-786-mc-0013-integration-review-20261002\\request.md",
+    "status": "copied-verified",
+    "sha256": "0F2B99CCFE7B0BC1B67768B0F30ED6CF7A7797C61AC71D72E803B55331594644"
+  },
+  {
+    "path": ".orchestration\\runs\\20261002-071509-786-mc-0013-integration-review-20261002\\result.json",
+    "status": "copied-verified",
+    "sha256": "8FF2E2D5B35B129D98C05AC4BB8EE121EB2F93F3872793E02446CEEB483AF87D"
+  },
+  {
+    "path": ".orchestration\\runs\\20261002-071509-786-mc-0013-integration-review-20261002\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  }
+]

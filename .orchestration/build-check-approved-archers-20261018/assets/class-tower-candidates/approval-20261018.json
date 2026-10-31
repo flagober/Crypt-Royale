@@ -1,0 +1,43 @@
+{
+  "assets": [
+    {
+      "file": "tower-v002.png",
+      "sha256": "C6D49DBFAC11483A61F2D01B2F92DA2E653D1FB398A3EB22B6F6451D609D3FFE"
+    },
+    {
+      "file": "guard-base-v001.png",
+      "sha256": "B9B003057D29A4F36B61CCA8B7F0A52A1180659FAB55BE6FF587054BAF049867"
+    },
+    {
+      "file": "guard-cannon-v001.png",
+      "sha256": "A924DCEDBCED76A67A6CA382924E97F40C8B8F5D2995734BFEB688749CAE9A78"
+    },
+    {
+      "file": "warrior-male-left-v001.png",
+      "sha256": "27A612CF21B1981559B312014CBD303B90FDBC97E81DBB4273B5D7267E22711F"
+    },
+    {
+      "file": "warrior-male-right-v001.png",
+      "sha256": "2BD2DFEBE04C121EF00749F12285FF80BDB113A4BD095543E393019F8865BECE"
+    },
+    {
+      "file": "warrior-male-front-v001.png",
+      "sha256": "598F46CBC1B0184F0456F107C976E827F7F54892A51151953A02207A02BE54EC"
+    },
+    {
+      "file": "warrior-female-left-v001.png",
+      "sha256": "6BC6E40FCFA0EF3C91D50CF61BA97B9CDDB9AEF46332BCEF4B93B7DCC8916ACB"
+    },
+    {
+      "file": "warrior-female-right-v001.png",
+      "sha256": "6A0F4FBD4908E507CE69C64EE026B4F9768010B02E58E37F4CA64D0CF3F2E1C2"
+    },
+    {
+      "file": "warrior-female-front-v001.png",
+      "sha256": "0B85687FE68CFEEF125545AFD6F7137363FA75B8FF24D02CB0AA2363DE84F491"
+    }
+  ],
+  "approval": "Usuário: aprovado",
+  "integratedInto": "src/game/tower-render.js",
+  "approvedOn": "2026-10-18"
+}

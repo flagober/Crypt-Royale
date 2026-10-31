@@ -1,0 +1,45 @@
+# Game Design Document (GDD) - Crypt Royale
+
+## 1. Visão Geral
+- **Nome do Jogo:** Crypt Royale (ou MonsterCrypt: Arena Royale)
+- **Gênero:** Tower Rush / Arena Real-Time Strategy (RTS)
+- **Plataforma:** Web / Mobile (HTML5 / PWA)
+- **Engine/Stack:** React 18, Vite, Tailwind CSS, HTML5 Canvas (ou Pixi.js)
+- **Backend:** Firebase (Auth, Firestore, Realtime Database, Cloud Functions)
+
+## 2. Conceito Central
+Crypt Royale é um spin-off competitivo do universo MonsterCrypt (RPG TopDown). Os jogadores batalham em arenas 1v1 em tempo real, utilizando um deck de 8 cartas que invocam Criaturas (Nexus), feitiços (Cryptorunas) e estruturas para destruir as Torres do Operador adversário.
+
+## 3. Integração com o Universo MonsterCrypt (Lore & Ativos)
+A base de dados canônica do MonsterCrypt (V10) será reaproveitada:
+- **Cartas/Tropas:** As famílias de monstros e Nexus formam as tropas do jogo (Trovões, Tanques Metálicos, Enxames, etc).
+- **Operadores (Torre do Rei):** As 126 classes de atletas assumem o papel de Operadores. Em Crypt Royale, a Torre do Operador não é passiva; ela possui uma Habilidade Ativa (Cooldown) controlada pelo jogador.
+- **Feitiços:** Crypto Gemas e Cryptorunas serão as magias de área e suporte (ex: Congelamento de Código, Gema de Dano).
+
+## 4. Arenas (Progressão de Troféus)
+O mapa de 7 setores do MonsterCrypt dita o matchmaking e progressão ranqueada:
+1. **Arena 1 (1–400 Troféus):** Vila Byte / Campos Iniciais
+2. **Arena 2 (400–800 Troféus):** NeoLeaf / Floresta Neon
+3. **Arena 3 (800–1200 Troféus):** Crystalis / Caverna Cristal
+4. **Arena 4 (1200–1600 Troféus):** Toxicron / Deserto Tóxico
+5. **Arena 5 (1600–2000 Troféus):** FrostByte / Terras Geladas
+6. **Arena 6 (2000–2500 Troféus):** NullCore / Ruínas do Vazio
+7. **Arena 7 (2500+ Troféus):** Aetherion / Cidadela Céu
+
+## 5. Inovações e Mecânicas Únicas
+- **Habilidade Ativa do Operador:** O Rei possui uma barra de especial com botão de habilidade ativa (ex: Invocar Escudo, Purificar Glitch).
+- **Terreno Glitch/Mutação:** No momento de "2x Elixir", glitches aparecem na arena concedendo buffs ou mutações de ataque a quem passar por cima.
+- **Nexus Sync (Evolução em Tempo Real):** Jogar duas tropas idênticas no mesmo quadrado gera uma fusão temporária, somando atributos.
+- **Marketplace P2P:** Leilão de cartas entre jogadores (usando moedas do jogo).
+
+## 6. Arquitetura Técnica e Regras de Ouro
+- **Desacoplamento de Engine:** O React gerencia apenas o HUD, menus e barra de energia. A física, colisão e renderização da batalha 2D em 60FPS ocorrerá puramente em Canvas/Pixi.js.
+- **Multiplayer Lockstep:** O Firebase Realtime Database sincronizará apenas os eventos de invocações (timestamp, carta, coordenadas x/y) usando uma 'seed' determinística para evitar dessincronização, reduzindo a sobrecarga de rede.
+- **Regras de Desenvolvimento:**
+  - *Regra de Ouro 1:* Sempre realizar backup da versão estável antes de grandes refatorações.
+  - *Regra de Ouro 2:* A documentação (GDD) deve estar sempre atualizada e sincronizada com as novas features.
+
+## 7. Próximos Passos (Roadmap Inicial)
+- Fase 1: Setup do ecossistema Frontend (Vite + React + Canvas) e criação do Loop de Partida (Game Loop a 60 FPS).
+- Fase 2: Definição mecânica das 8 primeiras cartas (Deck Canônico - Vila Byte) com base na Bíblia do CryptAtlas V10.
+- Fase 3: Prototipagem da Arena, sistema de elixir/energia, HUD com Tailwind e grid de colisão.

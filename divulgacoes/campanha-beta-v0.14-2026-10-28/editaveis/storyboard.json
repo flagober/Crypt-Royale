@@ -1,0 +1,15 @@
+{
+  "status":"preview-not-approved",
+  "durationSeconds":18.6,
+  "formats":[{"name":"vertical","width":1080,"height":1920},{"name":"horizontal","width":1920,"height":1080}],
+  "transition":{"kind":"crossfade","durationSeconds":0.35},
+  "scenes":[
+    {"id":"hero","from":0,"until":4,"headline":"Vila Byte chama por você.","message":"Proteja suas torres. Faça cada carta contar."},
+    {"id":"cards","from":3.65,"until":7.65,"headline":"Cartas. Estratégia. Evolução.","message":"Campanha contra IA e16 famílias de monstros."},
+    {"id":"evolve","from":7.3,"until":11.3,"headline":"Uma coleção. Muitas possibilidades.","message":"Cartas, Gold, níveis e novas formas. Requisitos variam por melhoria."},
+    {"id":"founder","from":10.95,"until":14.95,"headline":"Primeiros100. Uma chegada épica.","message":"Proposta BaúFundador:500 Gold,10 cartas,3 Fragmentos. CAMPANHA EM PREPARAÇÃO/NÃO ATIVA."},
+    {"id":"invite","from":14.6,"until":18.6,"headline":"Entre no beta. Deixe sua marca.","message":"BetaAndroid por convite. Peça acesso à equipe."}
+  ],
+  "audio":{"kind":"original-synthesized-jingle","narration":false,"sampleRate":48000,"channels":2,"copyrightedMusic":false},
+  "publication":{"socialPostsSent":false,"storeAvailabilityClaimed":false,"campaignActivated":false}
+}

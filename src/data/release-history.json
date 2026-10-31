@@ -1,0 +1,278 @@
+[
+  {
+    "versao": "0.13",
+    "cicloVersao": 2,
+    "data": "2026-10-31",
+    "titulo": "Arena Matchmaking PvP, Cards da Caixa de Correio e Loja em Modo Real",
+    "resumo": "PvP com Modo Livre e Modo Equilíbrio com alerta de nível, cards visuais de itens no Correio e Loja oficial em modo real com checkout.",
+    "alteracoes": [
+      "Arena PvP com Modo Equilíbrio: pareamento balanceado e alerta de confirmação quando o oponente for de nível superior.",
+      "Arena PvP com Modo Livre: combates abertos entre quaisquer níveis (dos mais fracos aos mais fortes) sem confirmação prévia.",
+      "Caixa de Correio com cards visuais de itens para Gold, XP, Fragmentos de Dados, cartas e classes, e modal de celebração ao resgatar presentes.",
+      "Loja Oficial ativada em Modo Real com checkout interativo, opções de pagamento e geração de recibos atômicos.",
+      "Build 27 oficial pronto para atualização na Google Play Store e instalador Windows Desktop."
+    ]
+  },
+  {
+    "versao": "0.12",
+    "cicloVersao": 2,
+    "data": "2026-10-31",
+    "titulo": "Sincronização de faixa e estabilidade de publicação",
+    "resumo": "Empacotamento oficial build 26 para lançamento sincronizado nas faixas da Google Play Store.",
+    "alteracoes": [
+      "Código de versão 26 oficial para lançamento desimpedido no Google Play Console.",
+      "Consolidação de empacotamento para faixas de teste fechado e teste interno.",
+      "Otimização contínua de integridade de save e resposta de transação."
+    ]
+  },
+  {
+    "versao": "0.11",
+    "cicloVersao": 2,
+    "data": "2026-10-31",
+    "titulo": "Estabilidade de versão e refinamentos de conectividade",
+    "resumo": "Empacotamento com código de versão 25 atualizado para o Google Play Console e estabilidade contínua de rede.",
+    "alteracoes": [
+      "Código de versão 25 oficial para entrega desimpedida no Google Play Console.",
+      "Consolidação da proteção de fluxo de batalha e reconexão offline transparente.",
+      "Tratamento aprimorado de erros transitórios de autenticação e cotas de banco de dados."
+    ]
+  },
+  {
+    "versao": "0.10",
+    "cicloVersao": 2,
+    "data": "2026-10-30",
+    "titulo": "Resiliência offline e proteção do fluxo de batalha",
+    "resumo": "Jogo resiliente a oscilações de rede e cotas na nuvem, fluxo de batalha sem interrupções e controles de saída de conta.",
+    "alteracoes": [
+      "Sincronização em segundo plano reconhece limites temporários de cota e instabilidade de rede sem interromper partidas em andamento.",
+      "Save local no aparelho preservado integralmente com avanço contínuo de campanha, ouro e coleção em modo offline seguro.",
+      "Modal de conta nunca mais abre automaticamente durante a jogatina em caso de erros transitórios de nuvem.",
+      "Painel de conta ganha botão Voltar ao jogo, atalho Escape e fechamento ativo mesmo em contingência de rede.",
+      "Mensagens de status traduzidas e explicativas em português, substituindo avisos técnicos em inglês."
+    ]
+  },
+  {
+    "versao": "0.9",
+    "cicloVersao": 2,
+    "data": "2026-10-29",
+    "titulo": "VIP e um novo ritmo para o Bastião",
+    "resumo": "VIPs por sete dias, compra em Gold confirmada na conta e recarga do Bastião separada da duração do escudo.",
+    "alteracoes": [
+      "Loja ganha botão Voltar à arena visível durante a rolagem, com alvo de toque de44pixels.",
+      "Fim da apresentação para convidados mostra Entrar ou criar conta como única ação principal; contas autenticadas mantêm campanha e treino. Progresso legado preservado.",
+      "Salas amistosas 1v1 por código, Base7 e três vitórias deVilaByte, manuais e com atributos normalizados; sem troféus, Gold, XP ou MCT. Autoridade do servidor e reconexão com pausa.",
+      "Cliente preparado para o despertar do servidor gratuito; recusa explícita de autenticação encerra tentativas mesmo se o proxy perder o código de fechamento.",
+      "Backend beta implantado no Render Free. Conexão remota habilitada somente no desenvolvimento para QA; ativação na distribuição depende de duas contas reais.",
+      "VIP 1/2/3 por sete dias, por 5.000/12.000/25.000 Gold; renovação manual do mesmo nível soma sete dias. Molduras bronze/prata/ouro, títulos nos níveis 2/3 e efeito de entrada PvE no VIP 3.",
+      "Bastião permanece ativo por 15 segundos e depois recarrega por 20 segundos. No PvE, VIP 1/2/3 reduz essa espera para 18/16/15 segundos. No PvP, ambos os lados mantêm 20 segundos.",
+      "Compra VIP exige conta sincronizada e conexão; confirmação e recibo evitam débito duplicado ao verificar o mesmo pedido. Benefícios definidos ao iniciar cada partida; validade confirmada pelo horário do servidor.",
+      "Passe automático continua separado, por 5.000 Gold, 20 Fragmentos e 50 cartas repetidas. Pagamentos reais e migração do Drive não foram ativados."
+    ]
+  },
+  {
+    "versao": "0.8",
+    "cicloVersao": 2,
+    "data": "2026-10-29",
+    "titulo": "Cada evolução tem sua jornada",
+    "resumo": "Base e Job separados, requisitos de nível para novas evoluções e conquistas anteriores preservadas.",
+    "alteracoes": [
+      "XP existente permanece como Base do jogador, com teto 200. Job tem XP próprio por classe e teto 120; não recebe cópia retroativa do XP antigo.",
+      "Partidas manuais elegíveis concedem 20 XP Job por vitória ou 10 por derrota/empate às duas classes de defesa em uso. Mínimo de 30 segundos e uma carta jogada; automático não concede Job; o mesmo resultado não pontua duas vezes.",
+      "Novas especializações exigem Base 40 e Job 20 da classe, além das mesmas 10 cartas de classe e 500 Gold. Reforço da torre por cartas continua separado. Especializações já conquistadas permanecem válidas.",
+      "Novas formas dos monstros exigem nível próprio 6 para Mk-II e 10 para Apex, com os mesmos custos de 20/50 duplicatas e 500/1.500 Gold. Evoluções anteriores permanecem válidas mesmo abaixo desses níveis.",
+      "Coleção mostra Base, Job, XP, requisitos e a jornada canônica de cinco tiers. Tiers III a V, Nexus e bosses aparecem como conteúdo futuro; nenhuma invocação ou batalha nova é liberada nesta versão.",
+      "Regras preparadas: Nexus nos níveis próprios 20/45 e vínculo 30/70; Domar em Base40/Job20 e Gênese em80/40. Bosses sem evolução, Base15 após as nove batalhas, dificuldades Normal/Veterano/Heroico. Pagamentos reais continuam desativados."
+    ]
+  },
+  {
+    "versao": "0.7",
+    "cicloVersao": 2,
+    "data": "2026-10-29",
+    "titulo": "Sua coleção ganha destaque",
+    "resumo": "Loja com fechar compacto, seleção de cartas ilustradas com controles de quantidade e nova moeda dos créditos MCT.",
+    "alteracoes": [
+      "Botão Fechar loja com tamanho fixo de44por44pixels e alinhamento no topo, sem esticar com o cabeçalho.",
+      "Seletor do passe com três cards por linha, artes reais das famílias, cópias disponíveis e botões de diminuir/aumentar, além de digitação direta.",
+      "Seleção limitada ao estoque de cada família e ao total de50cartas; atualização do inventário remove escolhas indisponíveis.",
+      "Nova moeda ilustrada de créditos internos MCT no saldo e nos quatro marcos de presença7/14/21/30dias, com destaque para marcos alcançados.",
+      "Custos do passe, bônus de presença, saves, arenas e preços planejados preservados. Compras em reais continuam desativadas."
+    ]
+  },
+  {
+    "versao": "0.6",
+    "cicloVersao": 2,
+    "data": "2026-10-28",
+    "titulo": "Uma arena de cada vez",
+    "resumo": "Jornada de arenas em sequência, treino na arena alcançada e acesso direto à próxima batalha.",
+    "alteracoes": [
+      "Menu Arenas substitui a escolha livre de mapas. Vila Byte, Minas de Cobre e Bosque de Circuitos são alcançados em ordem pelas nove batalhas existentes, três por arena.",
+      "Botão Continuar aponta para a primeira batalha ainda não vencida. Arenas mostram bloqueio, vitórias e possibilidade de repetir batalhas já concluídas.",
+      "Treino acompanha automaticamente a arena alcançada pelo save, ignorando a antiga preferência local de cenário; atributos continuam normalizados.",
+      "Progresso, cartas, evoluções, recursos e recompensas anteriores preservados. Derrotas, empates e partidas automáticas não liberam novas arenas.",
+      "Catálogo de Gold em reais continua somente em prévia; nenhum novo pagamento ou carteira externa habilitado."
+    ]
+  },
+  {
+    "versao": "0.5",
+    "cicloVersao": 2,
+    "data": "2026-10-28",
+    "titulo": "Vila Byte recebe você",
+    "resumo": "Loja com passe Sentinela, catálogo de pacotes de Gold em preparação, baú de boas-vindas e sequência de créditos internos MCT.",
+    "alteracoes": [
+      "Baú fixo no primeiro save novo da conta:300 Gold,4 Bit Bug,4 Data Mouse e2 Fragmentos de Dados, com resgate único pelo correio.",
+      "Passe automático de7 dias por5.000 Gold+20 Fragmentos de Dados+50 cartas repetidas escolhidas. Sem renovação automática; missões e avanço inicial da campanha permanecem manuais.",
+      "Créditos internos de presença nos dias7/14/21/30:5/7/10/15 MCT. Faltar reinicia a sequência e preserva o saldo; sem saque, transferência ou conversão garantida em tokens blockchain.",
+      "Catálogo de Gold em prévia com preços revisados aprovados:500/R$1,49;1.200/R$2,90;2.500/R$4,90;5.500/R$9,90;12.000/R$19,90. Vendas reais, Mercado Pago e faturamento da Play Store ainda não habilitados."
+    ]
+  },
+  {
+    "versao": "0.4",
+    "cicloVersao": 2,
+    "data": "2026-10-28",
+    "titulo": "Evoluções ganham vida",
+    "resumo": "Bit Bug Mk-II e Apex animados na arena; Paladino e Paladina com visual próprio na torre central e na coleção.",
+    "alteracoes": [
+      "Bit Bug Mk-II e Apex passam a usar animações próprias de caminhada em quatro direções, conforme a evolução conquistada.",
+      "Especialização Paladino / Paladina recebe retratos próprios na coleção e quatro estados de ataque em cada direção na torre central.",
+      "Saída visual do disparo acompanha a arma em cada vista e aparência escolhida.",
+      "Treino mostra as formas e especializações possuídas com os mesmos atributos normalizados; campanha conserva os bônus existentes.",
+      "Custos, desbloqueios, missões manuais e progresso salvo preservados. Outras famílias evoluídas, classes, Nexus e bosses continuam em produção."
+    ]
+  },
+  {
+    "versao": "0.3",
+    "cicloVersao": 2,
+    "data": "2026-10-28",
+    "titulo": "Uma coleção para conquistar",
+    "resumo": "Oito famílias iniciais, desbloqueios nas arenas e primeiras artes evoluídas do Bit Bug na coleção.",
+    "alteracoes": [
+      "Contas novas começam com 8 famílias. Vencer a fase 3 libera mais 4 e vencer a fase 6 libera as 4 restantes.",
+      "Mão, fila e implantação respeitam a coleção liberada; o adversário da campanha usa as famílias do capítulo.",
+      "Coleção mostra famílias bloqueadas, requisito de desbloqueio e duplicatas guardadas para usar depois.",
+      "Saves do beta anterior preservam acesso, cartas, Gold, XP, evoluções e escolhas de classe.",
+      "Destaque diário escolhe uma família disponível e permanece o mesmo ao desbloquear uma arena durante o dia.",
+      "Artes aprovadas de Bit Bug Mk-II e Apex na coleção. Vistas e animações próprias de batalha ainda em produção.",
+      "Custos de evolução e regra de partidas manuais preservados. Outras classes, Nexus e bosses seguem em produção por lotes."
+    ]
+  },
+  {
+    "versao": "0.2",
+    "cicloVersao": 2,
+    "data": "2026-10-28",
+    "titulo": "Sua arena, seus atalhos",
+    "resumo": "OFF/AUTO clicável, nível à esquerda e correio à direita no cabeçalho da arena.",
+    "alteracoes": [
+      "Ative ou desligue o treino automático diretamente no indicador OFF/AUTO.",
+      "Seu nível real, calculado pelo XP, aparece à esquerda e abre a coleção e o progresso.",
+      "Atalho de correio à direita para consultar mensagens e presentes da sua conta.",
+      "Cabeçalho adaptado para celular, tablet e computador, com botões de pelo menos 44 pixels.",
+      "Novo ciclo de numeração pública começa em 0.2; builds internos continuam crescentes e os pacotes antigos são preservados.",
+      "Automático mantém as regras de treino e não conclui missões manuais."
+    ]
+  },
+  {
+    "versao": "0.16",
+    "data": "2026-10-28",
+    "titulo": "A arena em primeiro plano",
+    "resumo": "Batalha com mais espaço e menu organizado em Jogo, Coleção e Ajustes.",
+    "alteracoes": [
+      "Cabeçalho compacto com logo, tempo e menu; conta e recursos passam para o painel lateral.",
+      "Som, volume, trilha e treino automático reunidos em Ajustes, sem botões flutuando na batalha.",
+      "Coleção, MCT, campanha, correio, missões e notas das versões acessíveis pelo menu.",
+      "Partida pausada ao abrir o menu, com retorno à arena e navegação pelo teclado.",
+      "Regras, recursos e progresso preservados; automático continua como treino/teste e não conclui missões manuais."
+    ]
+  },
+  {
+    "versao": "0.15",
+    "data": "2026-10-28",
+    "titulo": "A identidade de Crypt Royale",
+    "resumo": "Logo aprovada na abertura e no cabeçalho do jogo.",
+    "alteracoes": [
+      "Logo em dourado, azul e cristal violeta aprovada pelo usuário na apresentação e no cabeçalho.",
+      "Ícone do Guardião, progresso, contas, correio e regras de batalha preservados.",
+      "Ferramenta Windows separada fechar_crypt_royale.bat na raiz do projeto, com consulta e seleção restrita aos processos do Royale. Não faz parte da tela do jogo."
+    ]
+  },
+  {
+    "versao": "0.14",
+    "data": "2026-10-28",
+    "titulo": "Correio de Vila Byte e arena na medida",
+    "resumo": "Brindes por conta, artes das classes e arena ajustada às telas de celular.",
+    "alteracoes": [
+      "Ícone do Guardião aprovado nas plataformas Android, Windows, web e projeto iOS.",
+      "Baú Fundador aprovado na caixa de correio.",
+      "Caixa de correio com mensagens da equipe e resgate de presentes uma vez por conta, sincronizado com o save.",
+      "Quatro artes aprovadas de Guerreiro, Guerreira, Arqueiro e Arqueira na coleção.",
+      "Arena, mão e controles adaptados à altura disponível, em retrato e paisagem.",
+      "Configuração Google Android atualizada para certificados de distribuição; login confirmado normal pelo usuário.",
+      "Projeto iOS preparado para Mac e configuração Firebase própria; não há IPA nem publicação App Store.",
+      "Arte do Baú Fundador aplicada. Campanha dos primeiros100 ainda em preparação; sem campanha automática, compras ou MCT real."
+    ]
+  },
+  {
+    "versao": "0.13",
+    "data": "2026-10-27",
+    "titulo": "Sua jornada, versão por versão",
+    "resumo": "Notas acessíveis pelo número da versão e pelo menu.",
+    "alteracoes": [
+      "Consulte as novidades e os limites de cada beta sem sair do jogo.",
+      "Histórico de atualizações junto da sua coleção, conta e campanha.",
+      "Cadastro e progresso conquistado permanecem preservados."
+    ]
+  },
+  {
+    "versao": "0.12",
+    "data": "2026-10-27",
+    "titulo": "Beta no Google Play",
+    "resumo": "Primeiro beta interno da loja, para Android7 ou superior.",
+    "alteracoes": [
+      "Compatibilidade ajustada para manter a proteção automática da loja.",
+      "Login por e-mail e Google, salvamento na conta e guia de Vila Byte.",
+      "Sem compras ou anúncios. Treino e campanha contra IA; PvP e ligas ainda não disponíveis."
+    ]
+  },
+  {
+    "versao": "0.11",
+    "data": "2026-10-27",
+    "titulo": "Sua conta. Sua jornada.",
+    "resumo": "Cadastro, progresso na conta e abertura com o guardião de Vila Byte.",
+    "alteracoes": [
+      "E-mail ou Google e opção de levar seu progresso de visitante no primeiro acesso.",
+      "Saves separados por jogador, cópia offline, exportação e aviso de conflito.",
+      "Guia sobre cartas, energia, torres e campanha.",
+      "Pacote preservado; o envio para Google Play foi corrigido na versão0.12."
+    ]
+  },
+  {
+    "versao": "0.10",
+    "data": "2026-10-27",
+    "titulo": "MCT na carteira",
+    "resumo": "O espaço do MCT aparece nos recursos e no menu.",
+    "alteracoes": [
+      "Integração pendente, sem inventar saldo ou permitir transferências.",
+      "Gold, XP, cartas e Fragmentos de Dados continuam separados."
+    ]
+  },
+  {
+    "versao": "0.9",
+    "data": "2026-10-27",
+    "titulo": "Coleção e campanha",
+    "resumo": "Cartas repetidas fortalecem suas criaturas e classes.",
+    "alteracoes": [
+      "Níveis, formas, melhorias por cartas e Gold e especializações.",
+      "Campanha de nove desafios com recompensas e liberação da próxima fase."
+    ]
+  },
+  {
+    "versao": "0.8",
+    "data": "2026-10-27",
+    "titulo": "Três cenários de Vila Byte",
+    "resumo": "Vila Byte, Minas de Cobre e Bosque de Circuitos no treino.",
+    "alteracoes": [
+      "Ícones ilustrados de XP, cartas e atividades.",
+      "Painel de som corrigido para caber na tela.",
+      "Copper Mole e Byte Boar focam somente as torres."
+    ]
+  }
+]

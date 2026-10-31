@@ -1,0 +1,24 @@
+{
+  "status": "approved",
+  "transparent": true,
+  "assets": [
+    {
+      "arquivo": "public/assets/rewards/vila-byte-chest-v001.png",
+      "sha256": "72ce34eca95558cf77af0e83ce01ffa1c0525fd159086382e8825f7f08302504"
+    },
+    {
+      "arquivo": "public/assets/rewards/vila-byte-coins-v001.png",
+      "sha256": "101fc5b0f1de10c8816eaa8dd64045ed319bc4f27f3c0bb62571e267bea2920b"
+    },
+    {
+      "arquivo": "public/assets/rewards/vila-byte-fragments-v001.png",
+      "sha256": "f760b9f149b9e14d7a4733b28a7c769a3ea92fa179b1874ccef3c422aaff3aac"
+    },
+    {
+      "arquivo": "public/assets/rewards/vila-byte-gift-v001.png",
+      "sha256": "f406e6d9420d2b2f21ed8c748679f872feaa269d547253bb0f1e91c25f24394c"
+    }
+  ],
+  "userApproval": "Aprovo as quatro artes",
+  "approvedOn": "2026-10-27"
+}

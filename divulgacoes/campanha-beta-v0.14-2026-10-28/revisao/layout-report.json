@@ -1,0 +1,708 @@
+{
+  "generatedAt": "2026-10-28T07:33:31.254Z",
+  "status": "preview-not-approved",
+  "layouts": [
+    {
+      "format": "square",
+      "scene": "hero",
+      "relative": "imagens/royale-beta-quadrado-1080.png",
+      "width": 1080,
+      "height": 1080,
+      "scrollWidth": 1080,
+      "scrollHeight": 1080,
+      "text": "SEU PRÓXIMO DESAFIO\nVila Byte\nchama por você.\n\nProteja suas torres.\nFaça cada carta contar.",
+      "boxes": {
+        ".brand": {
+          "x": 60,
+          "y": 50,
+          "width": 329.453125,
+          "height": 68
+        },
+        ".preview": {
+          "x": 778.5,
+          "y": 60,
+          "width": 241.5,
+          "height": 41
+        },
+        ".copy": {
+          "x": 64,
+          "y": 193,
+          "width": 570,
+          "height": 403.71875
+        },
+        ".art": {
+          "x": 634,
+          "y": 285,
+          "width": 490,
+          "height": 540
+        },
+        ".tags": {
+          "x": 64,
+          "y": 789,
+          "width": 952,
+          "height": 54
+        },
+        ".cta": {
+          "x": 64,
+          "y": 874,
+          "width": 952,
+          "height": 86
+        },
+        ".foot": {
+          "x": 64,
+          "y": 982.40625,
+          "width": 952,
+          "height": 48.59375
+        }
+      }
+    },
+    {
+      "format": "portrait",
+      "scene": "cards",
+      "relative": "imagens/royale-beta-retrato-1080x1350.png",
+      "width": 1080,
+      "height": 1350,
+      "scrollWidth": 1080,
+      "scrollHeight": 1350,
+      "text": "MONTE SUA ESTRATÉGIA\nCartas.\nEstratégia.\nEvolução.\n\nEscolha suas criaturas e avance pela campanha contra IA.",
+      "boxes": {
+        ".brand": {
+          "x": 60,
+          "y": 50,
+          "width": 329.453125,
+          "height": 68
+        },
+        ".preview": {
+          "x": 778.5,
+          "y": 60,
+          "width": 241.5,
+          "height": 41
+        },
+        ".copy": {
+          "x": 64,
+          "y": 196,
+          "width": 727.734375,
+          "height": 384.21875
+        },
+        ".art": {
+          "x": 80,
+          "y": 650,
+          "width": 920,
+          "height": 350
+        },
+        ".tags": {
+          "x": 64,
+          "y": 1039,
+          "width": 936,
+          "height": 57
+        },
+        ".cta": {
+          "x": 64,
+          "y": 1128,
+          "width": 952,
+          "height": 92
+        },
+        ".foot": {
+          "x": 64,
+          "y": 1250.40625,
+          "width": 952,
+          "height": 48.59375
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "founder",
+      "relative": "imagens/royale-fundador-story-1080x1920.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "PROPOSTA BAÚ FUNDADOR\nPrimeiros 100.\nUma chegada\népica.\n\nUma proposta de boas-vindas para os primeiros 100 jogadores elegíveis.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 250,
+          "width": 800,
+          "height": 475.21875
+        },
+        ".art": {
+          "x": 80,
+          "y": 780,
+          "width": 920,
+          "height": 620
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1503,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1606,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1745,
+          "width": 920,
+          "height": 81
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "hero",
+      "relative": "revisao/cena-story-hero.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "SEU PRÓXIMO DESAFIO\nVila Byte\nchama por você.\n\nProteja suas torres.\nFaça cada carta contar.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 225,
+          "width": 680.515625,
+          "height": 362.71875
+        },
+        ".art": {
+          "x": 80,
+          "y": 730,
+          "width": 920,
+          "height": 650
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1525,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1628,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1748.3125,
+          "width": 920,
+          "height": 56.6875
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "cards",
+      "relative": "revisao/cena-story-cards.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "MONTE SUA ESTRATÉGIA\nCartas.\nEstratégia.\nEvolução.\n\nEscolha suas criaturas e avance pela campanha contra IA.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 225,
+          "width": 828.125,
+          "height": 411.015625
+        },
+        ".art": {
+          "x": 80,
+          "y": 730,
+          "width": 920,
+          "height": 650
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1525,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1628,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1748.3125,
+          "width": 920,
+          "height": 56.6875
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "evolve",
+      "relative": "revisao/cena-story-evolve.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "CADA CONQUISTA FAZ DIFERENÇA\nUma coleção.\nMuitas possibilidades.\n\nConquiste cartas e Gold.\nMelhore níveis e desbloqueie novas formas.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 225,
+          "width": 910,
+          "height": 456.546875
+        },
+        ".art": {
+          "x": 80,
+          "y": 730,
+          "width": 920,
+          "height": 650
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1525,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1628,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1748.3125,
+          "width": 920,
+          "height": 56.6875
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "founder",
+      "relative": "revisao/cena-story-founder.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "PROPOSTA BAÚ FUNDADOR\nPrimeiros 100.\nUma chegada\népica.\n\nUma proposta de boas-vindas para os primeiros 100 jogadores elegíveis.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 250,
+          "width": 800,
+          "height": 475.21875
+        },
+        ".art": {
+          "x": 80,
+          "y": 780,
+          "width": 920,
+          "height": 620
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1503,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1606,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1745,
+          "width": 920,
+          "height": 81
+        }
+      }
+    },
+    {
+      "format": "story",
+      "scene": "invite",
+      "relative": "revisao/cena-story-invite.png",
+      "width": 1080,
+      "height": 1920,
+      "scrollWidth": 1080,
+      "scrollHeight": 1920,
+      "text": "AJUDE A CONSTRUIR ESSA ARENA\nEntre no beta.\nDeixe sua\nmarca.\n\nTeste a campanha, experimente as cartas e conte para a equipe como foi jogar.",
+      "boxes": {
+        ".brand": {
+          "x": 72,
+          "y": 66,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 708.8125,
+          "y": 75,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 80,
+          "y": 225,
+          "width": 840,
+          "height": 456.546875
+        },
+        ".art": {
+          "x": 80,
+          "y": 730,
+          "width": 920,
+          "height": 650
+        },
+        ".tags": {
+          "x": 80,
+          "y": 1525,
+          "width": 920,
+          "height": 67
+        },
+        ".cta": {
+          "x": 80,
+          "y": 1628,
+          "width": 920,
+          "height": 92
+        },
+        ".foot": {
+          "x": 80,
+          "y": 1748.3125,
+          "width": 920,
+          "height": 56.6875
+        }
+      }
+    },
+    {
+      "format": "horizontal",
+      "scene": "hero",
+      "relative": "revisao/cena-horizontal-hero.png",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "text": "SEU PRÓXIMO DESAFIO\nVila Byte\nchama por você.\n\nProteja suas torres.\nFaça cada carta contar.",
+      "boxes": {
+        ".brand": {
+          "x": 94,
+          "y": 62,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 1524.8125,
+          "y": 78,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 100,
+          "y": 255,
+          "width": 777.640625,
+          "height": 386.5
+        },
+        ".art": {
+          "x": 1010,
+          "y": 190,
+          "width": 838,
+          "height": 715
+        },
+        ".tags": {
+          "x": 100,
+          "y": 791,
+          "width": 427.78125,
+          "height": 59
+        },
+        ".cta": {
+          "x": 100,
+          "y": 875,
+          "width": 820,
+          "height": 90
+        },
+        ".foot": {
+          "x": 100,
+          "y": 991.40625,
+          "width": 1724,
+          "height": 48.59375
+        }
+      }
+    },
+    {
+      "format": "horizontal",
+      "scene": "cards",
+      "relative": "revisao/cena-horizontal-cards.png",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "text": "MONTE SUA ESTRATÉGIA\nCartas.\nEstratégia.\nEvolução.\n\nEscolha suas criaturas e avance pela campanha contra IA.",
+      "boxes": {
+        ".brand": {
+          "x": 94,
+          "y": 62,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 1524.8125,
+          "y": 78,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 100,
+          "y": 255,
+          "width": 800,
+          "height": 493.59375
+        },
+        ".art": {
+          "x": 1010,
+          "y": 190,
+          "width": 838,
+          "height": 715
+        },
+        ".tags": {
+          "x": 100,
+          "y": 791,
+          "width": 577.90625,
+          "height": 59
+        },
+        ".cta": {
+          "x": 100,
+          "y": 875,
+          "width": 820,
+          "height": 90
+        },
+        ".foot": {
+          "x": 100,
+          "y": 991.40625,
+          "width": 1724,
+          "height": 48.59375
+        }
+      }
+    },
+    {
+      "format": "horizontal",
+      "scene": "evolve",
+      "relative": "revisao/cena-horizontal-evolve.png",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "text": "CADA CONQUISTA FAZ DIFERENÇA\nUma coleção.\nMuitas possibilidades.\n\nConquiste cartas e Gold.\nMelhore níveis e desbloqueie novas formas.",
+      "boxes": {
+        ".brand": {
+          "x": 94,
+          "y": 62,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 1524.8125,
+          "y": 78,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 100,
+          "y": 255,
+          "width": 850,
+          "height": 493.59375
+        },
+        ".art": {
+          "x": 1010,
+          "y": 190,
+          "width": 838,
+          "height": 715
+        },
+        ".tags": {
+          "x": 100,
+          "y": 791,
+          "width": 455.78125,
+          "height": 59
+        },
+        ".cta": {
+          "x": 100,
+          "y": 875,
+          "width": 820,
+          "height": 90
+        },
+        ".foot": {
+          "x": 100,
+          "y": 991.40625,
+          "width": 1724,
+          "height": 48.59375
+        }
+      }
+    },
+    {
+      "format": "horizontal",
+      "scene": "founder",
+      "relative": "revisao/cena-horizontal-founder.png",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "text": "PROPOSTA BAÚ FUNDADOR\nPrimeiros 100.\nUma chegada\népica.\n\nUma proposta de boas-vindas para os primeiros 100 jogadores elegíveis.",
+      "boxes": {
+        ".brand": {
+          "x": 94,
+          "y": 62,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 1524.8125,
+          "y": 78,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 100,
+          "y": 255,
+          "width": 800,
+          "height": 472.171875
+        },
+        ".art": {
+          "x": 1010,
+          "y": 190,
+          "width": 838,
+          "height": 715
+        },
+        ".tags": {
+          "x": 100,
+          "y": 786,
+          "width": 614.6875,
+          "height": 59
+        },
+        ".cta": {
+          "x": 100,
+          "y": 875,
+          "width": 820,
+          "height": 90
+        },
+        ".foot": {
+          "x": 100,
+          "y": 972.109375,
+          "width": 1724,
+          "height": 72.890625
+        }
+      }
+    },
+    {
+      "format": "horizontal",
+      "scene": "invite",
+      "relative": "revisao/cena-horizontal-invite.png",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "text": "AJUDE A CONSTRUIR ESSA ARENA\nEntre no beta.\nDeixe sua\nmarca.\n\nTeste a campanha, experimente as cartas e conte para a equipe como foi jogar.",
+      "boxes": {
+        ".brand": {
+          "x": 94,
+          "y": 62,
+          "width": 408.5625,
+          "height": 84
+        },
+        ".preview": {
+          "x": 1524.8125,
+          "y": 78,
+          "width": 299.1875,
+          "height": 50
+        },
+        ".copy": {
+          "x": 100,
+          "y": 255,
+          "width": 800,
+          "height": 493.59375
+        },
+        ".art": {
+          "x": 1010,
+          "y": 190,
+          "width": 838,
+          "height": 715
+        },
+        ".tags": {
+          "x": 100,
+          "y": 791,
+          "width": 520.390625,
+          "height": 59
+        },
+        ".cta": {
+          "x": 100,
+          "y": 875,
+          "width": 820,
+          "height": 90
+        },
+        ".foot": {
+          "x": 100,
+          "y": 991.40625,
+          "width": 1724,
+          "height": 48.59375
+        }
+      }
+    }
+  ]
+}

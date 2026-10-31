@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-28T08:44:12.9786694-03:00",
+  "completedAt": "2026-09-28T08:50:25.7926668-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0004-data-mouse-master-candidate-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-084412-mc-0004-data-mouse-master-candidate-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-084412-mc-0004-data-mouse-master-candidate-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-084412-mc-0004-data-mouse-master-candidate-v001\\stderr.log"
+}

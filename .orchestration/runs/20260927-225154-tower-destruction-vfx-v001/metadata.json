@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-27T22:51:54.2763041-03:00",
+  "completedAt": "2026-09-27T22:55:24.9743800-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\tower-destruction-vfx-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-225154-tower-destruction-vfx-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-225154-tower-destruction-vfx-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-225154-tower-destruction-vfx-v001\\stderr.log"
+}

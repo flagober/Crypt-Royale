@@ -1,0 +1,29 @@
+{
+  "composition": "three-towers-heroes-preview-v007.png",
+  "assets": [
+    {
+      "file": "three-towers-heroes-preview-v007.png",
+      "sha256": "70E9FAC79EB058465DA5B3CDE913DCE8862F5594795C5426ED15BAB40EC73803"
+    },
+    {
+      "file": "archer-platform-v001.png",
+      "sha256": "DB645C524666EA78928680A6094B6482FC62E828FE4440754748354C8BB32FDC"
+    },
+    {
+      "file": "archer-side-narrow-v001.png",
+      "sha256": "01B0F44992E04488480608B136E5E17D4E53716B8D31DEF994C75DA6394C84A7"
+    },
+    {
+      "file": "archer-female-approved-v001.png",
+      "sha256": "0B70724720274B6415330FCB8C1BD68379B2002470FC5293A3EB681DADBC62F5"
+    },
+    {
+      "file": "archer-male-approved-v001.png",
+      "sha256": "E2F88CFEA6442B930D7DC7C0FEDDE2C7CD51186A2E38907A009F74F9D94FB957"
+    }
+  ],
+  "approvedBy": "Usuário: Aprovado prossiga",
+  "animation": "one pose per archer + recoil, no global flip",
+  "runtime": "src/game/tower-art.json",
+  "approvedOn": "2026-10-18"
+}

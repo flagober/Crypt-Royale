@@ -1,0 +1,22 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261028-035357-023-20261028-tela-classes\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "508AE0B654FE7870004CD6D626C4E6E1D93150C4117CFCB9E027F7DD2F281A63"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-035357-023-20261028-tela-classes\\request.md",
+    "status": "copied-verified",
+    "sha256": "5F4C6E3BD322636A008FBE7313C619537FBDD95F42F96E1CD90284BC5F27978D"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-035357-023-20261028-tela-classes\\result.json",
+    "status": "copied-verified",
+    "sha256": "D8110425B0577AED94490B2A694C7D8D517CC44A1D86638775915F792BB123AD"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-035357-023-20261028-tela-classes\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "CA7A482730A0D566F91155AE9BA897A5FA431B55E7E750992ACCCC8EA8B1DCBC"
+  }
+]

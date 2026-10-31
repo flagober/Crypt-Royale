@@ -1,0 +1,44 @@
+{
+    "grid": "3x4",
+    "cell_size": [
+        140,
+        140
+    ],
+    "pivot": [
+        70,
+        128
+    ],
+    "frame_duration_ms": 110,
+    "playback_pattern": [
+        0,
+        1,
+        2,
+        1
+    ],
+    "row_order": [
+        "down",
+        "right",
+        "left",
+        "up"
+    ],
+    "direction_to_row": {
+        "down": 0,
+        "right": 1,
+        "left": 2,
+        "up": 3
+    },
+    "frame_order": [
+        "contact_a",
+        "passing",
+        "contact_b"
+    ],
+    "row_hashes": {
+        "down": "72E08DD978A1258EF4B77D21B1FD30742DAAF35F32AFF2749FBB5ABB1B40FE7E",
+        "right": "D24F4523DEF7A8FFEA0C4658B651A21440774C5455A7336AC161EE14CFF1E15A",
+        "left": "9D1AC21F2CB5C01E43265E0AC160944C4E5228C0973783BE85CC1EC1D4CB1D39",
+        "up": "79E241C6C85398FA7A10946C1AC92B39F586AE2433FD6D3818B45A403FE9CC5E"
+    },
+    "sha256": "B2F6D8360AA92DC6C8185F9C375A61DC60B2EB0EBAB79209B098B4C06C0E557B",
+    "supersedes": "cr_mc-0001_bit-bug_spritesheet_v003.png",
+    "superseded_reason_v3": "contact_a_v004 facial contamination in walk-down row"
+}

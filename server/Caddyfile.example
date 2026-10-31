@@ -1,0 +1,5 @@
+# Set PVP_DOMAIN to the owned hostname after DNS/VM approval.
+# Domain control and live certificate must be verified before activating the app.
+{$PVP_DOMAIN} {
+    reverse_proxy 127.0.0.1:5181
+}

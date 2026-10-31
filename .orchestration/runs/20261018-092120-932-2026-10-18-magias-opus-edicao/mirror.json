@@ -1,0 +1,42 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261018-092120-932-2026-10-18-magias-opus-edicao\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "0FECE3DAB92BA3F5C91336E01DECD5CC2FD18D2C7EBA43D9B59C7373ABC298E0"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-092120-932-2026-10-18-magias-opus-edicao\\request.md",
+    "status": "copied-verified",
+    "sha256": "572710289B233F20DA564378C03BDAE4803CC0E7ABA6AE6B2EFA6C97BCCECEBF"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-092120-932-2026-10-18-magias-opus-edicao\\result.json",
+    "status": "copied-verified",
+    "sha256": "EB952552547683E2D65612F5373641C354D3D0AF7EF047E24C11F08BC3F0FE30"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-092120-932-2026-10-18-magias-opus-edicao\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "02C898FE966C6F050B1D3935E75F1AFF15DED94904D7AAC4A50A85DE2D74FC9D"
+  },
+  {
+    "path": "public\\spell-effects-v002.js",
+    "status": "copied-verified",
+    "sha256": "729540BB2007F76D908D8D58CA48233A95E376B7747945B037294CA28265EE77"
+  },
+  {
+    "path": "public\\spell-effects.js",
+    "status": "copied-verified",
+    "sha256": "8E34B5A17267B8640187860DDAF140885E4017F3CF47D400F4F7A69368D308D3"
+  },
+  {
+    "path": "public\\spell-preview.html",
+    "status": "copied-verified",
+    "sha256": "1816D8DDEA7175F689DE949596570063E4734EE1BE89153B272629B27826815E"
+  },
+  {
+    "path": "scripts\\verify-spell-effects.mjs",
+    "status": "copied-verified",
+    "sha256": "EC1AAD52F51EF2E34800C533656B1C929D2477F4363F6A0776C735A048F2503F"
+  }
+]

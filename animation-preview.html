@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crypt Royale — Laboratório de Animações do Ecossistema</title>
+<style>
+body{margin:0;background:#101725;color:#e7edf7;font:16px system-ui}
+main{max-width:1200px;margin:auto;padding:28px}
+h1{font-size:26px;color:#58a6ff;margin-bottom:6px}
+p{color:#aabbd0;line-height:1.5}
+.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:18px;background:#1d2a40;border-radius:14px;border:1px solid #304563}
+button,select{background:#304563;color:white;padding:10px 14px;border:1px solid #587194;border-radius:8px;font-weight:600;cursor:pointer}
+button:hover,select:hover{background:#3d567c}
+input{accent-color:#68dcdb}
+.views{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px;margin-top:20px}
+.card{background:#1d2a40;padding:18px;border-radius:14px;border:1px solid #304563;display:flex;flex-direction:column}
+.card.featured{border-color:#58a6ff;box-shadow:0 0 16px rgba(88,166,255,0.2)}
+.card h2{font-size:18px;margin-top:0;display:flex;align-items:center;justify-content:space-between}
+.badge-hero{font-size:11px;background:#238636;color:#fff;padding:2px 8px;border-radius:12px}
+.badge-ref{font-size:11px;background:#6e7681;color:#fff;padding:2px 8px;border-radius:12px}
+canvas{width:100%;height:320px;image-rendering:pixelated;border-radius:8px;background:repeating-conic-gradient(#152031 0% 25%,#202f43 0% 50%) 0 0/24px 24px}
+.light canvas{background:#dce5eb}
+.grass canvas{background:#305640}
+output{display:block;margin:12px 0 6px;color:#8fe7df;font-family:monospace;font-size:13px}
+.details{font-size:13px;color:#8b949e;line-height:1.4}
+a{color:#8fe7df;font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<h1>Laboratório de Animações • MonsterCrypt Ecosystem</h1>
+<p>Preparação e validação de caminhada com a skill <code>monstercrypt-animation-pipeline</code>. Inspecione o <strong>Guerreiro Masculino Tier 1</strong> preparado com o modelo canônico (Coluna 2 corrigida para 1 pé puro e espada rúnica preservada) lado a lado com a unidade legada e a referência de cinemática.</p>
+
+<div class="controls">
+<button id="play">Pausar</button>
+<button id="back">⏮ Quadro Anterior</button>
+<button id="next">Próximo Quadro ⏭</button>
+<label>Direção: 
+  <select id="direction">
+    <option value="down">1. Frente (Down)</option>
+    <option value="right" selected>2. Perfil Direito (Right)</option>
+    <option value="left">3. Perfil Esquerdo (Left)</option>
+    <option value="up">4. Costas (Up)</option>
+    <option value="all">Todas as 4 Direções</option>
+  </select>
+</label>
+<label>Velocidade: <input id="fps" type="range" min="2" max="20" value="9"><span id="fpsValue">9 fps</span></label>
+<label>Zoom: 
+  <select id="zoom">
+    <option value="1">1×</option>
+    <option value="2" selected>2×</option>
+    <option value="3">3×</option>
+  </select>
+</label>
+<label><input id="idle" type="checkbox"> Pousar no Neutro (Idle)</label>
+<label>Fundo: 
+  <select id="background">
+    <option value="">Grade Escura</option>
+    <option value="light">Claro</option>
+    <option value="grass">Verde Grama</option>
+  </select>
+</label>
+</div>
+
+<div class="views">
+  <!-- Guerreiro Masculino -->
+  <section class="card featured">
+    <h2>Guerreiro Masculino Tier 1 <span class="badge-hero">Preparado • Piloto</span></h2>
+    <canvas id="warrior" width="600" height="460"></canvas>
+    <output id="warriorInfo">Carregando...</output>
+    <p class="details"><strong>Células 140×140 • Pivô [70, 128]</strong><br>
+    Ciclo: Passo A (0) → Neutro (1) → Passo B (2) → Neutro (1)<br>
+    Coluna 2: Perfil lateral puro de 1 pé • Espada rúnica 100% íntegra</p>
+  </section>
+
+  <!-- Circuit Hare -->
+  <section class="card">
+    <h2>Circuit Hare <span class="badge-ref">Royale Legado</span></h2>
+    <canvas id="legacy" width="600" height="460"></canvas>
+    <output id="legacyInfo">Carregando...</output>
+    <p class="details">3 poses · ciclo 0 → 1 → 2 → 1<br>
+    Células 140×140 • Pivô [70, 128]</p>
+  </section>
+
+  <!-- LPC Referência -->
+  <section class="card">
+    <h2>LPC <span class="badge-ref">Cinemática 8 Quadros</span></h2>
+    <canvas id="expanded" width="600" height="460"></canvas>
+    <output id="expandedInfo">Carregando...</output>
+    <p class="details">8 poses ativas · repouso na coluna 0<br>
+    Células 64×64 • Referência de ritmo<br>
+    <a href="/assets/animation-lab/lpc-walk-reference_credits.txt" target="_blank">Créditos e licenças da referência</a></p>
+  </section>
+</div>
+
+<p id="status" role="status" style="margin-top:20px;color:#58a6ff">Carregando spritesheets…</p>
+</main>
+
+<script type="module">
+import {spriteProfile,selectSpriteFrame} from '/src/game/sprite-animation.js';
+
+const $=id=>document.getElementById(id);
+
+const profiles = [
+  spriteProfile({cellSize: 140, pivotX: 70, pivotY: 128, playback: [0, 1, 2, 1], idleColumn: 1, directionRows: {down: 0, right: 1, left: 2, up: 3}}),
+  spriteProfile({cellSize: 140, pivotX: 70, pivotY: 128, playback: [0, 1, 2, 1], idleColumn: 1, directionRows: {down: 0, right: 1, left: 2, up: 3}}),
+  spriteProfile({cellSize: 64, pivotX: 32, pivotY: 60, offsetY: 512, idleColumn: 0, playback: [1,2,3,4,5,6,7,8], directionRows: {up: 0, left: 1, down: 2, right: 3}})
+];
+
+const canvasIds = ['warrior', 'legacy', 'expanded'];
+const infoIds = ['warriorInfo', 'legacyInfo', 'expandedInfo'];
+
+const images = [new Image(), new Image(), new Image()];
+const sources = [
+  '/assets/animation-lab/warrior-male-spritesheet-140x140.png',
+  '/assets/units/circuit-hare-spritesheet-v001.png',
+  '/assets/animation-lab/lpc-walk-reference.png'
+];
+
+let playing = true, elapsed = 0, last = null, ready = false;
+
+await Promise.all(images.map((img, i) => new Promise((resolve, reject) => {
+  img.onload = resolve;
+  img.onerror = () => reject(new Error('Falha ao carregar ' + sources[i]));
+  img.src = sources[i];
+}))).then(() => {
+  ready = true;
+  $('status').textContent = 'Pronto. Pause ou alterne a velocidade para inspecionar cada passada.';
+}).catch(e => {
+  $('status').textContent = e.message;
+});
+
+function draw() {
+  if (!ready) return;
+  profiles.forEach((profile, i) => {
+    profile.frameDurationMs = 1000 / Number($('fps').value);
+    const canvas = $(canvasIds[i]);
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.imageSmoothingEnabled = false;
+
+    const directions = $('direction').value === 'all' ? ['down', 'right', 'left', 'up'] : [$('direction').value];
+    directions.forEach((direction, j) => {
+      const f = selectSpriteFrame(profile, elapsed, !$('idle').checked, direction);
+      const multi = directions.length > 1;
+      const scale = Number($('zoom').value) * (multi ? 0.5 : 1);
+      const cx = multi ? 150 + 300 * (j % 2) : 300;
+      const ground = multi ? 200 + 220 * Math.floor(j / 2) : 360;
+
+      // Ground guide line
+      ctx.strokeStyle = '#587194';
+      ctx.setLineDash([4, 4]);
+      ctx.beginPath();
+      ctx.moveTo(cx - 100, ground);
+      ctx.lineTo(cx + 100, ground);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      ctx.drawImage(images[i], f.x, f.y, f.size, f.size, cx - profile.pivotX * scale, ground - profile.pivotY * scale, f.size * scale, f.size * scale);
+
+      ctx.fillStyle = '#bbd0e7';
+      ctx.font = '14px system-ui';
+      ctx.fillText(direction.toUpperCase(), cx - 25, multi ? 24 + 220 * Math.floor(j / 2) : 30);
+    });
+
+    const f = selectSpriteFrame(profile, elapsed, !$('idle').checked, directions[0]);
+    $(infoIds[i]).textContent = `Coluna ${f.column} · ${$('idle').checked ? 'Repouso (Idle)' : profile.playback.length + ' tempos no ciclo'}`;
+  });
+}
+
+function setPlaying(value) {
+  playing = value;
+  $('play').textContent = value ? 'Pausar' : 'Reproduzir';
+  last = null;
+}
+$('play').onclick = () => setPlaying(!playing);
+
+function step(delta) {
+  setPlaying(false);
+  const interval = 1000 / Number($('fps').value);
+  const tick = Math.floor(elapsed / interval + 0.00001);
+  elapsed = ((tick + delta + 8) % 8) * interval;
+  draw();
+}
+$('back').onclick = () => step(-1);
+$('next').onclick = () => step(1);
+
+for (const id of ['direction', 'zoom', 'idle']) $(id).onchange = draw;
+$('fps').oninput = () => {
+  $('fpsValue').textContent = $('fps').value + ' fps';
+  draw();
+};
+$('background').onchange = () => {
+  document.body.className = $('background').value;
+};
+
+function loop(now) {
+  if (last !== null && playing) elapsed += now - last;
+  last = now;
+  draw();
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

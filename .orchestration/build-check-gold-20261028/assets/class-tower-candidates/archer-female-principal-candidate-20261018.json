@@ -1,0 +1,11 @@
+{
+  "isolatedCandidate": "archer-female-principal-candidate-v001.png",
+  "sourceSha256": "2092A6F23F8FF0A7969A51A82F32BF102CAC587E628E8CC53367555204A5D031",
+  "chosenByUserOn": "2026-10-18",
+  "note": "Source identity selected by user; isolated image is a generated candidate, not animation-ready. Male archer pending individual definition.",
+  "sourcePosition": "right",
+  "status": "principal-candidate",
+  "requestedPosition": "left",
+  "identitySource": "three-towers-heroes-preview-v001.png",
+  "candidateSha256": "721ADB4B3A9CA4C4DB1BE042E7B30ED2BC06F3DC5E67E24178B25416A2EE15EB"
+}

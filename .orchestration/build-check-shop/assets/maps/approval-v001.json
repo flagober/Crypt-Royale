@@ -1,0 +1,28 @@
+{
+  "approvedBy": "Flavio",
+  "approvedAt": "2026-10-27",
+  "answer": "Aprovo os cinco",
+  "scope": "Tres mapas de treino e icones de XP e cartas",
+  "assets": [
+    {
+      "file": "public/assets/rewards/vila-byte-xp-v001.png",
+      "sha256": "d1c6e74e34b720ade429f06a85214797cc771593daab43a1cc523bb24175f15d"
+    },
+    {
+      "file": "public/assets/rewards/vila-byte-cards-v001.png",
+      "sha256": "bddf1ec185ab3f99a6201bc6a1e23f027bbe6d1e8138904dd87366fcd9acedac"
+    },
+    {
+      "file": "public/assets/maps/vila-byte-v001.png",
+      "sha256": "1f17cca5663342fa0cdd5898775a8ea57a51345d3e229b43845982ae95dddec4"
+    },
+    {
+      "file": "public/assets/maps/copper-mines-v001.png",
+      "sha256": "c575c214a43890b9f2c88740ac9f1a076c6a92bad359ea8354fe225e3fe3aa2c"
+    },
+    {
+      "file": "public/assets/maps/circuit-woods-v001.png",
+      "sha256": "beb5f1debd265ab6f12c9afe407721210f493a5b5459cc120e7857a324a2cef9"
+    }
+  ]
+}

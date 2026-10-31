@@ -1,0 +1,22 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261018-091718-458-2026-10-18-magias-16-colaboracao\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "E38FD686610C1C88553EDC27794FF46FC1AC49E52EF82E6F6F4E2288C56198F9"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-091718-458-2026-10-18-magias-16-colaboracao\\request.md",
+    "status": "copied-verified",
+    "sha256": "E23FEBD59058A1F6B9A309B63CC41E572906BCD9DB6ED62DDA4B94DA36DD5ADD"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-091718-458-2026-10-18-magias-16-colaboracao\\result.json",
+    "status": "copied-verified",
+    "sha256": "D97257ACF0DC29705ED241347D389BA5B623352A8DFF4C93DA76522D0977597A"
+  },
+  {
+    "path": ".orchestration\\runs\\20261018-091718-458-2026-10-18-magias-16-colaboracao\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "51F6C6AD2F47B59E6B7EC2DBA5BE7658F0F181C09C6F21363D3D80530247F937"
+  }
+]

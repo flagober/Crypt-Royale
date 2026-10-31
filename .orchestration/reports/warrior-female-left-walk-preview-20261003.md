@@ -1,0 +1,6 @@
+# Prévia da caminhada esquerda — Guerreira
+03/10/2026. Usuário pediu prosseguir. Criada art-source/previews/warrior-female-left-walk-v001.html, prévia separada do jogo, sem alteração das imagens.
+Ciclo: contato aprovado Nano v004 → neutro candidato Nano v001 → contato oposto candidato imagegen v001 → neutro. Imagens exibidas em área comum; fundo magenta de trabalho. Não aplica remoção de fundo nem reamostragem em arquivos. Não registra prossiga como aprovação visual de todos os quadros.
+Validação navegador http://localhost:5179/art-source/previews/warrior-female-left-walk-v001.html: três imagens carregadas, seleção Oposto pausa e mostra quadro correto, Próximo quadro retorna Neutro, ajuste de velocidade 5 para3 confirmado, Reproduzir retoma. Captura de revisão warrior-female-left-walk-preview-20261003.jpg.
+Limite: escala/pivôs, diferenças de desenho e alpha dos JPEG ainda precisam preparação. A alternância é visível, mas não declarar animação finalizada. Não integrado ao jogo. Nenhum teste do jogo/build necessário para este HTML separado. Backup prévio verificado, lote espelhado SHA-256.
+Acesso notebook: http://100.79.208.33:5179/art-source/previews/warrior-female-left-walk-v001.html . Depende do servidor local ativo na porta5179.

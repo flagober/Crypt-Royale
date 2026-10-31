@@ -1,0 +1,37 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261027-131633-373-2026-10-27-defesa-azul-revisao-v2\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "7FE710BD9B68AA4C8B2660B6E43200DE92B18D019420CA6A1A68C6474C6EC674"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131633-373-2026-10-27-defesa-azul-revisao-v2\\request.md",
+    "status": "copied-verified",
+    "sha256": "DE499BAA792888F2EE593EF254E905E3EBF976ACCB6537F14F7B1FCA3D7265EB"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131633-373-2026-10-27-defesa-azul-revisao-v2\\result.json",
+    "status": "copied-verified",
+    "sha256": "7C56B796C89D5B41DC6C588F3AE6A79E395657419A58AB93CD681E2741FE2A15"
+  },
+  {
+    "path": ".orchestration\\runs\\20261027-131633-373-2026-10-27-defesa-azul-revisao-v2\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "89F2A1EFABADA69AD47E8A4F1C5B4DC2F659980F2E7818667CC6B65E5336BF6A"
+  },
+  {
+    "path": ".orchestration\\tools\\probe-blue-components-20261027.mjs",
+    "status": "copied-verified",
+    "sha256": "B6D8C2DA04C9EC3BC7CBC07C200082707C52489DD8FDD09F349B95392BF8F757"
+  },
+  {
+    "path": "docs\\defesa-azul-16-poses-20261027.png",
+    "status": "copied-verified",
+    "sha256": "04BE02CC8394D2D8711ABB60F63A808ED96BE306D3A9FAD0A7E426EF8066DB14"
+  },
+  {
+    "path": "docs\\defesa-azul-revisao-20261027.png",
+    "status": "copied-verified",
+    "sha256": "EDBBBE5E6E289204B990FAE3D5B50821B5652356EA62DD1360CE352AF7C699A5"
+  }
+]

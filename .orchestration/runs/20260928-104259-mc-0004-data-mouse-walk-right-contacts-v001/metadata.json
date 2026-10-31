@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-28T10:43:00.0486283-03:00",
+  "completedAt": "2026-09-28T11:00:32.1879914-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0004-data-mouse-walk-right-contacts-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-104259-mc-0004-data-mouse-walk-right-contacts-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-104259-mc-0004-data-mouse-walk-right-contacts-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-104259-mc-0004-data-mouse-walk-right-contacts-v001\\stderr.log"
+}

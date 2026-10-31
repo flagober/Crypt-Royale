@@ -1,0 +1,478 @@
+{
+  "units": [
+    {
+      "id": "cache-mantis",
+      "name": "Cache Mantis",
+      "src": "/assets/units/cache-mantis-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "fdca19a59dcf7d079dab5feb6ed820d67c615b64b96b937b4718f305ca8a24cc",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "buffer-bison",
+      "name": "Buffer Bison",
+      "src": "/assets/units/buffer-bison-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 160,
+      "sha256": "a797d1d44c499e1f83e9c33f1fff8d598dd0c3147d3f24fd164fa2eb1b29d66b",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "packet-fox",
+      "name": "Packet Fox",
+      "src": "/assets/units/packet-fox-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "78f606b79a229e0ad7f7b43a4ce3f72e320f5c3172a3d480cc87c5fba3d42c5d",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "kernel-goat",
+      "name": "Kernel Goat",
+      "src": "/assets/units/kernel-goat-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "d42cdb92d62d8ba31b7169a79550be247cb3e6552d2ba87af4b95d5569e9177b",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "logic-lizard",
+      "name": "Logic Lizard",
+      "src": "/assets/units/logic-lizard-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "ffd5da7a874f1b9c949f67aca4e05472484e2345bc59ff74567d68d12dcc6772",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "patch-toad",
+      "name": "Patch Toad",
+      "src": "/assets/units/patch-toad-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "a0cd6352ded157995569a570e516576aa88769a8a9f88c0e3bbb9d43cecbadee",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "fiber-finch",
+      "name": "Fiber Finch",
+      "src": "/assets/units/fiber-finch-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "b89b2f50021c740255f15f66b935daef298c77aaf6b5dee83efe741734244a1f",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "copper-mole",
+      "name": "Copper Mole",
+      "src": "/assets/units/copper-mole-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "e5fefdf447fb8f882378e6cc18b17294f8684627bb83d86e00333ec6a75e3f44",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "socket-crab",
+      "name": "Socket Crab",
+      "src": "/assets/units/socket-crab-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "060274704e3d3e551028202e2d6b0a269975f47f80c1cdd1984dc5b407408bed",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "byte-boar",
+      "name": "Byte Boar",
+      "src": "/assets/units/byte-boar-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "ea0917f1c059fc9bade2c3d0ca5c1fdf12b0056d53ad2eceff5e66e58a02d7fc",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "cache-crow",
+      "name": "Cache Crow",
+      "src": "/assets/units/cache-crow-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "0f16a20c69d5303dcd6c79119ec02cc4bdb9236192193cce19dae9c9f19e7ba1",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "bit-bug",
+      "name": "Bit Bug",
+      "src": "/assets/units/bit-bug-spritesheet-v005.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 110,
+      "sha256": "e9ddd3fcb5484813432d3a2bbe4ce6213b6e91f7877bd568b48f3917f4f44230",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "data-mouse",
+      "name": "Data Mouse",
+      "src": "/assets/units/data-mouse-spritesheet-v002.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 160,
+      "sha256": "2e8b23ababa7096acbb867767d6d4abac99759b1c4f9efadd85b40f1ac2ca740",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "code-slime",
+      "name": "Code Slime",
+      "src": "/assets/units/code-slime-spritesheet-v002.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 150,
+      "sha256": "24abe331b63df169356fec872b948ea3e33b964630889757e1f56d0e3c6af342",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "pixel-pup",
+      "name": "Pixel Pup",
+      "src": "/assets/units/pixel-pup-spritesheet-v002.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 140,
+      "sha256": "03c934828db54420f740c0c0b3ab94aba3f57cabdc01b38b5f619c2a5bcb6110",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    },
+    {
+      "id": "circuit-hare",
+      "name": "Circuit Hare",
+      "src": "/assets/units/circuit-hare-spritesheet-v001.png",
+      "width": 420,
+      "height": 560,
+      "frameDurationMs": 110,
+      "sha256": "3a6082a3fc2c0d4539019537ed49dbfa379813043d1491c3927057ef5be96a3c",
+      "directions": [
+        "down",
+        "right",
+        "left",
+        "up"
+      ],
+      "playback": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "idleColumn": 1,
+      "status": {
+        "walk": "integrated",
+        "idle": "static pose",
+        "attack": "pending",
+        "hurt": "pending",
+        "defeat": "pending"
+      }
+    }
+  ],
+  "towers": [
+    {
+      "name": "Núcleo Operador",
+      "src": "/assets/towers/cr_vila_byte_operator_core_master_v001.png"
+    },
+    {
+      "name": "Torre Guardiã",
+      "src": "/assets/towers/cr_vila_byte_guard_tower_master_v001.png"
+    }
+  ]
+}

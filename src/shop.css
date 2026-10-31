@@ -1,0 +1,73 @@
+.shop-overlay{position:fixed;inset:0;z-index:80;background:#050a1bf5;color:#eaf4ff;overflow:auto;padding:24px}.shop-shell{max-width:1000px;margin:auto;outline:none}.shop-shell header{display:flex;justify-content:space-between;gap:16px;margin-bottom:24px}.shop-shell h2,.shop-shell h3{display:flex;align-items:center;gap:10px;font-weight:900}.shop-shell h2{font-size:clamp(24px,4vw,38px)}.shop-shell h3{font-size:22px;margin-bottom:12px}.shop-shell small{color:#67e8f9;font-weight:800;letter-spacing:.08em}.shop-shell p{line-height:1.6;color:#b4c5df;margin:8px 0}.shop-shell article{background:linear-gradient(135deg,#13253b,#12132d);border:1px solid #3b5175;border-radius:24px;padding:24px;margin:20px 0}.shop-shell button{min-height:44px;padding:10px 16px;border:1px solid #52719b;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#16354b;color:#eaf4ff;font-weight:800}.shop-shell button:disabled{opacity:.45;cursor:not-allowed}.shop-welcome{display:flex;gap:24px;align-items:center}.shop-welcome img{width:150px;height:150px;object-fit:contain}.shop-shell .shop-price{font-weight:900;font-size:20px;color:#fde68a}.shop-price b{color:#67e8f9;margin:0 4px}.shop-shell .shop-active{color:#86efac}.shop-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}.shop-cards label{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #3c5174;padding:12px;border-radius:12px}.shop-cards small{display:block;font-size:11px;letter-spacing:0}.shop-cards input{width:70px;padding:10px;border-radius:8px;background:#061025;border:1px solid #6685b6;color:#fff}.shop-shell fieldset{min-width:0}.shop-shell .shop-buy{background:#67e8f9;color:#031824;margin-top:14px}.shop-message{border:1px solid #67e8f9;padding:12px;border-radius:12px}.loyalty-panel{margin:20px 0;padding:20px;border:1px solid #a78bfa66;border-radius:18px;background:linear-gradient(120deg,#1c1d42,#102334)}.loyalty-panel h3{font-size:19px;font-weight:900}.loyalty-panel p{color:#b4c5df;font-size:13px;margin:8px 0}.loyalty-milestones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}.loyalty-milestones div{padding:14px;border:1px solid #53648c;border-radius:12px;text-align:center}.loyalty-milestones strong{display:block;color:#fde68a}.loyalty-milestones .received{border-color:#4ade80;background:#123a31}.loyalty-milestones small{font-size:11px}@media(max-width:600px){.shop-overlay{padding:12px}.shop-shell article{padding:16px}.shop-welcome{flex-direction:column;gap:10px}.shop-welcome img{width:120px;height:120px}.shop-cards{grid-template-columns:1fr}.loyalty-milestones{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-shell .shop-price{font-size:17px}}
+.shop-gold{margin:24px 0}.shop-gold-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.shop-gold-preview{font-size:12px;padding:8px 12px;border:1px solid #d3ae5644;border-radius:999px;color:#fde68a;background:#a57a171c}.shop-gold-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:18px}.shop-shell .shop-gold-pack{margin:0;padding:18px 10px;text-align:center;background:radial-gradient(ellipse at 50% 15%,#a57a172d,transparent 65%),linear-gradient(140deg,#172339,#15132c);display:flex;flex-direction:column;align-items:center;gap:8px;border-color:#a989433d}.shop-gold-pack img{object-fit:contain;filter:drop-shadow(0 7px 14px #e9ad1635)}.shop-gold-pack h4{color:#b4c5df;font-size:13px;font-weight:700}.shop-gold-pack>strong{color:#ffe7a0;font-size:25px;line-height:1.2}.shop-gold-pack>strong small{display:block;color:#e2c98b;letter-spacing:.12em;font-size:11px;margin-top:4px}.shop-shell .shop-gold-price{color:#f8fafc;font-weight:800;font-size:19px}.shop-shell .shop-gold-pack button{width:100%;margin-top:auto}.shop-gold-pack--4{box-shadow:inset 0 0 0 1px #d2ae4a44}.shop-shell .shop-gold-note{font-size:12px;line-height:1.6;margin-top:12px;color:#9bacc8}@media(max-width:850px){.shop-gold-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:520px){.shop-gold-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.shop-gold-pack:last-child{grid-column:1/-1}.shop-shell .shop-gold-pack{padding:16px 12px}.shop-gold-pack>strong{font-size:27px}}
+/* Loja: cabeçalho compacto e cartas ilustradas com controles de quantidade. */
+.shop-overlay{background:#050a1b;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(24px,env(safe-area-inset-bottom))}
+.shop-shell .shop-header{align-items:flex-start;gap:16px}.shop-header-copy{min-width:0;flex:1}.shop-header h2 svg{flex:0 0 24px}
+.shop-shell .shop-close{width:44px;height:44px;min-height:44px;max-height:44px;flex:0 0 44px;align-self:flex-start;padding:0;border-radius:14px;box-sizing:border-box}.shop-close svg{width:22px;height:22px}
+.shop-shell .shop-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.shop-shell .shop-copy-card{display:flex;flex-direction:column;min-width:0;padding:10px;margin:0;border-radius:18px;border-color:#3c5174;background:linear-gradient(150deg,#182943,#11192f);overflow:hidden}
+.shop-shell .shop-copy-card.is-selected{border-color:#67e8f9;box-shadow:0 0 0 1px #67e8f933,inset 0 0 30px #22d3ee0a}
+.shop-copy-art{position:relative;aspect-ratio:3/4;border-radius:11px;overflow:hidden;background:#071327}.shop-copy-art img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.shop-copy-badge{position:absolute;bottom:0;left:0;right:0;min-width:0;padding:6px 3px;text-align:center;color:#c9f7ff;font-size:11px;font-weight:800;background:linear-gradient(transparent,#020817f5);overflow-wrap:anywhere}
+.shop-copy-card h4{font-size:16px;line-height:1.25;font-weight:850;min-height:2.5em;margin:10px 0 0;color:#f1f6ff;text-align:center;overflow-wrap:anywhere}
+.shop-shell .shop-copy-owned{font-size:12px;margin:4px 0 10px;text-align:center;color:#83d9df;line-height:1.3}
+.shop-copy-stepper{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:auto}
+.shop-cards .shop-copy-stepper input{grid-column:1/-1;width:100%;min-width:0;height:44px;padding:4px;text-align:center;font-weight:900;font-size:18px;background:#050e21;border:1px solid #53779c;border-radius:10px;appearance:textfield}
+.shop-copy-stepper input::-webkit-inner-spin-button,.shop-copy-stepper input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.shop-shell .shop-copy-stepper button{width:100%;min-width:0;height:44px;min-height:44px;padding:0;font-size:24px;line-height:1;background:#18384f;border-color:#497692}
+.shop-copy-stepper button:focus-visible,.shop-copy-stepper input:focus-visible{outline:2px solid #67e8f9;outline-offset:2px}
+.shop-shell .shop-selection-count{display:inline-flex;padding:7px 12px;border-radius:999px;border:1px solid #67e8f955;color:#9df4ff;font-weight:850;font-size:14px;background:#0d354555}
+.shop-shell .shop-selection-help{font-size:13px;color:#a9bbd5}.shop-card-selection legend{font-weight:800;font-size:17px;color:#eef6ff}
+@media(max-width:600px){.shop-shell .shop-cards{gap:7px}.shop-shell .shop-copy-card{padding:6px;border-radius:13px}.shop-copy-art{border-radius:8px}.shop-copy-card h4{font-size:12px;margin-top:8px}.shop-shell .shop-copy-owned{font-size:10px}.shop-copy-badge{font-size:9px}.shop-copy-stepper{gap:4px}.shop-shell .shop-pass{padding:12px}.shop-card-selection legend{font-size:16px}}
+@media(max-width:359px){.shop-copy-stepper{grid-template-columns:minmax(0,1fr)}.shop-copy-stepper input{grid-column:1}.shop-shell .shop-copy-stepper button{min-width:44px}.shop-copy-card h4{font-size:11px}}
+
+/* Retorno visível durante a navegação da loja. */
+.shop-footer{position:sticky;bottom:0;z-index:3;display:flex;justify-content:flex-start;margin-top:20px;padding:12px 0 max(12px,env(safe-area-inset-bottom));border-top:1px solid #3f5675;background:#0b142bf5;backdrop-filter:blur(10px)}
+.shop-shell .shop-back{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border:1px solid #637e9e;border-radius:12px;background:#19354c;color:#e2f5ff;font-size:14px;font-weight:800}
+.shop-back:focus-visible{outline:2px solid #67e8f9;outline-offset:3px}
+
+
+/* --- Shop Real Purchase & Checkout Styles --- */
+.shop-header-badges{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.shop-live-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:800;padding:3px 8px;border-radius:6px;background:#05966933;color:#34d399;border:1px solid #10b98166;text-transform:uppercase;letter-spacing:.05em}
+.shop-security-banner{display:flex;align-items:center;gap:14px;padding:16px 20px;border-radius:16px;background:linear-gradient(135deg,#0c1a2e,#0a1424);border:1px solid #1e3a5f;margin:24px 0}
+.shop-security-icon{width:46px;height:46px;border-radius:12px;background:#0284c726;border:1px solid #0ea5e966;color:#38bdf8;display:grid;place-items:center;flex-shrink:0}
+.shop-security-banner h3{font-size:14px;font-weight:800;color:#f8fafc;margin:0 0 4px}
+.shop-security-banner p{font-size:12px;color:#94a3b8;line-height:1.5;margin:0}
+
+/* Checkout Modal */
+.shop-checkout-overlay{position:fixed;inset:0;z-index:96;display:grid;place-items:center;padding:16px;background:#020617ee;backdrop-filter:blur(10px)}
+.shop-checkout-card{position:relative;width:100%;max-width:480px;padding:26px 22px;border-radius:24px;background:linear-gradient(155deg,#0f1f38,#13162d);border:2px solid #0284c7;box-shadow:0 0 50px #0284c733;animation:popIn .25s ease-out}
+.shop-checkout-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#0c1626;border:1px solid #334155;color:#94a3b8;cursor:pointer}
+.shop-checkout-close:hover{color:#f8fafc;border-color:#64748b}
+.shop-checkout-heading small{color:#38bdf8;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.shop-checkout-heading h3{font-size:22px;font-weight:900;color:#f8fafc;margin:4px 0 16px}
+.shop-checkout-summary{display:flex;align-items:center;gap:14px;padding:14px;border-radius:16px;background:#071224;border:1px solid #1e293b;margin-bottom:18px}
+.shop-checkout-summary img{width:64px;height:64px;object-fit:contain;flex-shrink:0}
+.shop-checkout-summary h4{font-size:15px;font-weight:800;color:#f8fafc;margin:0 0 3px}
+.shop-checkout-gold{display:block;font-size:13px;font-weight:800;color:#facc15}
+.shop-checkout-price{display:block;font-size:18px;font-weight:900;color:#38bdf8;margin-top:4px}
+.shop-checkout-methods{margin-bottom:18px}
+.shop-checkout-label{display:block;font-size:12px;color:#94a3b8;font-weight:700;margin-bottom:8px}
+.shop-methods-grid{display:grid;grid-template-columns:1fr;gap:8px}
+.shop-method-card{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:12px;background:#081427;border:1px solid #1e293b;color:#cbd5e1;cursor:pointer;text-align:left;transition:all .2s ease}
+.shop-method-card:hover{border-color:#38bdf888}
+.shop-method-card.is-selected{border-color:#38bdf8;background:linear-gradient(135deg,#0a2544,#0f1a33);box-shadow:0 0 14px #0284c726}
+.shop-method-card strong{display:block;font-size:13px;color:#f8fafc}
+.shop-method-card small{display:block;font-size:11px;color:#94a3b8}
+.shop-checkout-error{display:flex;align-items:center;gap:8px;padding:10px;border-radius:10px;background:#7f1d1d33;border:1px solid #ef444466;color:#fca5a5;font-size:12px;margin-bottom:14px}
+.shop-checkout-actions{display:flex;flex-direction:column;gap:8px}
+.shop-checkout-confirm{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 20px;border-radius:14px;background:linear-gradient(135deg,#0284c7,#2563eb);color:#fff;font-weight:900!important;font-size:14px;border:none;cursor:pointer;box-shadow:0 4px 16px #0284c744;transition:all .2s ease}
+.shop-checkout-confirm:hover{box-shadow:0 6px 20px #0284c766;transform:translateY(-1px)}
+.shop-checkout-confirm:disabled{opacity:.5;cursor:not-allowed}
+.shop-checkout-cancel{min-height:40px;background:transparent;border:1px solid #334155;color:#94a3b8;border-radius:12px;cursor:pointer}
+.shop-checkout-cancel:hover{color:#f8fafc}
+
+/* Success View */
+.shop-checkout-success{text-align:center;padding:12px 4px}
+.shop-success-icon{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);color:#fff;display:grid;place-items:center;margin:0 auto 14px;box-shadow:0 0 24px #10b98155}
+.shop-checkout-success h3{font-size:22px;font-weight:900;color:#f8fafc;margin:0 0 8px}
+.shop-checkout-success p{font-size:13px;color:#cbd5e1;margin:0 0 18px}
+.shop-success-receipt{padding:10px;border-radius:10px;background:#071224;border:1px dashed #334155;margin-bottom:20px}
+.shop-success-receipt small{display:block;color:#64748b;font-size:9px;letter-spacing:.1em;margin-bottom:2px}
+.shop-success-receipt code{color:#38bdf8;font-size:13px;font-weight:800}

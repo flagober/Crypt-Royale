@@ -1,0 +1,57 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261028-143924-457-2026-10-28-desbloqueios-review\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "11F6F91A52E18B2A57185669122930BD495120A3A7BD97BA25A7C691510030F0"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-143924-457-2026-10-28-desbloqueios-review\\request.md",
+    "status": "copied-verified",
+    "sha256": "09DBA4B45B258D084035E606A5774808514DA720B9FAC997C5A818EC7267D001"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-143924-457-2026-10-28-desbloqueios-review\\result.json",
+    "status": "copied-verified",
+    "sha256": "51D6795D555087F80C317706287611C0A9A039C39C8211087F3535F6252499C3"
+  },
+  {
+    "path": ".orchestration\\runs\\20261028-143924-457-2026-10-28-desbloqueios-review\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "CA7A482730A0D566F91155AE9BA897A5FA431B55E7E750992ACCCC8EA8B1DCBC"
+  },
+  {
+    "path": "src\\App.jsx",
+    "status": "copied-verified",
+    "sha256": "4F905C3101124EFA4890C6A9DE1591BB2D6A4B9FECEC5CC72DF27795845D47A0"
+  },
+  {
+    "path": "src\\game\\activities.js",
+    "status": "copied-verified",
+    "sha256": "054F8026B2C6C989326C37A5664BB33628A70AD872B6D8F986A91447744434BF"
+  },
+  {
+    "path": "src\\game\\engine.js",
+    "status": "copied-verified",
+    "sha256": "169C06F75D470B76D971F8A521E2474926B90F0E34C23127BE6854CCCA5ED097"
+  },
+  {
+    "path": "src\\game\\progression-engine.js",
+    "status": "copied-verified",
+    "sha256": "220FEE04E66B621E10140EFDBC6BD2712FE764AAFAE876FDE425ED232C9933A4"
+  },
+  {
+    "path": "src\\game\\progression.js",
+    "status": "copied-verified",
+    "sha256": "91B612F835D52ACCD0D072F2E0091A9678D2B5688D91B43DCBD0F7B3A7DD4E27"
+  },
+  {
+    "path": "src\\progression.css",
+    "status": "copied-verified",
+    "sha256": "17AE76D36143DF1D5AC3C92E7D5C73C5E9831BE52628F8AC6F828B75D0E1554D"
+  },
+  {
+    "path": "src\\ProgressionPanel.jsx",
+    "status": "copied-verified",
+    "sha256": "09400725AED3080605F14939FFF0D8A12EB399E51E58107943B31847E054B764"
+  }
+]

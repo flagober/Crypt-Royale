@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crypt Royale · Magias candidatas v002</title>
+<style>
+  :root { --bg: #081510; --card: #11241b; --border: #27543d; --text: #e3fff0; --muted: #a4c3b3; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, sans-serif; }
+
+  /* ── Compact header (not sticky, won't eat screen on 320px) ─── */
+  header {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin: 8px; padding: 10px 12px;
+  }
+  header h1 { font-size: 1.1em; margin-bottom: 4px; }
+  header p { font-size: 0.8em; color: var(--muted); margin-bottom: 6px; }
+
+  /* ── Controls row: wraps gracefully on narrow screens ───────── */
+  .controls { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .controls button, .controls select {
+    padding: 6px 10px; border-radius: 8px; cursor: pointer;
+    background: #1a3528; color: var(--text); border: 1px solid var(--border);
+    font-size: 0.8em;
+  }
+  .controls button:hover, .controls select:hover { background: #254a38; }
+  .controls label { font-size: 0.75em; display: flex; align-items: center; gap: 4px; }
+  .controls input[type="checkbox"] { accent-color: #4ade80; }
+
+  #status { font-size: 0.75em; color: var(--muted); margin-top: 4px; }
+
+  /* ── Monster selector ───────────────────────────────────────── */
+  #monster-select { max-width: 160px; }
+
+  /* ── Card grid ──────────────────────────────────────────────── */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px; margin: 8px;
+  }
+  article {
+    background: var(--card); border: 1px solid var(--border);
+    padding: 10px; border-radius: 12px;
+  }
+  article h2 { font-size: 0.9em; margin-bottom: 4px; }
+  article canvas { width: 100%; image-rendering: pixelated; border-radius: 6px; }
+  article p { font-size: 0.75em; color: var(--muted); margin-top: 4px; }
+  article small { font-size: 0.7em; color: #7a9e8e; display: block; margin-top: 2px; }
+
+  /* Hide cards that don't match filter */
+  article.hidden { display: none; }
+
+  /* ── Background selector ────────────────────────────────────── */
+  #bg-select { max-width: 130px; }
+
+  /* ── 320px tweaks ───────────────────────────────────────────── */
+  @media (max-width: 400px) {
+    header { margin: 4px; padding: 8px; }
+    header h1 { font-size: 0.95em; }
+    main { grid-template-columns: 1fr; gap: 6px; margin: 4px; }
+    article { padding: 8px; }
+    .controls button, .controls select { padding: 5px 7px; font-size: 0.7em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Magias dos 16 monstros — v002</h1>
+  <p>Visuais aprovados e mecânicas integradas ao combate local.</p>
+  <div class="controls">
+    <button id="pause" title="Pausar/Reproduzir">⏸ Pausar</button>
+    <button id="restart" title="Reiniciar animação">⟳ Repetir</button>
+    <button id="step" title="Avançar 1 quadro">▶| Quadro</button>
+    <select id="speed" title="Velocidade">
+      <option value="0.25">0.25×</option>
+      <option value="0.5">0.5×</option>
+      <option value="1" selected>1×</option>
+      <option value="2">2×</option>
+    </select>
+    <select id="monster-select" title="Filtrar monstro">
+      <option value="all">Todos os monstros</option>
+    </select>
+    <select id="bg-select" title="Fundo">
+      <option value="#192d24">Floresta escura</option>
+      <option value="#1a1a2e">Noite azul</option>
+      <option value="#2d1b1b">Caverna vermelha</option>
+      <option value="#111111">Preto puro</option>
+      <option value="#f0f0f0">Branco (contraste)</option>
+    </select>
+    <label><input id="reduced" type="checkbox"> Mov. reduzido</label>
+  </div>
+  <p id="status" role="status">Carregando…</p>
+</header>
+
+<p style="margin:8px"><a style="color:#4ade80" href="/tower-preview.html">Poderes das torres</a> · <a style="color:#4ade80" href="/">Abrir jogo atualizado</a></p>
+<main id="grid"></main>
+
+<script type="module">
+import { drawSpell } from './spell-effects.js';
+
+const $ = id => document.getElementById(id);
+let elapsed = 0, last = performance.now(), paused = false;
+const entries = [];
+const CYCLE_MS = 2400; // full cycle with gap for readability
+
+// ── Controls ─────────────────────────────────────────────────────
+$('pause').onclick = () => {
+  paused = !paused;
+  $('pause').textContent = paused ? '▶ Reproduzir' : '⏸ Pausar';
+};
+$('restart').onclick = () => { elapsed = 0; };
+$('step').onclick = () => {
+  if (!paused) { paused = true; $('pause').textContent = '▶ Reproduzir'; }
+  elapsed += 16.67; // ~1 frame at 60fps
+};
+
+// Monster filter
+$('monster-select').onchange = () => {
+  const val = $('monster-select').value;
+  for (const entry of entries) {
+    entry.article.classList.toggle('hidden', val !== 'all' && entry.spell.id !== val);
+  }
+};
+
+// Background colour
+const bgSelect = $('bg-select');
+
+// Speed
+const speedSelect = $('speed');
+
+try {
+  const [a, b] = await Promise.all([
+    fetch('./spell-catalog.json'),
+    fetch('./animation-audit.json')
+  ]);
+  if (!a.ok || !b.ok) throw Error('Catálogo indisponível');
+  const spells = await a.json();
+  const audit = await b.json();
+
+  for (const spell of spells) {
+    const unit = audit.units.find(u => u.id === spell.id);
+    if (!unit) continue;
+
+    // Create card
+    const article = document.createElement('article');
+    const h = document.createElement('h2');
+    const canvas = document.createElement('canvas');
+    const text = document.createElement('p');
+    const note = document.createElement('small');
+
+    h.textContent = `${unit.name} · ${spell.name}`;
+    text.textContent = spell.description;
+    canvas.width = 320;
+    canvas.height = 200;
+    note.textContent = `Etapa visual · status: ${spell.status} · mecânica: ${spell.mechanicsActive ? 'ativa' : 'inativa'}`;
+
+    article.append(h, canvas, text, note);
+    $('grid').append(article);
+
+    // Load sprite
+    const image = new Image();
+    image.src = unit.src;
+    try { await image.decode(); } catch { /* sprite may be missing, proceed */ }
+
+    entries.push({ spell, image, canvas, article, unit });
+
+    // Populate monster selector
+    const opt = document.createElement('option');
+    opt.value = spell.id;
+    opt.textContent = unit.name;
+    $('monster-select').append(opt);
+  }
+
+  $('status').textContent = `${entries.length} efeitos carregados (v002). Etapa visual aprovada.`;
+
+  // ── Render loop ──────────────────────────────────────────────
+  function draw(now) {
+    const speed = parseFloat(speedSelect.value) || 1;
+    const dt = Math.min(now - last, 100) * speed;
+    if (!paused) elapsed += dt;
+    last = now;
+
+    const bgColor = bgSelect.value;
+    const cycle = elapsed % CYCLE_MS;
+    const isReducedMotion = $('reduced').checked;
+
+    for (const { spell, image, canvas, article, unit } of entries) {
+      if (article.classList.contains('hidden')) continue;
+
+      const c = canvas.getContext('2d');
+      // Background
+      c.fillStyle = bgColor;
+      c.fillRect(0, 0, 320, 200);
+
+      // Ground line
+      c.strokeStyle = '#30563f';
+      c.lineWidth = 1;
+      c.beginPath();
+      c.moveTo(0, 165);
+      c.lineTo(320, 165);
+      c.stroke();
+
+      // Draw caster sprite (left side)
+      c.imageSmoothingEnabled = false;
+      if (image.complete && image.naturalWidth > 0) {
+        // Single frame from spritesheet: column 1 (idle), row 1 (right-facing)
+        const frameW = unit.width / 3;
+        const frameH = unit.height / 4;
+        c.save();
+        if (unit.id === 'logic-lizard') {
+          // Measured detached atlas fragments, not part of the approved body.
+          c.beginPath(); c.rect(8, 28, frameW, frameH);
+          for (const [x, y, w, h] of [[13, 58, 8, 21], [121, 89, 7, 29]]) c.rect(8 + x, 28 + y, w, h);
+          c.clip('evenodd');
+        }
+        c.drawImage(image, frameW, frameH, frameW, frameH, 8, 28, frameW, frameH);
+        c.restore();
+      } else {
+        // Fallback: coloured circle for caster
+        c.fillStyle = spell.color + '60';
+        c.beginPath(); c.arc(70, 100, 18, 0, Math.PI * 2); c.fill();
+        c.fillStyle = '#fff';
+        c.font = '9px monospace'; c.textAlign = 'center';
+        c.fillText(spell.id.substring(0, 4), 70, 103);
+      }
+
+      // Target marker (right side — enemy position)
+      c.fillStyle = '#6c8176';
+      c.beginPath();
+      c.arc(235, 110, 14, 0, Math.PI * 2);
+      c.fill();
+      c.strokeStyle = '#4a6358';
+      c.lineWidth = 1;
+      c.stroke();
+
+      // Ally marker (for heal/buff effects — between caster and target)
+      c.fillStyle = '#3a6650';
+      c.beginPath();
+      c.arc(160, 120, 10, 0, Math.PI * 2);
+      c.fill();
+      c.fillStyle = '#8ab89f';
+      c.font = '7px monospace'; c.textAlign = 'center';
+      c.fillText('aliado', 160, 123);
+
+      // Draw spell effect
+      if (cycle < 1200) {
+        drawSpell(c, spell, cycle, {
+          x: 235,
+          y: 110,
+          casterX: 78,
+          casterY: 100,
+          allyX: 160,
+          allyY: 120,
+          reducedMotion: isReducedMotion
+        });
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  requestAnimationFrame(draw);
+
+} catch (e) {
+  $('status').textContent = 'Falha: ' + e.message;
+  console.error(e);
+}
+</script>
+</body>
+</html>

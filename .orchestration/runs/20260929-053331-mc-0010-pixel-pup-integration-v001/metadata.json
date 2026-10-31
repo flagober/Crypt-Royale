@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-29T05:33:32.1016798-03:00",
+  "completedAt": "2026-09-29T05:35:14.8809335-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0010-pixel-pup-integration-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-053331-mc-0010-pixel-pup-integration-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-053331-mc-0010-pixel-pup-integration-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260929-053331-mc-0010-pixel-pup-integration-v001\\stderr.log"
+}

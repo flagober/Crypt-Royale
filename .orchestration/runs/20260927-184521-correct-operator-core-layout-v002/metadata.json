@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-27T18:45:21.1211070-03:00",
+  "completedAt": "2026-09-27T18:47:10.9040234-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\correct-operator-core-layout-v002.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-184521-correct-operator-core-layout-v002\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-184521-correct-operator-core-layout-v002\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-184521-correct-operator-core-layout-v002\\stderr.log"
+}

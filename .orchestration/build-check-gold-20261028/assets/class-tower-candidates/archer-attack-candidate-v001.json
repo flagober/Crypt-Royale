@@ -1,0 +1,121 @@
+{
+  "status": "candidate",
+  "directions": {
+    "female": "right",
+    "male": "left"
+  },
+  "globalFlipAllowed": false,
+  "sequence": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "durationsMs": [
+    200,
+    300,
+    100,
+    250
+  ],
+  "cycleMs": 850,
+  "actors": [
+    {
+      "id": "female",
+      "source": [
+        1353,
+        1163
+      ],
+      "frames": [
+        {
+          "label": 2,
+          "area": 161749,
+          "x": 37,
+          "y": 22,
+          "width": 625,
+          "height": 532,
+          "pivotX": 304.5,
+          "pivotY": 531
+        },
+        {
+          "label": 1,
+          "area": 167820,
+          "x": 717,
+          "y": 9,
+          "width": 619,
+          "height": 545,
+          "pivotX": 300,
+          "pivotY": 544
+        },
+        {
+          "label": 3,
+          "area": 182794,
+          "x": 29,
+          "y": 578,
+          "width": 621,
+          "height": 564,
+          "pivotX": 318,
+          "pivotY": 563
+        },
+        {
+          "label": 4,
+          "area": 164834,
+          "x": 732,
+          "y": 606,
+          "width": 605,
+          "height": 537,
+          "pivotX": 307,
+          "pivotY": 536
+        }
+      ]
+    },
+    {
+      "id": "male",
+      "source": [
+        1374,
+        1145
+      ],
+      "frames": [
+        {
+          "label": 2,
+          "area": 143823,
+          "x": 90,
+          "y": 39,
+          "width": 568,
+          "height": 525,
+          "pivotX": 257.5,
+          "pivotY": 524
+        },
+        {
+          "label": 1,
+          "area": 156169,
+          "x": 711,
+          "y": 14,
+          "width": 650,
+          "height": 549,
+          "pivotX": 338,
+          "pivotY": 548
+        },
+        {
+          "label": 3,
+          "area": 154874,
+          "x": 102,
+          "y": 582,
+          "width": 562,
+          "height": 548,
+          "pivotX": 254.5,
+          "pivotY": 547
+        },
+        {
+          "label": 4,
+          "area": 147098,
+          "x": 798,
+          "y": 616,
+          "width": 560,
+          "height": 514,
+          "pivotX": 251,
+          "pivotY": 513
+        }
+      ]
+    }
+  ]
+}

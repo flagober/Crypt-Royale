@@ -1,0 +1,57 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261029-065246-734-pvp-lobby-20261029\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "83863CD8DCE0AF6E6B8698D3285CAE8596F735ECB0C707049444D11729AFBE15"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-065246-734-pvp-lobby-20261029\\request.md",
+    "status": "copied-verified",
+    "sha256": "E8041AD8156AC3317B737F1164D23B3FED6F648B67E40F2E54F2AF75ADF9AC67"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-065246-734-pvp-lobby-20261029\\result.json",
+    "status": "copied-verified",
+    "sha256": "E38C8568E3CD2D8194103EF2B76529106D2252A96FBDB04E37DDAD6CD0118DFA"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-065246-734-pvp-lobby-20261029\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "CA7A482730A0D566F91155AE9BA897A5FA431B55E7E750992ACCCC8EA8B1DCBC"
+  },
+  {
+    "path": "package-lock.json",
+    "status": "copied-verified",
+    "sha256": "27A7B7F10F7C32895BF34EAD33A42B8FEE464C8F23228741B77211932080DE93"
+  },
+  {
+    "path": "package.json",
+    "status": "copied-verified",
+    "sha256": "6D2EA54898C35653E1AF630D63B8E6C0249A9F778DA4CECB43FF3211ACB1723A"
+  },
+  {
+    "path": "scripts\\release-tools.cjs",
+    "status": "copied-verified",
+    "sha256": "1CCA42495F494AA8A95C266DE77C819EC62D7F58E2DE756BEC6EB5E18596FEE4"
+  },
+  {
+    "path": "src\\game\\engine.js",
+    "status": "copied-verified",
+    "sha256": "C5907D616B2D7A766F0DC418104E018812F49303BD03AF3FF89053491396810F"
+  },
+  {
+    "path": "src\\pvp-config.json",
+    "status": "copied-verified",
+    "sha256": "6F453398F6F9E7A0E50BCC7A3D3D2C46475A06847C0C741B7F28344361A09E12"
+  },
+  {
+    "path": "src\\pvp\\battle.js",
+    "status": "copied-verified",
+    "sha256": "35082BBCD43679601BAD11EADB82EAE284D8775BFC9D62BD868CABC995C90A7A"
+  },
+  {
+    "path": "src\\pvp\\rules.js",
+    "status": "copied-verified",
+    "sha256": "F992028408D848CF6D9F8970C302C96477CABE16838CBC57639D673D2C1AD0E1"
+  }
+]

@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+backup
+art-source/rejected
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Pacotes e arquivos locais de desenvolvimento nativo
+dist-apk
+dist-electron
+dist-pacote
+android/.gradle
+android/**/build
+android/local.properties
+android/app/src/main/assets/public
+*.jks
+*.keystore
+*.p12
+
+# iOS generated files and private signing material
+ios/App/Pods
+ios/App/App/public
+ios/**/build
+ios/**/DerivedData
+ios/**/xcuserdata
+*.p8
+*.mobileprovision
+*.pfx
+
+# Oracle account credentials: local only, never packages or source control.
+docs/oracle/
+
+# Backups e rascunhos locais
+backup_auto/
+scratch/
+imagens de testes/
+*.pdf
+chat codex.md
+test_*.py
+test_out.png
+art-source/

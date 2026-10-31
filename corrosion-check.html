@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Crypt Royale · Gosma corrosiva</title>
+<style>body{background:#081510;color:#e3fff0;font:16px system-ui;max-width:800px;margin:24px auto;padding:12px}canvas{width:100%;background:#182c23;border:1px solid #27543d;border-radius:14px}button{padding:12px;border-radius:10px;cursor:pointer}strong{color:#86efac}p{line-height:1.5}</style>
+<h1>Code Slime · Gosma corrosiva</h1><p>Teste controlado usando a simulação e os efeitos reais do jogo. O inimigo começa com 48 HP; cada pulso causa 8 de dano. A poça desaparece em 3 segundos.</p><button id="restart">Repetir teste</button> <button id="pause">Pausar</button> <a style="color:#86efac" href="/">Abrir jogo</a><p id="status" role="status"></p><canvas id="view" width="640" height="320"></canvas>
+<script type="module">
+import {createGame,stepGame} from './src/game/engine.js';
+import {onUnitDefeated} from './src/game/abilities.js';
+import {CARD_BY_ID} from './src/game/cards.js';
+import {drawBattleEffects} from './src/game/battle-effects.js';
+const canvas=document.getElementById('view'),ctx=canvas.getContext('2d'),sprite=new Image();sprite.src='/assets/units/pixel-pup-spritesheet-v002.png';await sprite.decode();
+let game,victim,paused=false,last=performance.now(),accumulator=0;
+const stepButton=document.createElement('button');stepButton.textContent='Avançar 0,5 s';document.getElementById('pause').after(stepButton);stepButton.onclick=()=>{paused=true;document.getElementById('pause').textContent='Reproduzir';for(let i=0;i<5;i++)stepGame(game,100);};
+function reset(){game=createGame();game.enemyThinkMs=1e9;game.towers=[];victim={...CARD_BY_ID['pixel-pup'],id:'corrosion-victim',cardId:'pixel-pup',team:'enemy',x:80,y:330,hp:48,maxHp:48,shield:0,damage:0,speed:0,attackLeftMs:1e9,facing:'right',isMoving:false,animationMs:0};game.units=[victim];onUnitDefeated(game,{cardId:'code-slime',team:'player',x:80,y:330});accumulator=0;}
+document.getElementById('restart').onclick=reset;document.getElementById('pause').onclick=()=>{paused=!paused;document.getElementById('pause').textContent=paused?'Reproduzir':'Pausar'};reset();
+function frame(now){if(!paused)accumulator+=Math.min(100,now-last);last=now;while(accumulator>=20&&game.nowMs<3600){stepGame(game,20);accumulator-=20;}if(game.nowMs>=3600)accumulator=0;
+ctx.fillStyle='#182c23';ctx.fillRect(0,0,640,320);ctx.save();ctx.translate(240,-125);ctx.strokeStyle='#30563f';ctx.beginPath();ctx.moveTo(-240,340);ctx.lineTo(400,340);ctx.stroke();
+if(victim.hp>0){ctx.save();ctx.imageSmoothingEnabled=false;if((victim.corrosionFlashUntil??0)>game.nowMs)ctx.filter='drop-shadow(0 0 7px #4ade80)';ctx.drawImage(sprite,140,140,140,140,victim.x-56,victim.y-102,112,112);ctx.restore();}
+drawBattleEffects(ctx,game);ctx.restore();document.getElementById('status').textContent=`Tempo: ${(game.nowMs/1000).toFixed(2)} s · HP inimigo: ${victim.hp}/48 · Poça: ${game.zones.length?'ativa':'encerrada'}${victim.hp<=0?' · Inimigo derrotado':''}`;requestAnimationFrame(frame);}requestAnimationFrame(frame);
+</script></html>

@@ -1,0 +1,21 @@
+// Internal credits only; client profile JSON is never the source of this balance.
+match /cryptroyale_loyalty/{uid} {
+  function ownCredits(){return request.auth != null && request.auth.uid == uid;}
+  function serverDay(){return int((request.time.toMillis() - 10800000) / 86400000);}
+  function amount(sequence){return sequence==7?5:sequence==14?7:sequence==21?10:sequence==30?15:0;}
+  function validCredit(){let n=request.resource.data;return n.keys().hasOnly(['version','owner','lastDay','sequence','cycle','balance','updatedAt'])
+    && n.version==1 && n.owner==uid && n.lastDay==serverDay()
+    && n.sequence is int && n.sequence>=1 && n.sequence<=30
+    && n.cycle is int && n.cycle>=0 && n.balance is int && n.balance>=0 && n.balance<=1000000000
+    && n.updatedAt==request.time
+    && getAfter(/databases/$(database)/documents/cryptroyale_saves/$(uid)).data.revision
+      == get(/databases/$(database)/documents/cryptroyale_saves/$(uid)).data.revision+1;}
+  allow get: if ownCredits();
+  allow list,delete: if false;
+  allow create: if ownCredits() && validCredit() && request.resource.data.sequence==1 && request.resource.data.cycle==0 && request.resource.data.balance==0;
+  allow update: if ownCredits() && validCredit() && serverDay()>resource.data.lastDay
+    && request.resource.data.sequence == (serverDay()==resource.data.lastDay+1 && resource.data.sequence<30 ? resource.data.sequence+1 : 1)
+    && request.resource.data.cycle == resource.data.cycle + (serverDay()==resource.data.lastDay+1 && resource.data.sequence<30 ? 0 : 1)
+    && request.resource.data.balance == resource.data.balance + amount(request.resource.data.sequence);
+}
+

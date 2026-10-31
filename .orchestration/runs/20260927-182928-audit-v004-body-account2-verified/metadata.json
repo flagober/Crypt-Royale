@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-27T18:29:28.1236802-03:00",
+  "completedAt": "2026-09-27T18:31:03.0462937-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\audit-v004-body.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-182928-audit-v004-body-account2-verified\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-182928-audit-v004-body-account2-verified\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-182928-audit-v004-body-account2-verified\\stderr.log"
+}

@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-28T18:38:21.7080571-03:00",
+  "completedAt": "2026-09-28T18:43:28.8809658-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\mc-0007-code-slime-turnaround-candidate-v002-correction.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-183821-mc-0007-code-slime-turnaround-candidate-v002\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-183821-mc-0007-code-slime-turnaround-candidate-v002\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260928-183821-mc-0007-code-slime-turnaround-candidate-v002\\stderr.log"
+}

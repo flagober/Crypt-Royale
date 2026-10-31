@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-27T19:01:43.0990429-03:00",
+  "completedAt": "2026-09-27T19:06:46.9449138-03:00",
+  "exitCode": 0,
+  "project": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "dangerousPermissions": true,
+  "promptSource": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\requests\\integrate-six-audio-tracks-v001.md",
+  "requestCopy": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-190143-integrate-six-audio-tracks-v001\\request.md",
+  "resultFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-190143-integrate-six-audio-tracks-v001\\result.json",
+  "stderrFile": "E:\\Projetos\\MonsterCrypt\\Crypt-Royale\\.orchestration\\runs\\20260927-190143-integrate-six-audio-tracks-v001\\stderr.log"
+}

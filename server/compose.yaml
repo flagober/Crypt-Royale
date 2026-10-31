@@ -1,0 +1,24 @@
+services:
+  pvp:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    restart: unless-stopped
+    init: true
+    user: node
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128
+    mem_limit: 768m
+    cpus: 1
+    environment:
+      PORT: 5181
+      PVP_HOST: 0.0.0.0
+      PVP_ORIGINS: https://monstercrypt-royale.web.app,https://monstercrypt-royale.firebaseapp.com,http://localhost,https://localhost,capacitor://localhost,null
+    ports:
+      - 127.0.0.1:5181:5181

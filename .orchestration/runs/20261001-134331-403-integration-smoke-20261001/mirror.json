@@ -1,0 +1,22 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261001-134331-403-integration-smoke-20261001\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "B431997670519B0BBDF89B3FBE8E934D17638BD3444405DDB9DE78251FA6850F"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-134331-403-integration-smoke-20261001\\request.md",
+    "status": "copied-verified",
+    "sha256": "1D86D6D37782587C5C7A5A7E0189E5FC985A067AF41DA4C21C04C2D8DEEBC406"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-134331-403-integration-smoke-20261001\\result.json",
+    "status": "copied-verified",
+    "sha256": "34FF4CB0A0837E1A86154F814759641F90B59E9A6AFC49118FCBA8043ADB2E21"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-134331-403-integration-smoke-20261001\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  }
+]

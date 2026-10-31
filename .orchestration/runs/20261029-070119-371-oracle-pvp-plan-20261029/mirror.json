@@ -1,0 +1,32 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261029-070119-371-oracle-pvp-plan-20261029\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "FC89FAD11F978956D8E19059D429C0EECA6C681F9784B75F9246ED2B56FE923C"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-070119-371-oracle-pvp-plan-20261029\\request.md",
+    "status": "copied-verified",
+    "sha256": "56B4F327B4D608AAFA3055F7838FE030326185991AEF7A833806960E2C8023DF"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-070119-371-oracle-pvp-plan-20261029\\result.json",
+    "status": "copied-verified",
+    "sha256": "F6D99DF0D105DE559DA339AB7B02E7F701386D13326646A57AEFE057BD6B8274"
+  },
+  {
+    "path": ".orchestration\\runs\\20261029-070119-371-oracle-pvp-plan-20261029\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "src\\pvp.css",
+    "status": "copied-verified",
+    "sha256": "6313537D92FFEB7370A0DED5D849F89CA792351F02D1C3DBB971AC73B76B5BD2"
+  },
+  {
+    "path": "src\\PvpPanel.jsx",
+    "status": "copied-verified",
+    "sha256": "C6F154F5E8DD50978209403B05D42EC5E1384DACF9CFC8F0089EA9ED2AAD0802"
+  }
+]

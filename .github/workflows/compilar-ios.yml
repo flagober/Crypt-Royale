@@ -1,0 +1,82 @@
+name: Compilar Crypt Royale iOS (.ipa)
+
+# Dispara manualmente com 1 clique na aba Actions do GitHub, ou ao enviar uma tag de versão
+on:
+  workflow_dispatch:
+    inputs:
+      ambiente:
+        description: 'Tipo de Compilação'
+        required: true
+        default: 'release'
+        type: choice
+        options:
+          - release
+          - debug
+
+jobs:
+  build-ios:
+    name: Compilar IPA no macOS com Xcode Oficial
+    runs-on: macos-14 # Runner oficial Apple Silicon (M1/M2) com Xcode pré-instalado
+
+    steps:
+      - name: 1. Baixar código do Crypt Royale
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar ambiente Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalar dependências do projeto
+        run: npm ci
+
+      - name: 4. Build de produção do Crypt Royale (Vite)
+        run: npm run build
+
+      - name: 5. Sincronizar projeto nativo Capacitor com iOS
+        run: npx cap sync ios
+
+      - name: 6. Instalar dependências CocoaPods do iOS
+        run: |
+          cd ios/App
+          pod install --repo-update
+
+      - name: 7. Compilar aplicativo iOS com Xcode oficial (xcodebuild)
+        run: |
+          cd ios/App
+          xcodebuild \
+            -workspace App.xcworkspace \
+            -scheme App \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/App.xcarchive \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            archive
+
+      - name: 8. Empacotar executável no formato oficial .ipa
+        run: |
+          echo "Localizando App.app no arquivo compilado..."
+          APP_PATH="ios/App/build/App.xcarchive/Products/Applications/App.app"
+          if [ ! -d "$APP_PATH" ]; then
+            APP_PATH=$(find ios/App/build -name "*.app" -type d | head -n 1)
+          fi
+          echo "App encontrado em: $APP_PATH"
+          
+          mkdir -p build_ipa/Payload
+          cp -R "$APP_PATH" build_ipa/Payload/
+          cd build_ipa
+          zip -r Crypt_Royale_iOS.ipa Payload
+          cd ..
+          echo "Pacote Crypt_Royale_iOS.ipa gerado com sucesso!"
+          ls -lh build_ipa/Crypt_Royale_iOS.ipa
+
+      - name: 9. Disponibilizar o arquivo .ipa para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: Crypt_Royale_iOS_IPA
+          path: build_ipa/Crypt_Royale_iOS.ipa
+          retention-days: 14
+

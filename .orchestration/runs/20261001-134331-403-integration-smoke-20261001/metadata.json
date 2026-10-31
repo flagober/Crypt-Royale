@@ -1,0 +1,16 @@
+{
+  "startedAt": "2026-10-01T13:43:31.4166723-03:00",
+  "completedAt": "2026-10-01T13:43:40.5757034-03:00",
+  "exitCode": 0,
+  "resultStatus": "SUCCESS",
+  "account": "flagober@gmail.com",
+  "accountConfirmedAt": "2026-10-01T13:41:06.2119714-03:00",
+  "model": "gemini-3.1-pro-high",
+  "effort": "high",
+  "mode": "plan",
+  "project": "C:\\FlavioG\\Crypt-Royale",
+  "promptSource": "C:\\FlavioG\\Crypt-Royale\\.orchestration\\requests\\integration-smoke-20261001.md",
+  "mirrorStatus": "verified",
+  "error": null,
+  "deletedPaths": []
+}

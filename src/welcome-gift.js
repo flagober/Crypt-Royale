@@ -1,0 +1,2 @@
+export const WELCOME_ID='a4e50c20-1e57-4a62-8b6b-0e8173619b01';
+export function welcomeGift(uid,createdAt){return {owner:uid,title:'Bem-vindo a Vila Byte!',body:'Seu Baú de Boas-Vindas chegou. Receba os recursos e comece sua coleção. Um presente por conta, com conteúdo fixo.',reward:{gold:300,xp:0,dataFragments:2,cards:{'bit-bug':4,'data-mouse':4},classCards:{}},createdAt,createdBy:'system:welcome-v1',claimedAt:null,readAt:null};}

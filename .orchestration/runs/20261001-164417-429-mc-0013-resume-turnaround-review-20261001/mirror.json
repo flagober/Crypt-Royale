@@ -1,0 +1,22 @@
+[
+  {
+    "path": ".orchestration\\runs\\20261001-164417-429-mc-0013-resume-turnaround-review-20261001\\metadata.json",
+    "status": "copied-verified",
+    "sha256": "8C19943B743F1B396C138481BC03F7CDCF74C4DD010C652A55272332D67BE862"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-164417-429-mc-0013-resume-turnaround-review-20261001\\request.md",
+    "status": "copied-verified",
+    "sha256": "21298FEFD88260823681602EB34DDFF981B72A1EB99CF2B40C08F00B9CF62D6D"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-164417-429-mc-0013-resume-turnaround-review-20261001\\result.json",
+    "status": "copied-verified",
+    "sha256": "186A6813A096B3EDF1F946401714E31A74A6A33927431ACB1B3BB1695DF30694"
+  },
+  {
+    "path": ".orchestration\\runs\\20261001-164417-429-mc-0013-resume-turnaround-review-20261001\\stderr.log",
+    "status": "copied-verified",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  }
+]

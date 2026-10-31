@@ -1,0 +1,19 @@
+// Crypt Royale fragment. Merge into the existing service, preserving other apps.
+// Do not deploy this file by itself over the shared MonsterCrypt rules.
+match /cryptroyale_saves/{uid} {
+  function owner() { return request.auth != null && request.auth.uid == uid; }
+  function validSave() {
+    let d = request.resource.data;
+    return d.keys().hasOnly(['owner','schema','revision','profileJson','updatedAt'])
+      && d.owner == uid && d.schema == 1
+      && d.revision is int && d.revision > 0
+      && d.profileJson is string && d.profileJson.size() <= 750000
+      && d.updatedAt == request.time;
+  }
+  allow get: if owner();
+  allow list: if false;
+  allow create: if owner() && validSave() && request.resource.data.revision == 1;
+  allow update: if owner() && validSave()
+    && request.resource.data.revision == resource.data.revision + 1;
+  allow delete: if owner();
+}

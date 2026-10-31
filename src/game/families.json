@@ -1,0 +1,279 @@
+{
+  "source": "MDs V10/04_CRYPTATLAS_677_CATALOGO_V10.md",
+  "checkedAt": "2026-10-27",
+  "note": "Nomes e quantidade de formas canônicos; custos de cartas e Gold específicos do Royale.",
+  "families": {
+    "bit-bug": [
+      {
+        "canonicalId": "MC-0001",
+        "name": "Bit Bug",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0002",
+        "name": "Bit Bug Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0003",
+        "name": "Bit Bug Apex",
+        "form": 3
+      }
+    ],
+    "data-mouse": [
+      {
+        "canonicalId": "MC-0004",
+        "name": "Data Mouse",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0005",
+        "name": "Data Mouse Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0006",
+        "name": "Data Mouse Apex",
+        "form": 3
+      }
+    ],
+    "code-slime": [
+      {
+        "canonicalId": "MC-0007",
+        "name": "Code Slime",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0008",
+        "name": "Code Slime Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0009",
+        "name": "Code Slime Apex",
+        "form": 3
+      }
+    ],
+    "pixel-pup": [
+      {
+        "canonicalId": "MC-0010",
+        "name": "Pixel Pup",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0011",
+        "name": "Pixel Pup Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0012",
+        "name": "Pixel Pup Apex",
+        "form": 3
+      }
+    ],
+    "circuit-hare": [
+      {
+        "canonicalId": "MC-0013",
+        "name": "Circuit Hare",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0014",
+        "name": "Circuit Hare Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0015",
+        "name": "Circuit Hare Apex",
+        "form": 3
+      }
+    ],
+    "cache-crow": [
+      {
+        "canonicalId": "MC-0016",
+        "name": "Cache Crow",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0017",
+        "name": "Cache Crow Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0018",
+        "name": "Cache Crow Apex",
+        "form": 3
+      }
+    ],
+    "byte-boar": [
+      {
+        "canonicalId": "MC-0019",
+        "name": "Byte Boar",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0020",
+        "name": "Byte Boar Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0021",
+        "name": "Byte Boar Apex",
+        "form": 3
+      }
+    ],
+    "socket-crab": [
+      {
+        "canonicalId": "MC-0031",
+        "name": "Socket Crab",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0032",
+        "name": "Socket Crab Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0033",
+        "name": "Socket Crab Apex",
+        "form": 3
+      }
+    ],
+    "copper-mole": [
+      {
+        "canonicalId": "MC-0022",
+        "name": "Copper Mole",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0023",
+        "name": "Copper Mole Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0024",
+        "name": "Copper Mole Apex",
+        "form": 3
+      }
+    ],
+    "fiber-finch": [
+      {
+        "canonicalId": "MC-0025",
+        "name": "Fiber Finch",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0026",
+        "name": "Fiber Finch Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0027",
+        "name": "Fiber Finch Apex",
+        "form": 3
+      }
+    ],
+    "patch-toad": [
+      {
+        "canonicalId": "MC-0028",
+        "name": "Patch Toad",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0029",
+        "name": "Patch Toad Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0030",
+        "name": "Patch Toad Apex",
+        "form": 3
+      }
+    ],
+    "logic-lizard": [
+      {
+        "canonicalId": "MC-0034",
+        "name": "Logic Lizard",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0035",
+        "name": "Logic Lizard Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0036",
+        "name": "Logic Lizard Apex",
+        "form": 3
+      }
+    ],
+    "kernel-goat": [
+      {
+        "canonicalId": "MC-0037",
+        "name": "Kernel Goat",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0038",
+        "name": "Kernel Goat Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0039",
+        "name": "Kernel Goat Apex",
+        "form": 3
+      }
+    ],
+    "packet-fox": [
+      {
+        "canonicalId": "MC-0040",
+        "name": "Packet Fox",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0041",
+        "name": "Packet Fox Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0042",
+        "name": "Packet Fox Apex",
+        "form": 3
+      }
+    ],
+    "buffer-bison": [
+      {
+        "canonicalId": "MC-0046",
+        "name": "Buffer Bison",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0047",
+        "name": "Buffer Bison Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0048",
+        "name": "Buffer Bison Apex",
+        "form": 3
+      }
+    ],
+    "cache-mantis": [
+      {
+        "canonicalId": "MC-0049",
+        "name": "Cache Mantis",
+        "form": 1
+      },
+      {
+        "canonicalId": "MC-0050",
+        "name": "Cache Mantis Mk-II",
+        "form": 2
+      },
+      {
+        "canonicalId": "MC-0051",
+        "name": "Cache Mantis Apex",
+        "form": 3
+      }
+    ]
+  }
+}

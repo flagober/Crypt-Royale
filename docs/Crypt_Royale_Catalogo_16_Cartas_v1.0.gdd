@@ -1,0 +1,322 @@
+# Crypt Royale — Catálogo Inicial de 16 Cartas
+
+**Documento:** GDD de elenco, combate, aquisição e balanceamento  
+**Versão:** 1.0  
+**Data:** 26/09/2026  
+**Status:** base de produção; números marcados como provisórios exigem playtest  
+**Escopo:** jogo competitivo 2D/2.5D, coleção de cartas e integração responsável com MCT
+
+---
+
+## 1. Objetivo deste catálogo
+
+Este documento define o primeiro conjunto jogável de 16 cartas do Crypt Royale. Ele preserva as oito unidades já existentes no protótipo e acrescenta oito unidades do catálogo canônico MonsterCrypt.
+
+O conjunto deve permitir quatro tipos de deck desde o primeiro teste público:
+
+1. pressão rápida e enxame;
+2. controle à distância e aéreo;
+3. resistência, proteção e sustentação;
+4. emboscada, mobilidade e contra-ataque.
+
+As cartas são colecionáveis e negociáveis quando elegíveis, mas poder competitivo não será exclusivo de pagamento ou de MCT.
+
+---
+
+## 2. Princípios obrigatórios
+
+- **Jogo e simulação em 2D/2.5D.** Arte pode sugerir volume, mas a leitura do combate deve ser clara em tela pequena.
+- **Sem pay-to-win.** Toda carta funcional deve possuir caminho razoável de obtenção por jogo.
+- **MCT não é promessa financeira.** O jogo e sua comunicação não prometem valorização, renda, recompra, lucro ou retorno.
+- **Sem conversão automática Diamantes → MCT.** Gold e Diamantes permanecem moedas fechadas do jogo.
+- **Sem loot box paga aleatória.** Compra com MCT deve revelar exatamente o que o jogador recebe.
+- **Competitivo normalizado.** Modos ranqueados podem limitar nível de carta para preservar habilidade e composição como fatores principais.
+- **Propriedade não altera regras.** Uma carta adquirida com MCT e a mesma carta obtida jogando devem ter estatísticas idênticas.
+- **Arte original.** Nenhum prompt ou ativo deve copiar personagens, franquias, interfaces ou marcas de terceiros.
+
+---
+
+## 3. Estrutura de uma carta
+
+Cada carta possui os seguintes campos mínimos:
+
+- ID canônico MonsterCrypt;
+- nome e slug;
+- elemento, natureza, região e família;
+- raridade colecionável;
+- custo de energia em batalha;
+- função tática;
+- alvos permitidos: solo, aéreo, estruturas ou combinações;
+- quantidade de unidades invocadas;
+- atributos de combate;
+- habilidade característica com sinal visual legível;
+- forças, fraquezas e pelo menos dois contra-ataques;
+- origem de aquisição;
+- arte principal, miniatura, sprite e efeitos.
+
+Os valores abaixo são o **primeiro alvo de balanceamento**, não uma promessa de números finais.
+
+---
+
+## 4. Visão geral das 16 cartas
+
+| # | ID | Carta | Elemento / natureza | Custo | Papel | Quant. | Alvos | Aquisição-base |
+|---:|---|---|---|---:|---|---:|---|---|
+| 1 | MC-0001 | Bit Bug | Digital / Feral | 2 | enxame | 3 | solo | inicial/jogo |
+| 2 | MC-0004 | Data Mouse | Metal / Vigilante | 3 | atirador | 1 | solo e aéreo | inicial/jogo |
+| 3 | MC-0007 | Code Slime | Terra / Ágil | 2 | pressão dupla | 2 | solo | inicial/jogo |
+| 4 | MC-0010 | Pixel Pup | Água / Sábia | 3 | lutador | 1 | solo | inicial/jogo |
+| 5 | MC-0013 | Circuit Hare | Digital / Resonante | 4 | investida | 1 | solo | jogo/MCT direto |
+| 6 | MC-0016 | Cache Crow | Metal / Estável | 3 | tropa aérea | 2 | solo e aéreo | jogo/MCT direto |
+| 7 | MC-0019 | Byte Boar | Terra / Caótica | 5 | tanque de estruturas | 1 | estruturas | jogo/MCT direto |
+| 8 | MC-0031 | Socket Crab | Terra / Tenaz | 4 | guardião | 1 | solo | jogo/MCT direto |
+| 9 | MC-0022 | Copper Mole | Água / Leal | 3 | escavador | 1 | solo/estruturas | jogo/MCT direto |
+| 10 | MC-0025 | Fiber Finch | Digital / Predadora | 2 | batedor aéreo | 2 | solo e aéreo | jogo/MCT direto |
+| 11 | MC-0028 | Patch Toad | Metal / Serena | 3 | suporte | 1 | solo e aéreo | jogo/MCT direto |
+| 12 | MC-0034 | Logic Lizard | Água / Curiosa | 4 | dano encadeado | 1 | solo e aéreo | jogo/MCT direto |
+| 13 | MC-0037 | Kernel Goat | Digital / Feral | 4 | rompedor | 1 | solo | jogo/MCT direto |
+| 14 | MC-0040 | Packet Fox | Metal / Vigilante | 4 | infiltração | 1 | solo | jogo/MCT direto |
+| 15 | MC-0046 | Buffer Bison | Água / Sábia | 5 | tanque de aura | 1 | solo | jogo/MCT direto |
+| 16 | MC-0049 | Cache Mantis | Digital / Resonante | 4 | assassino | 1 | solo | jogo/MCT direto |
+
+**Nota:** “jogo/MCT direto” significa que a carta pode ser conquistada jogando ou comprada diretamente, com conteúdo conhecido, pelo Marketplace. MCT oferece conveniência, estética ou propriedade negociável; não estatísticas superiores.
+
+---
+
+## 5. Fichas de design
+
+### 5.1 MC-0001 — Bit Bug
+
+- **Fantasia:** pequenos insetos de código atacam em grupo e sobrecarregam um alvo isolado.
+- **Custo/quantidade:** 2 de energia; invoca 3.
+- **Base atual:** 95 HP, 22 dano, velocidade 48, alcance 16, ataque a cada 750 ms.
+- **Habilidade proposta:** `Enxame Binário` — bônus visual e pequeno aumento de velocidade quando dois ou mais Bit Bugs atacam o mesmo alvo.
+- **Força:** excelente troca contra unidades lentas de alvo único.
+- **Fraqueza:** dano em área e torres com alta cadência.
+- **Leitura visual:** três silhuetas pequenas, olhos ciano e trilha de bits quadrados.
+
+### 5.2 MC-0004 — Data Mouse
+
+- **Fantasia:** sentinela compacta que dispara pacotes de dados com precisão.
+- **Custo/quantidade:** 3; invoca 1.
+- **Base atual:** 290 HP, 58 dano, velocidade 44, alcance 86, ataque a cada 1.050 ms.
+- **Habilidade proposta:** `Checksum` — o terceiro disparo consecutivo no mesmo alvo causa pequeno dano extra.
+- **Força:** suporte seguro atrás de tanques e resposta a voadores.
+- **Fraqueza:** assassinos, investidas e cercos rápidos.
+- **Leitura visual:** orelhas antena, cauda-cabo e visor âmbar.
+
+### 5.3 MC-0007 — Code Slime
+
+- **Fantasia:** massa de código maleável que se divide para ocupar espaço.
+- **Custo/quantidade:** 2; invoca 2.
+- **Base atual:** 145 HP, 31 dano, velocidade 36, alcance 18, ataque a cada 900 ms.
+- **Habilidade proposta:** `Fragmentação` — ao cair, deixa um resíduo visual que desacelera levemente o inimigo por curto período; não gera novas unidades infinitas.
+- **Força:** distração, defesa barata e controle de rota.
+- **Fraqueza:** área, longo alcance e unidades que ignoram desaceleração.
+- **Leitura visual:** corpo gelatinoso verde-ciano, fragmentos de caracteres no interior.
+
+### 5.4 MC-0010 — Pixel Pup
+
+- **Fantasia:** companheiro veloz, equilibrado e confiável.
+- **Custo/quantidade:** 3; invoca 1.
+- **Base atual:** 430 HP, 67 dano, velocidade 52, alcance 19, ataque a cada 1.000 ms.
+- **Habilidade proposta:** `Rastro Leal` — ganha curta aceleração ao aproximar-se de um aliado sob ataque.
+- **Força:** resposta versátil e boa perseguição.
+- **Fraqueza:** tanques pesados e controle de grupo.
+- **Leitura visual:** cachorro digital azul, coleira luminosa e cauda pixelada.
+
+### 5.5 MC-0013 — Circuit Hare
+
+- **Fantasia:** lebre elétrica que acumula carga durante a corrida.
+- **Custo/quantidade:** 4; invoca 1.
+- **Base atual:** 335 HP, 104 dano, velocidade 70, alcance 20, ataque a cada 1.200 ms.
+- **Habilidade proposta:** `Salto de Circuito` — primeiro contato após percorrer distância mínima causa dano adicional, sempre com aviso luminoso.
+- **Força:** pune retaguardas expostas.
+- **Fraqueza:** enxames, bloqueadores baratos e reposicionamento.
+- **Leitura visual:** pernas longas, circuitos magenta-ciano e arco elétrico nas orelhas.
+
+### 5.6 MC-0016 — Cache Crow
+
+- **Fantasia:** corvos de memória voam sobre bloqueios terrestres e atacam em dupla.
+- **Custo/quantidade:** 3; invoca 2.
+- **Base atual:** 155 HP, 43 dano, velocidade 58, alcance 62, ataque a cada 900 ms.
+- **Habilidade proposta:** `Memória de Alvo` — mantém o alvo por um breve período mesmo se ele atravessar a multidão.
+- **Força:** pressão aérea eficiente.
+- **Fraqueza:** dano em área antiaéreo e torres de alta cadência.
+- **Leitura visual:** penas segmentadas de grafite, olhos violeta e cache luminoso no peito.
+
+### 5.7 MC-0019 — Byte Boar
+
+- **Fantasia:** javali blindado que ignora distrações para romper estruturas.
+- **Custo/quantidade:** 5; invoca 1.
+- **Base atual:** 980 HP, 82 dano, velocidade 30, alcance 22, ataque a cada 1.300 ms.
+- **Habilidade proposta:** `Cabeçada de Byte` — o primeiro golpe numa estrutura causa impacto adicional moderado.
+- **Força:** absorve dano e obriga resposta defensiva.
+- **Fraqueza:** enxames, controle e alto dano por segundo.
+- **Leitura visual:** presas de dados, testa blindada e placas laranja.
+
+### 5.8 MC-0031 — Socket Crab
+
+- **Fantasia:** caranguejo-fortaleza que trava conexões e segura a linha.
+- **Custo/quantidade:** 4; invoca 1.
+- **Base atual:** 690 HP, 54 dano, velocidade 28, alcance 24, ataque a cada 950 ms.
+- **Habilidade proposta:** `Porta Travada` — após parar para atacar, recebe pequena redução de dano frontal.
+- **Força:** defesa consistente contra lutadores e cargas.
+- **Fraqueza:** flanqueamento, aéreo e dano sustentado à distância.
+- **Leitura visual:** casco hexagonal, pinças como conectores e núcleo azul.
+
+### 5.9 MC-0022 — Copper Mole
+
+- **Fantasia:** toupeira condutora que atravessa o subsolo para surgir perto do objetivo.
+- **Alvo de balanceamento:** custo 3; 350 HP; 70 dano; velocidade 45; alcance 18; ataque a cada 1.050 ms.
+- **Habilidade:** `Túnel de Cobre` — no posicionamento, percorre sob o solo durante até 1,2 s. O ponto de saída aparece ao adversário e pode ser preparado; a habilidade ocorre uma vez por invocação.
+- **Força:** aproximação contra atiradores e estruturas.
+- **Fraqueza:** guardiões no ponto de saída, enxames e aéreo.
+- **Leitura visual:** garras largas de cobre, focinho-sonda e linhas aquáticas azul-esverdeadas.
+
+### 5.10 MC-0025 — Fiber Finch
+
+- **Fantasia:** pequenos pássaros de fibra óptica exploram a arena em alta velocidade.
+- **Alvo de balanceamento:** custo 2; invoca 2; 110 HP; 35 dano; velocidade 68; alcance 55; ataque a cada 850 ms.
+- **Habilidade:** `Pulso Óptico` — o primeiro ataque revela efeitos de camuflagem do alvo por curto período.
+- **Força:** ciclagem, reconhecimento e resposta a infiltradores.
+- **Fraqueza:** qualquer área antiaérea e torres rápidas.
+- **Leitura visual:** asas translúcidas de fibras, bico luminoso e rastros arco-íris discretos.
+
+### 5.11 MC-0028 — Patch Toad
+
+- **Fantasia:** sapo técnico aplica correções de emergência em aliados.
+- **Alvo de balanceamento:** custo 3; 360 HP; 40 dano; velocidade 32; alcance 45; ataque a cada 1.200 ms.
+- **Habilidade:** `Hotfix` — a cada 4 s emite cura curta de 45 HP no aliado mais ferido próximo. Não cura estruturas e não se autocura.
+- **Força:** prolonga unidades médias e favorece posicionamento.
+- **Fraqueza:** dano explosivo, assassinos e separação do grupo.
+- **Leitura visual:** bolsas metálicas nas costas, língua-cabo e ícone de remendo no visor, sem texto.
+
+### 5.12 MC-0034 — Logic Lizard
+
+- **Fantasia:** lagarto analista dispara um pulso que salta entre inimigos próximos.
+- **Alvo de balanceamento:** custo 4; 390 HP; 64 dano; velocidade 40; alcance 78; ataque a cada 1.100 ms.
+- **Habilidade:** `Lógica Encadeada` — o disparo alcança um segundo alvo por 50% do dano e um terceiro por 25%; não retorna ao mesmo alvo.
+- **Força:** combate formações agrupadas.
+- **Fraqueza:** unidades espaçadas, mergulho rápido e tanques isolados.
+- **Leitura visual:** crista geométrica azul, pupilas de cursor e cauda em forma de circuito lógico.
+
+### 5.13 MC-0037 — Kernel Goat
+
+- **Fantasia:** bode robusto reinicia a linha inimiga com uma cabeçada de núcleo.
+- **Alvo de balanceamento:** custo 4; 560 HP; 75 dano; velocidade 50; alcance 20; ataque a cada 1.000 ms.
+- **Habilidade:** `Kernel Panic` — a primeira cabeçada e depois uma a cada 5 s empurra levemente unidades terrestres; chefes e estruturas resistem.
+- **Força:** rompe formações e afasta defensores.
+- **Fraqueza:** aéreo, enxames e atiradores protegidos.
+- **Leitura visual:** chifres espirais como trilhas de placa e núcleo vermelho controlado no peito.
+
+### 5.14 MC-0040 — Packet Fox
+
+- **Fantasia:** raposa de pacotes mascara sua assinatura para infiltrar a retaguarda.
+- **Alvo de balanceamento:** custo 4; 330 HP; 90 dano; velocidade 56; alcance 18; ataque a cada 900 ms.
+- **Habilidade:** `Pacote Fantasma` — fica camuflada após 2 s sem atacar ou sofrer dano; o primeiro golpe saindo da camuflagem recebe +40%. Uma distorção visível permite reação.
+- **Força:** elimina suportes desprotegidos.
+- **Fraqueza:** revelação do Fiber Finch, área e guardiões.
+- **Leitura visual:** cauda como fluxo de pacotes, máscara violeta e silhueta elegante.
+
+### 5.15 MC-0046 — Buffer Bison
+
+- **Fantasia:** bisão massivo estabiliza aliados ao absorver picos de dano.
+- **Alvo de balanceamento:** custo 5; 880 HP; 62 dano; velocidade 28; alcance 22; ataque a cada 1.250 ms.
+- **Habilidade:** `Zona de Buffer` — aliados num raio curto recebem 12% de redução de dano; o efeito não acumula com outro Buffer Bison.
+- **Força:** avanço em formação e proteção de suportes.
+- **Fraqueza:** separação, dano percentual e ataque aéreo concentrado.
+- **Leitura visual:** ombros largos, anéis de buffer azul-água e placas arredondadas.
+
+### 5.16 MC-0049 — Cache Mantis
+
+- **Fantasia:** louva-a-deus de memória executa emboscadas rápidas e precisas.
+- **Alvo de balanceamento:** custo 4; 320 HP; 115 dano; velocidade 62; alcance 18; ataque a cada 1.000 ms.
+- **Habilidade:** `Cache Hit` — ao adquirir seu primeiro alvo, avança até 45 unidades e causa +30% no primeiro golpe. O salto não reinicia ao trocar de alvo.
+- **Força:** ameaça atiradores e suportes.
+- **Fraqueza:** unidades-isca, blindagem e dano em área.
+- **Leitura visual:** lâminas frontais verde-ciano, tórax fino e memória cristalina nas costas.
+
+---
+
+## 6. Economia e Marketplace MCT
+
+### 6.1 Três camadas de valor
+
+1. **Jogabilidade:** cartas e progressão obtidas por partidas, missões, eventos e crafting interno.
+2. **Coleção:** variantes visuais, bordas, animações, emotes, avatares e edições numeradas.
+3. **Propriedade opcional:** ativos elegíveis negociados em MCT pela Wallet do ecossistema.
+
+### 6.2 O que pode ser comprado com MCT
+
+- uma carta específica, com preço e conteúdo visíveis;
+- edição colecionável de uma carta, sem bônus competitivo;
+- skin, efeito de entrada, emote, arena, verso de carta ou pacote cosmético;
+- passe ou ingresso de evento com recompensas declaradas;
+- taxa de negociação quando houver mercado entre jogadores.
+
+### 6.3 O que não deve acontecer
+
+- conversão automática de Gold ou Diamantes em MCT;
+- saque automático de recompensa interna em MCT;
+- venda de estatísticas exclusivas;
+- caixas pagas com resultado aleatório;
+- linguagem de investimento, renda, lucro, valorização ou recompra garantida;
+- emissão sem limites, preços opacos ou taxa escondida.
+
+### 6.4 Receita sustentável do Crypt Royale
+
+- comissão transparente do Marketplace;
+- venda primária de cosméticos e edições colecionáveis;
+- passes sazonais centrados em cosméticos e conveniência;
+- personalização de perfil, arena e clã;
+- eventos patrocinados ou temáticos que não vendam vantagem;
+- licenciamento futuro de itens cosméticos entre produtos MonsterCrypt.
+
+A distribuição de qualquer receita, reserva ou incentivo em MCT deve ser documentada separadamente e validada juridicamente antes de publicação.
+
+---
+
+## 7. Primeiros decks de teste
+
+### Deck A — Pressão rápida
+
+Bit Bug, Code Slime, Pixel Pup, Circuit Hare, Fiber Finch, Packet Fox, Data Mouse e Kernel Goat.
+
+### Deck B — Linha protegida
+
+Buffer Bison, Patch Toad, Data Mouse, Logic Lizard, Socket Crab, Cache Crow, Pixel Pup e Fiber Finch.
+
+### Deck C — Cerco e contra-ataque
+
+Byte Boar, Copper Mole, Socket Crab, Cache Mantis, Cache Crow, Code Slime, Data Mouse e Kernel Goat.
+
+Os decks servem para playtest, não como recomendação competitiva permanente.
+
+---
+
+## 8. Critérios de validação
+
+Antes de considerar o catálogo pronto para lançamento:
+
+- cada carta deve ter pelo menos dois contra-ataques identificáveis;
+- nenhuma carta pode ser obrigatória em mais de 35% dos decks de teste por falta de alternativa funcional;
+- custo médio dos decks deve permitir decisões frequentes sem spam contínuo;
+- habilidades precisam ser compreendidas pelo efeito visual, sem depender de texto durante a luta;
+- variantes MCT e gratuitas da mesma carta devem produzir o mesmo resultado de combate;
+- toda compra deve exibir item, preço, taxa e destino antes da confirmação na Wallet;
+- testes devem cobrir desconexão, dupla confirmação, repetição de transação e saldo insuficiente;
+- telemetria deve medir uso, vitória, derrota, dano, tempo em campo e combinações dominantes sem coletar dados desnecessários.
+
+---
+
+## 9. Próxima decisão de produção
+
+1. aprovar identidade visual das 16 cartas;
+2. produzir uma imagem-mestra por carta;
+3. validar legibilidade em miniatura;
+4. gerar sprites e efeitos em lotes pequenos;
+5. implementar as oito novas cartas atrás de uma configuração de teste;
+6. realizar balanceamento sem MCT ativo;
+7. integrar catálogo ao Marketplace somente depois de contratos, Wallet e fluxos de erro auditados.
+
