@@ -16,7 +16,7 @@ else {
     const pathname=decodeURIComponent(url.pathname),file=path.resolve(root,'.'+(pathname==='/'?'/index.html':pathname));
     if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile())return new Response('Not found',{status:404});
     const result=await net.fetch(pathToFileURL(file).href);
-    const headers=new Headers(result.headers);headers.set('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com; object-src 'none'; base-uri 'none'");
+    const headers=new Headers(result.headers);headers.set('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://crypt-royale-commerce-beta.onrender.com; object-src 'none'; base-uri 'none'");
     return new Response(result.body,{status:result.status,headers});
    }catch{return new Response('Invalid resource',{status:400});}
   });
@@ -27,7 +27,12 @@ else {
    if(event.sender!==window.webContents||!event.senderFrame.url.startsWith('cryptroyale://app/')||googlePending)throw Error('Solicitação de login inválida.');
    googlePending=true;try{return await require('./scripts/desktop-account.cjs').googleDesktop(shell);}finally{googlePending=false;}
   });
-  window.webContents.setWindowOpenHandler(({url})=>{if(['https://monstercrypt-royale.web.app/privacy.html','https://monstercrypt-royale.web.app/delete-account.html'].includes(url))shell.openExternal(url);return {action:'deny'};});
+  window.webContents.setWindowOpenHandler(({url})=>{
+   if(['https://monstercrypt-royale.web.app/privacy.html','https://monstercrypt-royale.web.app/delete-account.html'].includes(url)||url.startsWith('https://www.mercadopago.com')||url.startsWith('https://mercadopago.com')||url.startsWith('https://sandbox.mercadopago.com')){
+    shell.openExternal(url);
+   }
+   return {action:'deny'};
+  });
   window.webContents.on('will-navigate',(event,url)=>{if(!url.startsWith('cryptroyale://app/'))event.preventDefault();});
   if(smoke){
    const timer=setTimeout(()=>{console.error('Smoke test excedeu o prazo');app.exit(1)},30000);

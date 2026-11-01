@@ -2,7 +2,7 @@ import {VipShop} from './VipShop.jsx';
 import {useEffect, useRef, useState} from 'react';
 import {
   X, ShoppingBag, Mail, Bot, ArrowLeft, CheckCircle2, ShieldCheck,
-  Smartphone, QrCode, CreditCard, Sparkles, AlertCircle
+  QrCode, CreditCard, Sparkles, AlertCircle, ExternalLink, Loader2
 } from 'lucide-react';
 import {AUTO_PASS, autoAccess, selectedCopies} from './shop.js';
 import {CARD_BY_ID} from './game/cards.js';
@@ -22,14 +22,15 @@ export function ShopPanel({
   ownerId,
   clockNow,
   onBuyVip,
-  onBuyGold
+  getIdToken
 }) {
   const [selection, setSelection] = useState({});
   const [checkoutPack, setCheckoutPack] = useState(null);
-  const [paymentMethod, setPaymentMethod] = useState('google-play');
+  const [checkoutUrl, setCheckoutUrl] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState('mercadopago');
   const [purchasing, setPurchasing] = useState(false);
-  const [purchaseSuccess, setPurchaseSuccess] = useState(null);
   const [checkoutError, setCheckoutError] = useState('');
+  const [orderInfo, setOrderInfo] = useState(null);
 
   const ref = useRef(null);
   const request = useRef(crypto.randomUUID());
@@ -49,7 +50,8 @@ export function ShopPanel({
       if (e.key === 'Escape') {
         if (checkoutPack) {
           setCheckoutPack(null);
-          setPurchaseSuccess(null);
+          setCheckoutUrl(null);
+          setOrderInfo(null);
           setCheckoutError('');
         } else {
           closeRef.current();
@@ -59,11 +61,11 @@ export function ShopPanel({
       const nodes = [...ref.current.querySelectorAll('button:not(:disabled),input:not(:disabled)')];
       const a = nodes[0], b = nodes.at(-1);
       if (e.shiftKey && document.activeElement === a) {
+        b.focus();
         e.preventDefault();
-        b?.focus();
       } else if (!e.shiftKey && document.activeElement === b) {
+        a.focus();
         e.preventDefault();
-        a?.focus();
       }
     };
     document.addEventListener('keydown', key);
@@ -77,38 +79,56 @@ export function ShopPanel({
     setSelection(s => reconcileCardSelection(s, inventory));
   }, [inventory]);
 
-  const setQuantity = (id, value) => setSelection(s => updateCardSelection(s, inventory, id, value));
-
-  const buy = async () => {
-    if (await onBuy(selection, request.current)) {
-      setSelection({});
-      request.current = crypto.randomUUID();
+  const setAmount = (id, value) => {
+    try {
+      setSelection(s => updateCardSelection(s, id, value, inventory));
+    } catch {
+      // Reconciles and bounds on error.
     }
   };
 
   const handleOpenCheckout = pack => {
     setCheckoutPack(pack);
-    setPurchaseSuccess(null);
+    setCheckoutUrl(null);
+    setOrderInfo(null);
     setCheckoutError('');
-    setPaymentMethod('google-play');
+    setPaymentMethod('mercadopago');
   };
 
-  const handleConfirmPurchase = async () => {
-    if (!checkoutPack || purchasing || !onBuyGold) return;
+  const handleStartPayment = async () => {
+    if (!checkoutPack || purchasing) return;
+    if (!authenticated || !getIdToken) {
+      setCheckoutError('Por favor, entre na sua conta Google para comprar pacotes de Gold oficiais.');
+      return;
+    }
     setPurchasing(true);
     setCheckoutError('');
     try {
-      const ok = await onBuyGold(checkoutPack);
-      if (ok) {
-        setPurchaseSuccess({
-          pack: checkoutPack,
-          orderId: crypto.randomUUID().slice(0, 8).toUpperCase()
-        });
-      } else {
-        setCheckoutError('A transação não pôde ser confirmada. Verifique sua conexão e tente novamente.');
+      const token = await getIdToken();
+      if (!token) throw new Error('Não foi possível obter autenticação da conta. Entre novamente.');
+      const res = await fetch('https://crypt-royale-commerce-beta.onrender.com/api/v1/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          packId: checkoutPack.id,
+          provider: 'mercadopago'
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Serviço de pagamentos indisponível no momento.');
+      }
+      setOrderInfo(data.order);
+      const url = data.checkoutUrl || data.sandboxCheckoutUrl;
+      setCheckoutUrl(url);
+      if (url) {
+        window.open(url, '_blank');
       }
     } catch (err) {
-      setCheckoutError(err.message || 'Erro ao processar pagamento.');
+      setCheckoutError(err.message || 'Falha ao iniciar pagamento.');
     } finally {
       setPurchasing(false);
     }
@@ -122,7 +142,7 @@ export function ShopPanel({
             <div className="shop-header-badges">
               <small>VILA BYTE · LOJA OFICIAL</small>
               <span className="shop-live-badge">
-                <CheckCircle2 size={12} /> Modo Real Ativo
+                <CheckCircle2 size={12} /> Mercado Pago Ativo
               </span>
             </div>
             <h2 id="shop-title"><ShoppingBag /> Recursos para sua jornada</h2>
@@ -133,9 +153,7 @@ export function ShopPanel({
           </button>
         </header>
 
-        {message && <p role="status" className="shop-message">{message}</p>}
-
-        {/* Seção Oficial de Pacotes de Gold */}
+        {/* Pacotes Oficiais de Gold */}
         <section className="shop-gold" aria-labelledby="gold-packs-title">
           <div className="shop-gold-heading">
             <div>
@@ -144,13 +162,13 @@ export function ShopPanel({
             </div>
             <span className="shop-gold-preview">5 pacotes oficiais</span>
           </div>
-          <p>Escolha o tamanho do seu pacote. Crédito atômico imediato no seu perfil com recibo oficial.</p>
+          <p>Escolha o tamanho do seu pacote. Pague via Pix ou Cartão com entrega atômica na sua conta.</p>
 
           <div className="shop-gold-grid">
             {GOLD_PACKS.map((pack, i) => (
-              <article key={pack.id} className={'shop-gold-pack shop-gold-pack--' + i}>
+              <article key={pack.id} className={`shop-gold-pack shop-gold-pack--${i}`}>
                 <img
-                  src={pack.image || '/assets/rewards/vila-byte-coins-v001.png'}
+                  src={pack.image}
                   alt={pack.name}
                   width="100"
                   height="100"
@@ -162,11 +180,10 @@ export function ShopPanel({
                 <p className="shop-gold-price">{goldPackPrice(pack)}</p>
                 <button
                   type="button"
-                  disabled={busy || !authenticated || !ready}
                   onClick={() => handleOpenCheckout(pack)}
-                  aria-label={`Comprar ${pack.name}: +${pack.gold.toLocaleString('pt-BR')} Gold por ${goldPackPrice(pack)}`}
+                  aria-label={`Comprar ${pack.name} por ${goldPackPrice(pack)}`}
                 >
-                  {busy ? 'Processando…' : `Comprar · ${goldPackPrice(pack)}`}
+                  Comprar {goldPackPrice(pack)}
                 </button>
               </article>
             ))}
@@ -183,101 +200,89 @@ export function ShopPanel({
             <h3>Seu primeiro presente</h3>
             <p>300 Gold · 4 Bit Bug · 4 Data Mouse · 2 Fragmentos de Dados</p>
             <p>Enviado ao correio ao salvar uma jornada nova na conta. Uma vez por conta, com conteúdo fixo.</p>
-            <button type="button" onClick={onMail}><Mail size={17} /> Abrir meu correio</button>
           </div>
+          <button type="button" onClick={onMail}>Abrir correio</button>
         </article>
 
-        {/* Seção VIP */}
-        <VipShop
-          key={ownerId || 'guest'}
-          profile={profile}
-          ownerId={ownerId}
-          authenticated={authenticated}
-          ready={ready}
-          busy={busy}
-          clockNow={clockNow}
-          onBuy={onBuyVip}
-        />
-
-        {/* Passe do Sentinela */}
+        {/* Passe Sentinela */}
         <article className="shop-pass">
-          <small>PROTOCOLO SENTINELA</small>
-          <h3><Bot /> Automático por 7 dias</h3>
-          <p>Treino livre e repetição de fases já vencidas. Não avança a campanha, não conclui missões manuais nem concede recompensas de batalha.</p>
-          <p className="shop-price">5.000 Gold <b>+</b> 20 Fragmentos de Dados <b>+</b> 50 cartas repetidas</p>
-          <p>Todos os custos juntos. Sem renovação automática. Uma nova compra acrescenta sete dias ao tempo restante.</p>
-          {access.active ? (
-            <p className="shop-active">Ativo até {new Date(access.until).toLocaleString('pt-BR', {timeZone: 'America/Sao_Paulo'})}</p>
-          ) : (
-            <p>Passe inativo · o modo automático exige esta compra.</p>
-          )}
+          <h3><Bot /> {AUTO_PASS.days} dias de Sentinela Automático</h3>
+          <p className="shop-price">
+            {AUTO_PASS.gold.toLocaleString('pt-BR')} <b>Gold</b> · {AUTO_PASS.dataFragments} <b>Fragmentos</b> · {AUTO_PASS.cards} <b>Cartas</b>
+          </p>
+          <p>
+            {access.active
+              ? `Sentinela ativo até ${new Date(access.until).toLocaleString('pt-BR')}. Comprar outro pacote soma mais sete dias.`
+              : 'Libera o modo automático nas atividades. Sem assinatura recorrente; renove quando quiser.'}
+          </p>
 
-          <p>Seu saldo: {gold.toLocaleString('pt-BR')} Gold · {fragments} Fragmentos de Dados</p>
-
-          <fieldset disabled={busy || !authenticated || !ready} className="shop-card-selection">
-            <legend>Escolha quais cartas usar</legend>
-            <p className="shop-selection-count" role="status" aria-live="polite">{count} de {AUTO_PASS.cards} cartas selecionadas</p>
-            <p className="shop-selection-help">Use − e + ou digite a quantidade. Apenas as cópias escolhidas serão consumidas ao confirmar a compra.</p>
+          <fieldset className="shop-card-selection">
+            <legend>Entregar {AUTO_PASS.cards} cartas repetidas</legend>
+            <p className="shop-selection-help">
+              Use as setas para escolher quantas cópias repetidas de cada monstro quer entregar.
+            </p>
             <div className="shop-cards">
-              {Object.entries(inventory || {}).filter(([id, n]) => n > 0 && CARD_BY_ID[id]).map(([id, n]) => {
-                const card = CARD_BY_ID[id], quantity = selection[id] || 0, limit = cardSelectionLimit(selection, inventory, id);
+              {Object.entries(inventory || {}).map(([id, n]) => {
+                const limit = cardSelectionLimit(id, inventory);
+                if (limit <= 0) return null;
+                const current = selection[id] || 0;
                 return (
-                  <article className={'shop-copy-card' + (quantity ? ' is-selected' : '')} key={id} aria-label={card.name}>
+                  <div key={id} className={`shop-copy-card ${current > 0 ? 'is-selected' : ''}`}>
                     <div className="shop-copy-art">
-                      <img src={card.cardArt} alt={card.name} width="180" height="240" loading="lazy" />
-                      <span className="shop-copy-badge">{quantity > 0 ? quantity + (quantity === 1 ? ' escolhida' : ' escolhidas') : card.role}</span>
+                      <img src={`/assets/cards/${id}-v001.png`} alt="" loading="lazy" />
+                      <span className="shop-copy-badge">
+                        {current > 0 ? `${current}/${limit} no passe` : `Até ${limit}`}
+                      </span>
                     </div>
-                    <h4>{card.name}</h4>
-                    <p className="shop-copy-owned">{n.toLocaleString('pt-BR')} {n === 1 ? 'disponível' : 'disponíveis'}</p>
+                    <h4>{CARD_BY_ID[id]?.name || id}</h4>
+                    <p className="shop-copy-owned">{n} no inventário · {limit} repetidas</p>
                     <div className="shop-copy-stepper">
-                      <label className="sr-only" htmlFor={'shop-copy-' + id}>Quantidade de {card.name}</label>
+                      <button
+                        type="button"
+                        aria-label={`Diminuir cartas de ${CARD_BY_ID[id]?.name || id}`}
+                        onClick={() => setAmount(id, current - 1)}
+                        disabled={current <= 0}
+                      >
+                        -
+                      </button>
                       <input
-                        id={'shop-copy-' + id}
                         type="number"
-                        inputMode="numeric"
                         min="0"
                         max={limit}
-                        step="1"
-                        value={quantity}
-                        aria-label={'Usar cartas ' + card.name}
-                        onChange={e => setQuantity(id, Number(e.target.value))}
+                        value={current}
+                        onChange={e => setAmount(id, e.target.value)}
+                        aria-label={`Quantidade de cartas de ${CARD_BY_ID[id]?.name || id}`}
                       />
-                      <button type="button" onClick={() => setQuantity(id, quantity - 1)} disabled={quantity <= 0} aria-label={'Diminuir ' + card.name}>−</button>
-                      <button type="button" onClick={() => setQuantity(id, quantity + 1)} disabled={quantity >= limit} aria-label={'Aumentar ' + card.name}>+</button>
+                      <button
+                        type="button"
+                        aria-label={`Aumentar cartas de ${CARD_BY_ID[id]?.name || id}`}
+                        onClick={() => setAmount(id, current + 1)}
+                        disabled={current >= limit}
+                      >
+                        +
+                      </button>
                     </div>
-                  </article>
+                  </div>
                 );
               })}
             </div>
-            {!Object.entries(inventory || {}).some(([id, n]) => n > 0 && CARD_BY_ID[id]) && (
-              <p>As cartas repetidas que você conquistar aparecerão aqui.</p>
-            )}
+            <p className="shop-selection-count">{count} de {AUTO_PASS.cards} cartas selecionadas</p>
           </fieldset>
 
-          {!authenticated && <p>Entre na sua conta para comprar e conservar o passe.</p>}
-          {authenticated && !ready && <p>Sincronize seu progresso antes de comprar.</p>}
           <button
+            type="button"
             className="shop-buy"
-            disabled={busy || !authenticated || !ready || count !== 50 || gold < 5000 || fragments < 20}
-            onClick={buy}
+            disabled={count !== AUTO_PASS.cards || gold < AUTO_PASS.gold || fragments < AUTO_PASS.dataFragments || busy || !ready}
+            onClick={() => onBuy(selection, request.current)}
           >
-            {busy ? 'Confirmando…' : access.active ? 'Confirmar compra · acrescentar 7 dias' : 'Confirmar compra · ativar 7 dias'}
+            Trocar recursos e ativar passe
           </button>
         </article>
 
-        {/* Rodapé de Segurança da Loja Oficial */}
-        <article className="shop-security-banner">
-          <div className="shop-security-icon">
-            <ShieldCheck size={28} />
-          </div>
-          <div>
-            <h3>Loja Oficial Crypt Royale · Compras Reais Seguras</h3>
-            <p>
-              As aquisições de Gold são creditadas de forma atômica no seu inventário, garantindo entrega imediata e recibo com chave única na sua conta vinculada.
-            </p>
-          </div>
-        </article>
+        {/* Loja VIP */}
+        <VipShop profile={profile} ownerId={ownerId} clockNow={clockNow} onBuyVip={onBuyVip} />
 
+        {/* Retorno Visível */}
         <footer className="shop-footer">
           <button type="button" className="shop-back" onClick={onClose}>
             <ArrowLeft size={18} /> Voltar à arena
@@ -285,76 +290,47 @@ export function ShopPanel({
         </footer>
       </section>
 
-      {/* Modal de Checkout Real */}
+      {/* Modal Oficial de Checkout */}
       {checkoutPack && (
         <div className="shop-checkout-overlay" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
           <div className="shop-checkout-card">
             <button
               type="button"
               className="shop-checkout-close"
-              onClick={() => { setCheckoutPack(null); setPurchaseSuccess(null); }}
+              onClick={() => { setCheckoutPack(null); setCheckoutUrl(null); }}
               aria-label="Fechar checkout"
             >
               <X size={20} />
             </button>
 
-            {!purchaseSuccess ? (
+            {!checkoutUrl ? (
               <>
                 <div className="shop-checkout-heading">
-                  <small>CHECKOUT OFICIAL · MODO REAL</small>
+                  <small>VILA BYTE · PAGAMENTO OFICIAL</small>
                   <h3 id="checkout-title">Confirmar Compra</h3>
                 </div>
 
                 <div className="shop-checkout-summary">
-                  <img
-                    src={checkoutPack.image || '/assets/rewards/vila-byte-coins-v001.png'}
-                    alt={checkoutPack.name}
-                    width="70"
-                    height="70"
-                  />
+                  <img src={checkoutPack.image} alt={checkoutPack.name} />
                   <div>
                     <h4>{checkoutPack.name}</h4>
                     <span className="shop-checkout-gold">+{checkoutPack.gold.toLocaleString('pt-BR')} Gold</span>
-                    <strong className="shop-checkout-price">{goldPackPrice(checkoutPack)}</strong>
+                    <span className="shop-checkout-price">{goldPackPrice(checkoutPack)}</span>
                   </div>
                 </div>
 
                 <div className="shop-checkout-methods">
-                  <label className="shop-checkout-label">Escolha a forma de pagamento:</label>
+                  <label className="shop-checkout-label">Forma de Pagamento Oficial:</label>
                   <div className="shop-methods-grid">
                     <button
                       type="button"
-                      className={`shop-method-card ${paymentMethod === 'google-play' ? 'is-selected' : ''}`}
-                      onClick={() => setPaymentMethod('google-play')}
+                      className={`shop-method-card ${paymentMethod === 'mercadopago' ? 'is-selected' : ''}`}
+                      onClick={() => setPaymentMethod('mercadopago')}
                     >
-                      <Smartphone size={20} />
+                      <QrCode size={22} className="text-cyan-400" />
                       <div>
-                        <strong>Google Play</strong>
-                        <small>Faturamento oficial Android</small>
-                      </div>
-                    </button>
-
-                    <button
-                      type="button"
-                      className={`shop-method-card ${paymentMethod === 'pix' ? 'is-selected' : ''}`}
-                      onClick={() => setPaymentMethod('pix')}
-                    >
-                      <QrCode size={20} />
-                      <div>
-                        <strong>Pix Instantâneo</strong>
-                        <small>QR Code / Copia e Cola</small>
-                      </div>
-                    </button>
-
-                    <button
-                      type="button"
-                      className={`shop-method-card ${paymentMethod === 'card' ? 'is-selected' : ''}`}
-                      onClick={() => setPaymentMethod('card')}
-                    >
-                      <CreditCard size={20} />
-                      <div>
-                        <strong>Cartão de Crédito</strong>
-                        <small>À vista no checkout</small>
+                        <strong>Pix Instantâneo / Mercado Pago</strong>
+                        <small>Aprovação e entrega imediata na conta</small>
                       </div>
                     </button>
                   </div>
@@ -371,13 +347,15 @@ export function ShopPanel({
                     type="button"
                     className="shop-checkout-confirm"
                     disabled={purchasing || busy}
-                    onClick={handleConfirmPurchase}
+                    onClick={handleStartPayment}
                   >
                     {purchasing ? (
-                      'Processando transação…'
+                      <>
+                        <Loader2 size={18} className="animate-spin" /> Gerando pagamento seguro…
+                      </>
                     ) : (
                       <>
-                        <ShieldCheck size={18} /> Pagar {goldPackPrice(checkoutPack)} e Receber Gold
+                        <ShieldCheck size={18} /> Pagar {goldPackPrice(checkoutPack)} com Pix
                       </>
                     )}
                   </button>
@@ -394,23 +372,37 @@ export function ShopPanel({
             ) : (
               <div className="shop-checkout-success">
                 <div className="shop-success-icon">
-                  <Sparkles size={40} />
+                  <Sparkles size={40} className="text-yellow-400" />
                 </div>
-                <h3>Pagamento Confirmado!</h3>
+                <h3>Pagamento Aberto!</h3>
                 <p>
-                  Foram creditados <strong>+{purchaseSuccess.pack.gold.toLocaleString('pt-BR')} Gold</strong> na sua conta Crypt Royale.
+                  O link de pagamento seguro do Mercado Pago foi gerado para <strong>+{checkoutPack.gold.toLocaleString('pt-BR')} Gold</strong>.
                 </p>
                 <div className="shop-success-receipt">
-                  <small>RECIBO OFICIAL</small>
-                  <code>#CR-{purchaseSuccess.orderId}</code>
+                  <small>PEDIDO GERADO</small>
+                  <code>#CR-{orderInfo?.id ? orderInfo.id.slice(0, 8).toUpperCase() : 'PENDENTE'}</code>
                 </div>
-                <button
-                  type="button"
-                  className="shop-checkout-confirm"
-                  onClick={() => { setCheckoutPack(null); setPurchaseSuccess(null); }}
-                >
-                  <CheckCircle2 size={18} /> Concluir e Voltar à Loja
-                </button>
+                <p className="text-xs text-slate-400 my-2">
+                  Conclua o pagamento via Pix ou Cartão na aba do Mercado Pago. O Gold é creditado de forma atômica no seu perfil assim que o banco confirmar!
+                </p>
+                <div className="flex flex-col gap-2 mt-4">
+                  <a
+                    href={checkoutUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="shop-checkout-confirm"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <ExternalLink size={18} /> Abrir Página de Pagamento
+                  </a>
+                  <button
+                    type="button"
+                    className="shop-checkout-cancel"
+                    onClick={() => { setCheckoutPack(null); setCheckoutUrl(null); }}
+                  >
+                    Concluir e Voltar ao Jogo
+                  </button>
+                </div>
               </div>
             )}
           </div>

@@ -1,0 +1,25 @@
+{
+  "capturedAt": "2026-11-01T00:28:47.632Z",
+  "application": "MonsterCrypt",
+  "productionUrl": "https://clever-doodles-refuse.loca.lt/api/v1/webhooks/mercadopago",
+  "testUrl": "https://clever-doodles-refuse.loca.lt/api/v1/webhooks/mercadopago",
+  "events": [
+    "60 checkbox (settable, integer) Description: Order (Mercado Pago), Value: 0, ID: «r2c»",
+    "63 checkbox (settable, integer) Description: Vinculação de aplicações, Value: 0, ID: «r2d»",
+    "66 checkbox (settable, integer) Description: Alertas de fraude, Value: 0, ID: «r2e»",
+    "69 checkbox (settable, integer) Description: Reclamações, Value: 0, ID: «r2f»",
+    "72 checkbox (settable, integer) Description: Card Updater, Value: 0, ID: «r2g»",
+    "75 checkbox (settable, integer) Description: Contestações, Value: 0, ID: «r2h»",
+    "78 checkbox (settable, integer) Description: Envios (Mercado Pago), Value: 0, ID: «r2i»",
+    "81 checkbox (settable, integer) Description: Perfil de pago, Value: 0, ID: «r2j»",
+    "84 checkbox (settable, integer) Description: Pagamentos (legacy), Value: 1, ID: «r2k»",
+    "91 checkbox (settable, integer) Description: Planos e assinaturas, Value: 0, ID: «r2m»",
+    "94 checkbox (settable, integer) Description: Integrações Point, Value: 0, ID: «r2n»",
+    "97 checkbox (settable, integer) Description: Delivery (proximity marketplace), Value: 0, ID: «r2o»",
+    "100 checkbox (settable, integer) Description: Wallet Connect, Value: 0, ID: «r2p»",
+    "103 checkbox (settable, integer) Description: Pedidos comerciais, Value: 0, ID: «r2q»",
+    "106 checkbox (settable, integer) Description: Self Service, Value: 0, ID: «r2r»",
+    "109 checkbox (settable, integer) Description: Split - Autorização, Value: 0, ID: «r2s»"
+  ],
+  "secretPreserved": true
+}

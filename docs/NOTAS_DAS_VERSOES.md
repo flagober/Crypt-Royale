@@ -1,3 +1,13 @@
+## 31/10/2026 — v0.2 · Pagamentos Oficiais via Mercado Pago/Pix, Medidor de Energia na GUI e Pipeline iOS na Nuvem
+
+Resumo: Integração do checkout oficial Mercado Pago com Pix instantâneo, medidor de energia visível na tela de batalha do PC, botões de pós-partida com retorno ao menu e compilação nativa para iPhone.
+
+- Loja Oficial conectada à API Mercado Pago: compras de Gold via Pix e Cartão de Crédito com validação de assinatura e entrega atômica no servidor.
+- Medidor de Energia na GUI Desktop: indicador numérico com ícone luminoso e contagem X/10 tanto na barra de combate quanto no cabeçalho.
+- Tela de Fim de Partida Aprimorada: botão (X) para retorno imediato à arena limpa e novo botão "Opções de menu do jogo" para navegação direta.
+- Automação iOS na Nuvem: pipeline oficial com macOS 15 e Xcode 16 gerando o pacote instalável Crypt_Royale_iOS.ipa.
+- Build 28 oficial pronto para atualização na Google Play Store (AAB), Windows Desktop (EXE) e iOS (IPA).
+
 ## 31/10/2026 — v0.13 · Arena Matchmaking PvP, Cards da Caixa de Correio e Loja em Modo Real
 
 Resumo: PvP com Modo Livre e Modo Equilíbrio com alerta de nível, cards visuais de itens no Correio e Loja oficial em modo real com checkout.

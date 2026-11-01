@@ -1,5 +1,19 @@
 [
   {
+    "versao": "0.2",
+    "cicloVersao": 2,
+    "data": "2026-10-31",
+    "titulo": "Pagamentos Oficiais via Mercado Pago/Pix, Medidor de Energia na GUI e Pipeline iOS na Nuvem",
+    "resumo": "Integração do checkout oficial Mercado Pago com Pix instantâneo, medidor de energia visível na tela de batalha do PC, botões de pós-partida com retorno ao menu e compilação nativa para iPhone.",
+    "alteracoes": [
+      "Loja Oficial conectada à API Mercado Pago: compras de Gold via Pix e Cartão de Crédito com validação de assinatura e entrega atômica no servidor.",
+      "Medidor de Energia na GUI Desktop: indicador numérico com ícone luminoso e contagem X/10 tanto na barra de combate quanto no cabeçalho.",
+      "Tela de Fim de Partida Aprimorada: botão (X) para retorno imediato à arena limpa e novo botão \"Opções de menu do jogo\" para navegação direta.",
+      "Automação iOS na Nuvem: pipeline oficial com macOS 15 e Xcode 16 gerando o pacote instalável Crypt_Royale_iOS.ipa.",
+      "Build 28 oficial pronto para atualização na Google Play Store (AAB), Windows Desktop (EXE) e iOS (IPA)."
+    ]
+  },
+  {
     "versao": "0.13",
     "cicloVersao": 2,
     "data": "2026-10-31",

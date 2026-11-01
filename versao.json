@@ -1,8 +1,8 @@
 {
-  "versao": "0.13",
-  "versaoTecnica": "0.28.0",
-  "buildNumber": 27,
-  "resumo": "PvP com Modo Livre e Modo Equilíbrio com alerta de nível, cards visuais de itens no Correio e Loja oficial em modo real com checkout.",
-  "data": "2026-10-31T19:38:05.615Z",
+  "versao": "0.2",
+  "versaoTecnica": "0.29.0",
+  "buildNumber": 28,
+  "resumo": "Integração do checkout oficial Mercado Pago com Pix instantâneo, medidor de energia visível na tela de batalha do PC, botões de pós-partida com retorno ao menu e compilação nativa para iPhone.",
+  "data": "2026-11-01T01:25:40.723Z",
   "cicloVersao": 2
 }
